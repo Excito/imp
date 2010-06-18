@@ -1,0 +1,7 @@
+*.php /usr/share/horde3/imp
+
+js  /usr/share/horde3/imp
+lib /usr/share/horde3/imp
+locale /usr/share/horde3/imp
+templates /usr/share/horde3/imp
+themes /usr/share/horde3/imp

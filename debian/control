@@ -1,0 +1,37 @@
+Source: imp4
+Section: web
+Priority: optional
+Maintainer: Horde Maintainers <pkg-horde-hackers@lists.alioth.debian.org>
+Uploaders: Carl Fürstenberg <carl@excito.com>, Ola Lundqvist <opal@debian.org>, Lionel Elie Mamane <lmamane@debian.org>, Gregory Colpart (evolix) <reg@evolix.fr>
+Build-Depends: debhelper (>= 7.2)
+Standards-Version: 3.8.4
+Homepage: http://www.horde.org/imp/
+
+Package: imp4
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, horde3 (>= 3.3), imp4-base
+Suggests: ingo1, kronolith2, turba2, aspell, ispell, imapproxy
+Description: webmail component for horde framework
+ IMP is the Internet Messaging Program (formerly, among other things, the IMAP
+ webMail Program), a PHP-based webmail system and a component of the Horde
+ project.  IMP, once installed, accesses mail over IMAP thus requiring little
+ to no special preparations on the server on which mail is stored.
+ .
+ IMP offers most of the features users have come to expect from their
+ conventional mail programs, including attachments, spell-check, address books,
+ multiple folders, and multiple-language support.
+
+Package: imp4-base
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, horde3-base (>= 3.3), php5-imap, php-mail-mime
+Description: webmail component for horde framework
+ IMP is the Internet Messaging Program (formerly, among other things, the IMAP
+ webMail Program), a PHP-based webmail system and a component of the Horde
+ project.  IMP, once installed, accesses mail over IMAP thus requiring little
+ to no special preparations on the server on which mail is stored.
+ .
+ IMP offers most of the features users have come to expect from their
+ conventional mail programs, including attachments, spell-check, address books,
+ multiple folders, and multiple-language support.
+ .
+ This package provides the base files

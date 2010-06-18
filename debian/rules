@@ -1,0 +1,33 @@
+#!/usr/bin/make -f
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh  $@
+
+override_dh_install: 
+	dh_install
+	#### change made for program run with no problems ###
+	# change HORDE_BASE  in php files
+	# change /usr/local/bin/php to /usr/bin/php
+	# change IMP_BASE in php files
+	for i in $$(find debian/imp4-base -name "*.php"); do \
+		cat $$i | \
+		sed -e "s/define('HORDE_BASE'.*;/define\('HORDE_BASE', '\/usr\/share\/horde3\'\);/" |\
+		sed -e "s/define('IMP_BASE'.*;/define\('IMP_BASE', '\/usr\/share\/horde3\/imp'\);/" |\
+		sed -e "s/\/usr\/local\/bin/\/usr\/bin/" > $$i.rew; \
+		cat $$i.rew > $$i; \
+		rm -f $$i.rew; \
+		done
+	echo "Deny from all" > debian/imp4/etc/horde/imp4/.htaccess
+	touch debian/imp4/etc/horde/imp4/conf.php
+	for i in config/*.dist; do \
+		NAME=etc/horde/imp4/$$(basename $$i ".dist"); \
+		cp -a $$i debian/imp4/$$NAME; \
+	done
+
+override_dh_installchangelogs:
+	dh_installchangelogs docs/CHANGES
+
+override_dh_installdocs:
+	dh_installdocs -X docs/CHANGES -X docs/INSTALL

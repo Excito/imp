@@ -1,0 +1,221 @@
+imp4 for Debian
+---------------
+
+To configure this package use the horde3 web configuration. To let
+it write to the configuration files you have to change the owner
+of the /etc/horde/imp4 dir and config files to be owned by www-data.
+
+If you do not do that you have to cut from the web configuration
+program and paste into the config file yourself.
+
+The reason why this is not the default option is, that allow writing
+to configuration files without any authentication is a big
+security hole.
+
+.....................................................................
+
+Some notes from upstream INSTALL document follow here:
+
+Prerequisites
+=============
+
+To function properly, IMP **REQUIRES** the following:
+
+1. The following PHP capabilities:
+
+   a. File Upload Support
+
+      File upload support is **required** to allow attachments in mail
+      composition and to allow various importing features to work (e.g.
+      importing PGP or S/MIME keys, importing mbox files).  To enable file
+      upload support:
+
+      1. In your php.ini file, the following line **must** be present::
+
+         file_uploads = On
+
+      2. Your temporary upload directory **must** be writable to the user
+         the web server is running as.  If you leave the configuration
+         option ``upload_tmp_dir`` blank in ``php.ini``, PHP will use the
+         default directory compiled into it (normally ``/tmp`` on
+         Unix-like systems).
+
+      3. Set the maximum size of the uploaded files via the
+         ``upload_max_filesize`` configuration option in ``php.ini``.  For
+         example, to allow 5 MB attachments, place the following line in
+         your ``php.ini`` file::
+
+         upload_max_filesize = 5M
+
+         If either ``file_uploads`` is turned off, or your temporary upload
+         directory is *not* writable by the server, all file upload
+         functionality will be disabled by Horde/IMP and will not be available
+         to the user.
+
+   The following PHP options are **RECOMMENDED** to enable advanced features in
+   IMP:
+
+   a. OpenSSL support ``--with-openssl``
+
+      The OpenSSL module is used by IMP to provide S/MIME functionality.
+      Without the module, S/MIME options will be disabled.
+
+
+2. The following PEAR modules:
+
+   a. HTTP_Request [OPTIONAL]
+
+      HTTP_Request is required to use the HTML composition mode.
+
+3. At least one IMAP or POP3 server.
+
+   While IMP is an application that is installed on a Web server and is run
+   from a Web browser, it is only an IMAP and POP3 *client*, like Eudora or
+   Outlook Express.  You must have access to an IMAP or POP3 server (or
+   multiple servers) on which your users' mail is stored in order to use IMP.
+
+   IMAP is recommended over POP3 in order to let users maintain mail folders
+   other than INBOX.  IMAP is also *much* faster than POP3 in displaying a
+   mailbox of messages.  In short, do not use POP3 unless IMAP is not
+   available.
+
+   Freely available IMAP servers (for \*nix systems) that have been verified
+   to work with IMP include:
+
+   - UW-IMAP (ftp://ftp.cac.washington.edu/imap/)
+   - Courier-IMAP (http://www.inter7.com/courierimap.html)
+   - Cyrus (http://asg.web.cmu.edu/cyrus/)
+   - Dovecot (http://dovecot.procontrol.fi/)
+
+The following items are not required, but are strongly **RECOMMENDED**:
+====================================
+
+1. Sendmail or equivalent.
+
+   While Horde can inject mail via either a local sendmail or a remote SMTP
+   server, sendmail is recommended for use with IMP for improved performance
+   and error handling/reporting, as well as a more accurate mail envelope.
+
+   The mail transport settings are set in the Horde configuration, so further
+   documentation can be found there.
+
+2. Ispell, or a drop-in replacement.
+
+   Ispell, or its enhanced cousin aspell, is used as IMP's spell-checking
+   engine.  You must install one of these, or a similar program with an
+   ispell-compatible interface, to use IMP's spell-check feature.
+
+Configuring IMP
+===============
+
+1. Configuring Horde for IMP
+
+   a. Enable IMP authentication [OPTIONAL]
+
+      If you would prefer that your users authenticate directly with IMP,
+      without having to authenticate through Horde first, load the
+      ``Administration/Configuration/Authentication`` page and from the ``What
+      backend should we use for authenticating users to Horde`` pulldown menu
+      select ``Let a Horde application handle authentication``.  (Please see
+      the second note below.) Select ``imp`` from the ``The application which
+      is providing authentication`` pulldown menu.
+
+      .. Note:: **You will have to log in twice if you don't do this** -- Once
+                to Horde and a second time to IMP.
+
+      .. Note:: If this is a new install, you will not be able to configure
+                IMP using the Horde Administration/Configuration page if you
+                first enabled IMP authentication for Horde.  You must set
+                Horde to use another authentication method (refer to the
+                `horde/docs/INSTALL`_ file), configure IMP, then reset Horde
+                to use IMP authentication.  One way to reset Horde in order to
+                reach the Administration page is to replace the Horde
+                configuration file ``conf.php`` with the original in
+                ``horde/config/conf.php.dist``.  You should of course back up
+                your current settings since they will otherwise be permanently
+                lost.
+
+2. Configuring IMP.
+
+   You must be sure to list your IMAP/POP3 server names and configuration
+   information in ``servers.php`` (unless you demand that the user specify his
+   own at login).
+
+   You must login to Horde as a Horde Administrator to finish the
+   configuration of IMP.  Use the Horde ``Administration`` menu item to get to
+   the administration page, and then click on the ``Configuration`` icon to
+   get the configuration page.  Select ``Mail`` from the selection list of
+   applications.  Fill in or change any configuration values as needed.  When
+   done click on ``Generate Mail Configuration`` to generate the ``conf.php``
+   file.  If your web server doesn't have write permissions to the IMP
+   configuration directory or file, it will not be able to write the file.  In
+   this case, go back to ``Configuration`` and choose one of the other methods
+   to create the configuration file ``imp/config/conf.php``.
+
+   Note for international users: IMP uses GNU gettext to provide local
+   translations of text displayed by applications; the translations are found
+   in the ``po/`` directory.  If a translation is not yet available for your
+   locale (and you wish to create one), see the ``horde/po/README`` file, or
+   if you're having trouble using a provided translation, please see the
+   `horde/docs/TRANSLATIONS`_ file for instructions.
+
+   IMP Configuration Pointers
+
+   * If you would like IMP to scan all text messages for UUencoded data, you
+     must make change this line in ``imp/config/mime_drivers.php``::
+
+     $mime_drivers['imp']['plain']['uuencode'] = true;
+
+     Note that this is a performance hit since *every* text body must be
+     scanned in its entriety to look for uuencoded data.  Therefore, this
+     feature is disabled by default.
+
+3. Securing IMP
+
+   Before you can secure IMP, you need a secure Horde installation.  Please
+   read the file in `horde/docs/SECURITY`_ for Horde security information
+   before proceeding.
+
+   There are two channels by which, unless steps are taken to avoid it, IMP
+   encourages users to pass their IMAP and POP3 passwords around the Internet
+   unencrypted.
+
+   The first channel is between their browser and the Web server.  We strongly
+   recommend using an SSL-capable Web server to give users the option of
+   encrypting communications between their browser and the Web server on which
+   IMP is running; some sites may wish to disable non-SSL access entirely.
+
+   The second channel is between the Web server and their IMAP or POP3 server.
+   The simplest way to avoid this is to have the mail server running on the
+   same system as the Web server, and configuring IMP to connect to the IMAP
+   or POP3 server on ``localhost`` instead of on the Internet hostname.  In
+   cases where that is not possible, we recommend using IMAP-SSL or POP3-SSL
+   to ensure that users' passwords remain safe after they have entrusted them
+   to IMP.
+
+   Other security steps you can take to increase security include:
+
+   * Use session cookies instead or URL based sessions.
+   * Set your php ``session.entropy_length`` to a larger value (e.g. 16) and
+     ``session.entropy_file`` to a random source (e.g. ``/dev/urandom``)
+   * Enable and use the php mycrypt extension.
+   * If your database, mail server, and web server are on the same host
+     machine, then:
+
+   * use unix socket database access and disable tcp database access.
+   * use ``localhost`` for all TCP/IP connections to avoid the network.
+   * use the command-line sendmail for sending mail if possible.
+
+4. Testing IMP
+
+   Use IMP to login to a known working IMAP or POP3 server.  Test at least the
+   following:
+
+   - Sending mail (via the ``Compose`` item in the menu bar).
+   - Setting preferences (check to see if they survive after logging out and
+     back in, if you are using an SQL or LDAP preferences system).
+   - Reading mail.
+   - Changing folders.
+
+
+ -- Jose Carlos <jose@psabs.com.br>, Mon, 21 Feb 2005 15:09:49 -0300
