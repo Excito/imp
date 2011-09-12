@@ -1,3 +1,9 @@
+imp4 (4.3.10-1) vincent; urgency=low
+
+  * Imported Upstream version 4.3.10
+
+ -- Carl Fürstenberg <azatoth@gmail.com>  Mon, 12 Sep 2011 16:18:52 +0200
+
 imp4 (4.3.7-1) vincent; urgency=low
 
   * New upstream release
