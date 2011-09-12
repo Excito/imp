@@ -13,7 +13,7 @@
  *   $noset_impview   - Don't set viewmode variable.
  *   $session_control - Sets special session control limitations
  *
- * $Horde: imp/lib/base.php,v 1.79.10.21 2009/01/06 15:24:04 jan Exp $
+ * $Horde: imp/lib/base.php,v 1.79.10.22 2010/05/13 21:53:03 slusarz Exp $
  *
  * Copyright 1999-2009 The Horde Project (http://www.horde.org/)
  *
@@ -139,7 +139,9 @@ if ($authentication !== 'none') {
     }
 
     // Set viewmode.
-    if (!Util::nonInputVar('noset_impview')) {
+    if (!Util::nonInputVar('noset_impview') &&
+        isset($_SESSION['imp']) &&
+        is_array($_SESSION['imp'])) {
         $_SESSION['imp']['viewmode'] = 'imp';
     }
 }

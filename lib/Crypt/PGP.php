@@ -2,7 +2,7 @@
 /**
  * @package IMP
  *
- * $Horde: imp/lib/Crypt/PGP.php,v 1.90.2.27 2009/10/09 13:02:34 jan Exp $
+ * $Horde: imp/lib/Crypt/PGP.php,v 1.90.2.28 2011/01/05 18:52:37 slusarz Exp $
  */
 
 /** Horde_Crypt_pgp */
@@ -198,7 +198,7 @@ class IMP_PGP extends Horde_Crypt_pgp {
 
         /* Try retrieving by e-mail only first. */
         $this->_getPublicKeySources();
-        $result = $GLOBALS['registry']->call('contacts/getField', array($address, IMP_PGP_PUBKEY_FIELD, $this->_sources, false, true));
+        $result = $GLOBALS['registry']->call('contacts/getField', array($address, IMP_PGP_PUBKEY_FIELD, $this->_sources, true, true));
 
         /* TODO: Retrieve by ID. */
 

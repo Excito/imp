@@ -1,6 +1,6 @@
 <?php
 /**
- * $Horde: imp/message.php,v 2.560.4.61 2009/02/17 07:32:12 slusarz Exp $
+ * $Horde: imp/message.php,v 2.560.4.62 2010/07/01 20:00:26 slusarz Exp $
  *
  * Copyright 1999-2009 The Horde Project (http://www.horde.org/)
  *
@@ -46,6 +46,7 @@ if (!$imp_mailbox->isValidIndex()) {
 }
 
 $flagged_unseen = false;
+$dnsnoprefetch = true;
 $printer_friendly = false;
 
 /* Set the current time zone. */

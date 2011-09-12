@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: dev@lists.horde.org\n"
-"POT-Creation-Date: 2010-04-26 17:24+0200\n"
+"POT-Creation-Date: 2010-10-25 14:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -32,7 +33,7 @@ msgstr ""
 msgid "    From: "
 msgstr ""
 
-#: folders.php:381 mailbox.php:357
+#: mailbox.php:357 folders.php:381
 #, php-format
 msgid " (Accesskey %s)"
 msgstr ""
@@ -55,12 +56,12 @@ msgstr ""
 msgid "%.0f%% of %.0f MB"
 msgstr ""
 
-#: folders.php:311 folders.php:322 lib/Message.php:863
+#: folders.php:311 folders.php:322 lib/Message.php:862
 #, php-format
 msgid "%.2fMB"
 msgstr ""
 
-#: thread.php:162
+#: thread.php:164
 #, php-format
 msgid "%d Messages"
 msgstr ""
@@ -207,7 +208,7 @@ msgstr ""
 msgid "%s%% of allowed size"
 msgstr ""
 
-#: message.php:282 message.php:287 message.php:505
+#: message.php:283 message.php:288 message.php:506
 #, php-format
 msgid "%s: %s"
 msgstr ""
@@ -222,7 +223,7 @@ msgstr ""
 msgid "%u of %u messages in %s unread."
 msgstr ""
 
-#: message.php:506
+#: message.php:507
 #, php-format
 msgid "(%d&nbsp;of&nbsp;%d)"
 msgstr ""
@@ -402,7 +403,7 @@ msgid ""
 "address on a new line)</em>"
 msgstr ""
 
-#: lib/IMAP/ACL/rfc4314.php:59 lib/IMAP/ACL/rfc2086.php:57
+#: lib/IMAP/ACL/rfc2086.php:57 lib/IMAP/ACL/rfc4314.php:59
 msgid "Administer"
 msgstr ""
 
@@ -441,7 +442,7 @@ msgstr ""
 msgid "All old sent-mail folders more than %s months old will be deleted."
 msgstr ""
 
-#: acl.php:88 acl.php:129
+#: acl.php:93 acl.php:135
 #, php-format
 msgid "All rights on folder \"%s\" successfully removed for user \"%s\"."
 msgstr ""
@@ -489,8 +490,8 @@ msgstr ""
 msgid "An unknown person"
 msgstr ""
 
-#: message.php:477 mailbox.php:764 templates/message/navbar_navigate.html:12
-#: templates/mailbox/navbar.html:18 templates/mailbox/navbar.html:34
+#: mailbox.php:764 message.php:478 templates/mailbox/navbar.html:18
+#: templates/mailbox/navbar.html:34 templates/message/navbar_navigate.html:12
 msgid "Answered"
 msgstr ""
 
@@ -519,7 +520,7 @@ msgstr ""
 msgid "Apply filter rules whenever sidebar is refreshed?"
 msgstr ""
 
-#: thread.php:174
+#: thread.php:176
 msgid "Are you sure you want to delete all messages in this thread?"
 msgstr ""
 
@@ -540,11 +541,11 @@ msgstr ""
 msgid "Are you sure you want to do this?"
 msgstr ""
 
-#: message.php:684
+#: message.php:685
 msgid "Are you sure you wish to PERMANENTLY delete all attachments?"
 msgstr ""
 
-#: message.php:554 templates/javascript_defs.php:41
+#: message.php:555 templates/javascript_defs.php:41
 msgid "Are you sure you wish to PERMANENTLY delete these messages?"
 msgstr ""
 
@@ -556,11 +557,11 @@ msgstr ""
 msgid "Are you sure you wish to delete all mail in this folder?"
 msgstr ""
 
-#: lib/IMP.php:865
+#: lib/IMP.php:869
 msgid "Are you sure you wish to empty your spam folder?"
 msgstr ""
 
-#: lib/IMP.php:857
+#: lib/IMP.php:861
 msgid "Are you sure you wish to empty your trash folder?"
 msgstr ""
 
@@ -619,7 +620,7 @@ msgstr ""
 msgid "Attachment"
 msgstr ""
 
-#: attachment.php:73
+#: attachment.php:77
 #, php-format
 msgid "Attachment %s deleted."
 msgstr ""
@@ -662,21 +663,21 @@ msgstr ""
 msgid "Awaiting Response"
 msgstr ""
 
-#: message.php:524 thread.php:141
+#: thread.php:143 message.php:525
 #, php-format
 msgid "Bac_k to %s"
 msgstr ""
 
-#: message.php:524 thread.php:141
+#: thread.php:143 message.php:525
 #, php-format
 msgid "Back to %s"
 msgstr ""
 
-#: thread.php:138
+#: thread.php:140
 msgid "Back to Multiple Message View Index"
 msgstr ""
 
-#: thread.php:136
+#: thread.php:138
 msgid "Back to Thread Display"
 msgstr ""
 
@@ -716,7 +717,7 @@ msgstr ""
 msgid "Below the message text"
 msgstr ""
 
-#: message.php:580 mailbox.php:526
+#: mailbox.php:526 message.php:581
 msgid "Blacklist"
 msgstr ""
 
@@ -728,11 +729,11 @@ msgstr ""
 msgid "Body"
 msgstr ""
 
-#: message.php:570 config/prefs.php.dist:769
+#: message.php:571 config/prefs.php.dist:769
 msgid "Body Text Only"
 msgstr ""
 
-#: message.php:571 config/prefs.php.dist:770
+#: message.php:572 config/prefs.php.dist:770
 msgid "Body Text with Attachments"
 msgstr ""
 
@@ -765,16 +766,15 @@ msgstr ""
 msgid "Calendar"
 msgstr ""
 
-#: templates/contacts/contacts.html:69
+#: templates/contacts/contacts.html:69 templates/pgp/import_key.html:49
+#: templates/pgp/passphrase.html:22 templates/saveimage/saveimage.html:20
+#: templates/smime/import_key.html:70 templates/smime/passphrase.html:24
 #: templates/folders/folders_confirm.html:24 templates/folders/import.html:18
-#: templates/saveimage/saveimage.html:20 templates/smime/passphrase.html:24
-#: templates/smime/import_key.html:70 templates/pgp/passphrase.html:22
-#: templates/pgp/import_key.html:49
 msgid "Cancel"
 msgstr ""
 
-#: templates/compose/redirect.html:84 templates/compose/compose.html:21
-#: templates/compose/compose.html:208
+#: templates/compose/compose.html:21 templates/compose/compose.html:208
+#: templates/compose/redirect.html:84
 msgid "Cancel Message"
 msgstr ""
 
@@ -790,7 +790,7 @@ msgstr ""
 msgid "Cannot connect to the remote mail server: "
 msgstr ""
 
-#: lib/IMAP/Tree.php:2098
+#: lib/IMAP/Tree.php:2103
 msgid "Cannot directly create mailbox in this folder."
 msgstr ""
 
@@ -824,7 +824,7 @@ msgstr ""
 msgid "Chair Person"
 msgstr ""
 
-#: acl.php:173 acl.php:174 templates/acl/acl.html:13
+#: acl.php:179 acl.php:180 templates/acl/acl.html:13
 msgid "Change Folder"
 msgstr ""
 
@@ -848,7 +848,7 @@ msgstr ""
 msgid "Characters to display:"
 msgstr ""
 
-#: templates/folders/actions.html:6 templates/mailbox/message_headers.html:13
+#: templates/mailbox/message_headers.html:13 templates/folders/actions.html:6
 msgid "Check All/None"
 msgstr ""
 
@@ -856,7 +856,7 @@ msgstr ""
 msgid "Check Spelling"
 msgstr ""
 
-#: folders.php:394 mailbox.php:656
+#: mailbox.php:656 folders.php:394
 msgid "Check _All/None"
 msgstr ""
 
@@ -954,7 +954,7 @@ msgstr ""
 msgid "Clicking on the address will open the message to be read"
 msgstr ""
 
-#: templates/fetchmail/fetchmail.html:33 templates/newmsg/alert.html:17
+#: templates/newmsg/alert.html:17 templates/fetchmail/fetchmail.html:33
 msgid "Close"
 msgstr ""
 
@@ -962,7 +962,7 @@ msgstr ""
 msgid "Close this window"
 msgstr ""
 
-#: lib/IMAP/Tree.php:2043
+#: lib/IMAP/Tree.php:2048
 msgid "Closed Folder"
 msgstr ""
 
@@ -1040,7 +1040,7 @@ msgstr ""
 msgid "Convert textual emoticons into graphical ones?"
 msgstr ""
 
-#: message.php:520 message.php:707 mailbox.php:486 mailbox.php:895
+#: mailbox.php:486 mailbox.php:895 message.php:521 message.php:708
 msgid "Copy"
 msgstr ""
 
@@ -1048,7 +1048,7 @@ msgstr ""
 msgid "Copy selection"
 msgstr ""
 
-#: message.php:520 message.php:707 mailbox.php:486 mailbox.php:895
+#: mailbox.php:486 mailbox.php:895 message.php:521 message.php:708
 msgid "Copy to folder"
 msgstr ""
 
@@ -1062,12 +1062,12 @@ msgstr ""
 msgid "Could not complete request. Reason Given: %s"
 msgstr ""
 
-#: attachment.php:51
+#: attachment.php:55
 #, php-format
 msgid "Could not create the VFS backend: %s"
 msgstr ""
 
-#: lib/Message.php:790
+#: lib/Message.php:789
 #, php-format
 msgid "Could not delete messages from %s. The server said: %s"
 msgstr ""
@@ -1167,7 +1167,7 @@ msgstr ""
 msgid "Current Attachments"
 msgstr ""
 
-#: acl.php:176
+#: acl.php:182
 #, php-format
 msgid "Current access to %s"
 msgstr ""
@@ -1269,10 +1269,10 @@ msgstr ""
 msgid "Delegated"
 msgstr ""
 
-#: folders.php:440 message.php:554 mailbox.php:508 mailbox.php:510
-#: lib/IMAP/ACL/rfc4314.php:57 templates/fetchmail/fetchmailprefs.html:122
-#: templates/contacts/contacts.html:59 templates/folders/actions.html:19
-#: templates/smime/smime.html:35 templates/pgp/pgp.html:43
+#: mailbox.php:508 mailbox.php:510 folders.php:440 message.php:555
+#: lib/IMAP/ACL/rfc4314.php:57 templates/contacts/contacts.html:59
+#: templates/fetchmail/fetchmailprefs.html:122 templates/pgp/pgp.html:43
+#: templates/smime/smime.html:35 templates/folders/actions.html:19
 msgid "Delete"
 msgstr ""
 
@@ -1281,7 +1281,7 @@ msgstr ""
 msgid "Delete %s Public Key"
 msgstr ""
 
-#: templates/smime/smime.html:75 templates/pgp/pgp.html:86
+#: templates/pgp/pgp.html:86 templates/smime/smime.html:75
 msgid "Delete Current Keys"
 msgstr ""
 
@@ -1297,7 +1297,7 @@ msgstr ""
 msgid "Delete Stationery"
 msgstr ""
 
-#: thread.php:174
+#: thread.php:176
 msgid "Delete Thread"
 msgstr ""
 
@@ -1338,7 +1338,7 @@ msgstr ""
 msgid "Delete?"
 msgstr ""
 
-#: message.php:480 mailbox.php:779 templates/mailbox/navbar.html:20
+#: mailbox.php:779 message.php:481 templates/mailbox/navbar.html:20
 #: templates/mailbox/navbar.html:37
 msgid "Deleted"
 msgstr ""
@@ -1376,9 +1376,9 @@ msgstr ""
 msgid "Description:"
 msgstr ""
 
-#: templates/smime/smime.html:35 templates/smime/smime.html:67
 #: templates/pgp/pgp.html:43 templates/pgp/pgp.html:75
-#: templates/pgp/pgp.html:80
+#: templates/pgp/pgp.html:80 templates/smime/smime.html:35
+#: templates/smime/smime.html:67
 msgid "Details"
 msgstr ""
 
@@ -1474,7 +1474,7 @@ msgstr ""
 msgid "Download %s in .zip Format"
 msgstr ""
 
-#: message.php:680
+#: message.php:681
 msgid "Download All Attachments (in .zip file)"
 msgstr ""
 
@@ -1486,12 +1486,12 @@ msgstr ""
 msgid "Download in .zip Format"
 msgstr ""
 
-#: message.php:478 mailbox.php:769 templates/message/navbar_navigate.html:14
-#: templates/mailbox/navbar.html:22 templates/mailbox/navbar.html:40
+#: mailbox.php:769 message.php:479 templates/mailbox/navbar.html:22
+#: templates/mailbox/navbar.html:40 templates/message/navbar_navigate.html:14
 msgid "Draft"
 msgstr ""
 
-#: lib/IMAP/Tree.php:1998
+#: lib/IMAP/Tree.php:2003
 msgid "Draft folder"
 msgstr ""
 
@@ -1552,12 +1552,12 @@ msgstr ""
 msgid "Edit your preferences for accessing other mail accounts."
 msgstr ""
 
-#: lib/Message.php:807
+#: lib/Message.php:806
 #, php-format
 msgid "Emptied all messages from %s."
 msgstr ""
 
-#: lib/Message.php:783
+#: lib/Message.php:782
 msgid "Emptied all messages from Virtual Trash Folder."
 msgstr ""
 
@@ -1569,11 +1569,11 @@ msgstr ""
 msgid "Empty Selected Folders"
 msgstr ""
 
-#: lib/IMP.php:865
+#: lib/IMP.php:869
 msgid "Empty _Spam"
 msgstr ""
 
-#: lib/IMP.php:857
+#: lib/IMP.php:861
 msgid "Empty _Trash"
 msgstr ""
 
@@ -1635,17 +1635,17 @@ msgstr ""
 msgid "Enter the name for your new trash folder"
 msgstr ""
 
-#: message.php:569 lib/Search.php:741 config/prefs.php.dist:768
+#: message.php:570 lib/Search.php:741 config/prefs.php.dist:768
 msgid "Entire Message"
 msgstr ""
 
-#: message.php:175 thread.php:71 lib/Compose.php:1164
+#: thread.php:73 message.php:176 lib/Compose.php:1164
 #, php-format
 msgid "Entry \"%s\" was successfully added to the address book"
 msgstr ""
 
-#: lib/MIME/Viewer/pkcs7.php:448 lib/MIME/Viewer/pgp.php:453
-#: lib/MIME/Viewer/status.php:71 lib/MIME/Viewer/status.php:162
+#: lib/MIME/Viewer/pkcs7.php:448 lib/MIME/Viewer/status.php:71
+#: lib/MIME/Viewer/status.php:162 lib/MIME/Viewer/pgp.php:453
 msgid "Error"
 msgstr ""
 
@@ -1663,7 +1663,7 @@ msgstr ""
 msgid "Error sending reply: %s."
 msgstr ""
 
-#: templates/smime/smime.html:29 templates/pgp/pgp.html:37
+#: templates/pgp/pgp.html:37 templates/smime/smime.html:29
 msgid "Error:"
 msgstr ""
 
@@ -1723,7 +1723,7 @@ msgstr ""
 msgid "FCKeditor"
 msgstr ""
 
-#: lib/IMP.php:876 lib/IMP.php:878
+#: lib/IMP.php:880 lib/IMP.php:882
 msgid "F_etch Mail"
 msgstr ""
 
@@ -1758,7 +1758,7 @@ msgstr ""
 msgid "Fetchmail: no new messages."
 msgstr ""
 
-#: lib/IMP.php:882
+#: lib/IMP.php:886
 msgid "Fi_lters"
 msgstr ""
 
@@ -1803,8 +1803,8 @@ msgstr ""
 msgid "First Page"
 msgstr ""
 
-#: message.php:479 mailbox.php:774 templates/message/navbar_navigate.html:10
-#: templates/mailbox/navbar.html:16 templates/mailbox/navbar.html:32
+#: mailbox.php:774 message.php:480 templates/mailbox/navbar.html:16
+#: templates/mailbox/navbar.html:32 templates/message/navbar_navigate.html:10
 msgid "Flagged For Followup"
 msgstr ""
 
@@ -1812,11 +1812,11 @@ msgstr ""
 msgid "Flagged messages"
 msgstr ""
 
-#: message.php:568 mailbox.php:533
+#: mailbox.php:533 message.php:569
 msgid "Fo_rward"
 msgstr ""
 
-#: lib/IMAP/Tree.php:2043 templates/folders/folders_size.html:6
+#: lib/IMAP/Tree.php:2048 templates/folders/folders_size.html:6
 msgid "Folder"
 msgstr ""
 
@@ -1853,7 +1853,7 @@ msgstr ""
 msgid "Format of message dates in the mailbox view for messages dated today"
 msgstr ""
 
-#: message.php:568 mailbox.php:533 lib/Compose.php:1823
+#: mailbox.php:533 message.php:569 lib/Compose.php:1823
 msgid "Forward"
 msgstr ""
 
@@ -1882,7 +1882,7 @@ msgstr ""
 msgid "Fro_m"
 msgstr ""
 
-#: lib/Search.php:711 lib/UI/Mailbox.php:99 lib/UI/Message.php:25
+#: lib/Search.php:711 lib/UI/Message.php:25 lib/UI/Mailbox.php:99
 #: templates/compose/compose.html:27
 msgid "From"
 msgstr ""
@@ -1913,7 +1913,7 @@ msgstr ""
 msgid "Go"
 msgstr ""
 
-#: thread.php:140
+#: thread.php:142
 msgid "Go to Message"
 msgstr ""
 
@@ -1921,17 +1921,17 @@ msgstr ""
 msgid "Go to Virtual Inbox"
 msgstr ""
 
-#: lib/IMP.php:404
+#: lib/IMP.php:408
 #, php-format
 msgid "Go to address book entry of \"%s\""
 msgstr ""
 
-#: message.php:447 lib/Filter.php:130 lib/MIME/Contents.php:449
-#: lib/MIME/Viewer/images.php:90 lib/MIME/Viewer/images.php:97
-#: lib/MIME/Viewer/images.php:99 lib/MIME/Viewer/notification.php:60
-#: lib/MIME/Viewer/notification.php:67 lib/MIME/Viewer/related.php:85
-#: lib/MIME/Viewer/pkcs7.php:491 lib/MIME/Viewer/appledouble.php:48
-#: lib/MIME/Viewer/status.php:119 lib/MIME/Viewer/status.php:128
+#: message.php:448 lib/Filter.php:130 lib/MIME/Contents.php:449
+#: lib/MIME/Viewer/related.php:85 lib/MIME/Viewer/images.php:90
+#: lib/MIME/Viewer/images.php:97 lib/MIME/Viewer/images.php:99
+#: lib/MIME/Viewer/pkcs7.php:491 lib/MIME/Viewer/status.php:119
+#: lib/MIME/Viewer/status.php:128 lib/MIME/Viewer/notification.php:60
+#: lib/MIME/Viewer/notification.php:67 lib/MIME/Viewer/appledouble.php:48
 msgid "HERE"
 msgstr ""
 
@@ -1943,7 +1943,7 @@ msgstr ""
 msgid "HTML Version of Message"
 msgstr ""
 
-#: message.php:619
+#: message.php:620
 msgid "Headers"
 msgstr ""
 
@@ -1983,7 +1983,7 @@ msgstr ""
 msgid "High"
 msgstr ""
 
-#: message.php:293
+#: message.php:294
 msgid "High Priority"
 msgstr ""
 
@@ -2060,11 +2060,11 @@ msgstr ""
 msgid "Import"
 msgstr ""
 
-#: templates/smime/import_key.html:69 templates/pgp/import_key.html:48
+#: templates/pgp/import_key.html:48 templates/smime/import_key.html:69
 msgid "Import Key"
 msgstr ""
 
-#: templates/smime/smime.html:81 templates/pgp/pgp.html:131
+#: templates/pgp/pgp.html:131 templates/smime/smime.html:81
 msgid "Import Keypair"
 msgstr ""
 
@@ -2096,7 +2096,7 @@ msgstr ""
 msgid "Import Personal S/MIME Certificates"
 msgstr ""
 
-#: templates/smime/smime.html:47 templates/pgp/pgp.html:55
+#: templates/pgp/pgp.html:55 templates/smime/smime.html:47
 msgid "Import Public Key"
 msgstr ""
 
@@ -2139,9 +2139,9 @@ msgstr ""
 msgid "In Process"
 msgstr ""
 
-#: templates/prefs/initialpageselect.inc:4 lib/Folder.php:68 lib/api.php:293
-#: lib/IMP.php:733 lib/IMP.php:744 lib/IMAP/Tree.php:410
-#: lib/IMAP/Tree.php:1981
+#: templates/prefs/initialpageselect.inc:4 lib/api.php:293 lib/IMP.php:737
+#: lib/IMP.php:748 lib/Folder.php:68 lib/IMAP/Tree.php:415
+#: lib/IMAP/Tree.php:1986
 msgid "Inbox"
 msgstr ""
 
@@ -2161,7 +2161,7 @@ msgstr ""
 msgid "Increase Indent"
 msgstr ""
 
-#: lib/MIME/Viewer/notification.php:59 lib/MIME/Viewer/status.php:131
+#: lib/MIME/Viewer/status.php:131 lib/MIME/Viewer/notification.php:59
 msgid "Info"
 msgstr ""
 
@@ -2183,7 +2183,7 @@ msgstr ""
 msgid "Inline"
 msgstr ""
 
-#: lib/IMAP/ACL/rfc4314.php:53 lib/IMAP/ACL/rfc2086.php:53
+#: lib/IMAP/ACL/rfc2086.php:53 lib/IMAP/ACL/rfc4314.php:53
 msgid "Insert"
 msgstr ""
 
@@ -2288,11 +2288,11 @@ msgid ""
 "generation?"
 msgstr ""
 
-#: templates/smime/smime.html:42 templates/pgp/pgp.html:50
+#: templates/pgp/pgp.html:50 templates/smime/smime.html:42
 msgid "Key import is not available. File upload is not enabled on this server."
 msgstr ""
 
-#: templates/smime/smime.html:45 templates/pgp/pgp.html:53
+#: templates/pgp/pgp.html:53 templates/smime/smime.html:45
 msgid ""
 "Key import is not available. You have no address book defined to add your "
 "contacts."
@@ -2322,7 +2322,7 @@ msgstr ""
 msgid "Link Attachments?"
 msgstr ""
 
-#: attachment.php:35 lib/Compose.php:2629
+#: attachment.php:39 lib/Compose.php:2629
 msgid "Linked attachments are forbidden."
 msgstr ""
 
@@ -2331,7 +2331,7 @@ msgstr ""
 msgid "Links will expire on %s"
 msgstr ""
 
-#: lib/IMAP/ACL/rfc4314.php:49 lib/IMAP/ACL/rfc2086.php:49
+#: lib/IMAP/ACL/rfc2086.php:49 lib/IMAP/ACL/rfc4314.php:49
 msgid "List"
 msgstr ""
 
@@ -2378,7 +2378,7 @@ msgstr ""
 msgid "Low"
 msgstr ""
 
-#: message.php:297
+#: message.php:298
 msgid "Low Priority"
 msgstr ""
 
@@ -2398,7 +2398,7 @@ msgstr ""
 msgid "Mail server type to connect to:"
 msgstr ""
 
-#: lib/IMAP/Tree.php:1988 lib/IMAP/Tree.php:2015
+#: lib/IMAP/Tree.php:1993 lib/IMAP/Tree.php:2020
 msgid "Mailbox"
 msgstr ""
 
@@ -2406,11 +2406,11 @@ msgstr ""
 msgid "Mailbox and Folder Display Options"
 msgstr ""
 
-#: lib/IMAP/ACL/rfc4314.php:52 lib/IMAP/ACL/rfc2086.php:52
+#: lib/IMAP/ACL/rfc2086.php:52 lib/IMAP/ACL/rfc4314.php:52
 msgid "Mark (Other)"
 msgstr ""
 
-#: lib/IMAP/ACL/rfc4314.php:51 lib/IMAP/ACL/rfc2086.php:51
+#: lib/IMAP/ACL/rfc2086.php:51 lib/IMAP/ACL/rfc4314.php:51
 msgid "Mark (Seen)"
 msgstr ""
 
@@ -2422,9 +2422,9 @@ msgstr ""
 msgid "Mark All Messages as Unseen"
 msgstr ""
 
+#: templates/mailbox/navbar.html:27 templates/mailbox/navbar.html:29
 #: templates/message/navbar_navigate.html:6
-#: templates/message/navbar_navigate.html:8 templates/mailbox/navbar.html:27
-#: templates/mailbox/navbar.html:29
+#: templates/message/navbar_navigate.html:8
 msgid "Mark as:"
 msgstr ""
 
@@ -2515,7 +2515,7 @@ msgstr ""
 msgid "Message Size"
 msgstr ""
 
-#: message.php:589
+#: message.php:590
 msgid "Message Source"
 msgstr ""
 
@@ -2577,7 +2577,7 @@ msgstr ""
 msgid "Month"
 msgstr ""
 
-#: message.php:519 message.php:706 mailbox.php:485 mailbox.php:894
+#: mailbox.php:485 mailbox.php:894 message.php:520 message.php:707
 msgid "Move"
 msgstr ""
 
@@ -2589,7 +2589,7 @@ msgstr ""
 msgid "Move spam messages to spam folder and innocent messages to INBOX"
 msgstr ""
 
-#: message.php:519 message.php:706 mailbox.php:485 mailbox.php:894
+#: mailbox.php:485 mailbox.php:894 message.php:520 message.php:707
 msgid "Move to folder"
 msgstr ""
 
@@ -2601,7 +2601,7 @@ msgstr ""
 msgid "Multipart/alternative"
 msgstr ""
 
-#: thread.php:181
+#: thread.php:183
 msgid "Multiple Message View"
 msgstr ""
 
@@ -2609,8 +2609,8 @@ msgstr ""
 msgid "Multiple Message View:"
 msgstr ""
 
-#: templates/fetchmail/fetchmailprefs.html:91 templates/smime/smime.html:4
-#: templates/pgp/pgp.html:4
+#: templates/fetchmail/fetchmailprefs.html:91 templates/pgp/pgp.html:4
+#: templates/smime/smime.html:4
 msgid "NOTE:"
 msgstr ""
 
@@ -2634,7 +2634,7 @@ msgstr ""
 msgid "Never save attachments"
 msgstr ""
 
-#: lib/IMP.php:490
+#: lib/IMP.php:494
 msgid "New Folder"
 msgstr ""
 
@@ -2651,7 +2651,7 @@ msgstr ""
 msgid "New Message to %s"
 msgstr ""
 
-#: message.php:535
+#: message.php:536
 msgid "Next Message"
 msgstr ""
 
@@ -2669,11 +2669,11 @@ msgstr ""
 msgid "No Certificate found"
 msgstr ""
 
-#: lib/IMP.php:1455
+#: lib/IMP.php:1466
 msgid "No Encryption"
 msgstr ""
 
-#: templates/smime/smime.html:26 templates/pgp/pgp.html:34
+#: templates/pgp/pgp.html:34 templates/smime/smime.html:26
 msgid "No Keys in Keyring"
 msgstr ""
 
@@ -2706,7 +2706,7 @@ msgstr ""
 msgid "No email information located in the public key."
 msgstr ""
 
-#: acl.php:76
+#: acl.php:78
 msgid "No folder selected."
 msgstr ""
 
@@ -2726,7 +2726,7 @@ msgstr ""
 msgid "No folders with unseen messages"
 msgstr ""
 
-#: lib/IMP.php:1054
+#: lib/IMP.php:1058
 msgid "No limit"
 msgstr ""
 
@@ -2763,7 +2763,7 @@ msgstr ""
 msgid "No supported IMAP authentication method could be found."
 msgstr ""
 
-#: acl.php:108
+#: acl.php:114
 msgid "No user specified."
 msgstr ""
 
@@ -2771,8 +2771,8 @@ msgstr ""
 msgid "Non Participant"
 msgstr ""
 
-#: templates/prefs/folderselect.inc:21 templates/prefs/sentmailselect.inc:38
-#: templates/prefs/sourceselect.inc:35 templates/prefs/spamselect.inc:20
+#: templates/prefs/spamselect.inc:20 templates/prefs/folderselect.inc:21
+#: templates/prefs/sentmailselect.inc:38 templates/prefs/sourceselect.inc:35
 #: templates/prefs/trashselect.inc:23 lib/MIME/Viewer/itip.php:794
 #: lib/MIME/Viewer/itip.php:925 templates/mailbox/navbar.html:11
 msgid "None"
@@ -2786,13 +2786,13 @@ msgstr ""
 msgid "Not Deleted"
 msgstr ""
 
-#: templates/message/navbar_navigate.html:15 templates/mailbox/navbar.html:23
-#: templates/mailbox/navbar.html:41
+#: templates/mailbox/navbar.html:23 templates/mailbox/navbar.html:41
+#: templates/message/navbar_navigate.html:15
 msgid "Not Draft"
 msgstr ""
 
-#: templates/message/navbar_navigate.html:11 templates/mailbox/navbar.html:17
-#: templates/mailbox/navbar.html:33
+#: templates/mailbox/navbar.html:17 templates/mailbox/navbar.html:33
+#: templates/message/navbar_navigate.html:11
 msgid "Not Flagged"
 msgstr ""
 
@@ -2800,7 +2800,7 @@ msgstr ""
 msgid "Not Personal"
 msgstr ""
 
-#: lib/Crypt/PGP.php:136 lib/Crypt/SMIME.php:125 lib/Crypt/SMIME.php:140
+#: lib/Crypt/SMIME.php:125 lib/Crypt/SMIME.php:140 lib/Crypt/PGP.php:136
 msgid "Not a valid public key."
 msgstr ""
 
@@ -2812,7 +2812,7 @@ msgstr ""
 msgid "Note that this can take some time"
 msgstr ""
 
-#: lib/IMP.php:542
+#: lib/IMP.php:546
 msgid "Notepads"
 msgstr ""
 
@@ -2824,7 +2824,7 @@ msgstr ""
 msgid "Nothing"
 msgstr ""
 
-#: attachment.php:109
+#: attachment.php:113
 msgid "Notification: Linked attachment downloaded"
 msgstr ""
 
@@ -2840,8 +2840,8 @@ msgstr ""
 msgid "OK"
 msgstr ""
 
-#: templates/search/search.html:61 templates/smime/import_key.html:31
-#: templates/pgp/import_key.html:30
+#: templates/search/search.html:61 templates/pgp/import_key.html:30
+#: templates/smime/import_key.html:31
 msgid "OR"
 msgstr ""
 
@@ -2857,15 +2857,15 @@ msgstr ""
 msgid "Only one folder should be selected for this action."
 msgstr ""
 
-#: lib/IMP.php:933 lib/IMP.php:938
+#: lib/IMP.php:937 lib/IMP.php:942
 msgid "Open Fo_lder"
 msgstr ""
 
-#: lib/IMP.php:938
+#: lib/IMP.php:942
 msgid "Open Folder"
 msgstr ""
 
-#: lib/IMAP/Tree.php:2039
+#: lib/IMAP/Tree.php:2044
 msgid "Opened Folder"
 msgstr ""
 
@@ -2900,11 +2900,11 @@ msgstr ""
 msgid "PGP"
 msgstr ""
 
-#: lib/IMP.php:1458
+#: lib/IMP.php:1469
 msgid "PGP Encrypt Message"
 msgstr ""
 
-#: lib/IMP.php:1463
+#: lib/IMP.php:1474
 msgid "PGP Encrypt Message with passphrase"
 msgstr ""
 
@@ -2938,15 +2938,15 @@ msgstr ""
 msgid "PGP Public Keyring"
 msgstr ""
 
-#: lib/IMP.php:1459
+#: lib/IMP.php:1470
 msgid "PGP Sign Message"
 msgstr ""
 
-#: lib/IMP.php:1460
+#: lib/IMP.php:1471
 msgid "PGP Sign/Encrypt Message"
 msgstr ""
 
-#: lib/IMP.php:1464
+#: lib/IMP.php:1475
 msgid "PGP Sign/Encrypt Message with passphrase"
 msgstr ""
 
@@ -3024,7 +3024,7 @@ msgstr ""
 msgid "Page:"
 msgstr ""
 
-#: message.php:687
+#: message.php:688
 msgid "Part(s)"
 msgstr ""
 
@@ -3036,8 +3036,8 @@ msgstr ""
 msgid "Passphrase successfully unloaded."
 msgstr ""
 
-#: templates/smime/passphrase.html:21 templates/pgp/passphrase.html:19
-#: templates/pgp/pgp.html:117
+#: templates/pgp/passphrase.html:19 templates/pgp/pgp.html:117
+#: templates/smime/passphrase.html:21
 msgid "Passphrase:"
 msgstr ""
 
@@ -3066,7 +3066,7 @@ msgstr ""
 msgid "Paste from clipboard"
 msgstr ""
 
-#: message.php:465 mailbox.php:752 templates/mailbox/navbar.html:24
+#: mailbox.php:752 message.php:466 templates/mailbox/navbar.html:24
 msgid "Personal"
 msgstr ""
 
@@ -3173,7 +3173,7 @@ msgstr ""
 msgid "Port"
 msgstr ""
 
-#: lib/IMAP/ACL/rfc4314.php:54 lib/IMAP/ACL/rfc2086.php:54
+#: lib/IMAP/ACL/rfc2086.php:54 lib/IMAP/ACL/rfc4314.php:54
 msgid "Post"
 msgstr ""
 
@@ -3189,7 +3189,7 @@ msgstr ""
 msgid "Preferences"
 msgstr ""
 
-#: smime.php:262 pgp.php:271 filterprefs.php:53
+#: smime.php:262 filterprefs.php:53 pgp.php:271
 msgid "Preferences successfully updated."
 msgstr ""
 
@@ -3197,7 +3197,7 @@ msgstr ""
 msgid "Preview"
 msgstr ""
 
-#: message.php:528
+#: message.php:529
 msgid "Previous Message"
 msgstr ""
 
@@ -3205,7 +3205,7 @@ msgstr ""
 msgid "Previous Page"
 msgstr ""
 
-#: message.php:603
+#: message.php:604
 msgid "Print"
 msgstr ""
 
@@ -3213,11 +3213,11 @@ msgstr ""
 msgid "Print document"
 msgstr ""
 
-#: message.php:691
+#: message.php:692
 msgid "Printed By"
 msgstr ""
 
-#: message.php:671 lib/MIME/Viewer/itip.php:918
+#: message.php:672 lib/MIME/Viewer/itip.php:918
 msgid "Priority"
 msgstr ""
 
@@ -3335,7 +3335,7 @@ msgstr ""
 msgid "Quota status: %.2f MB / NO LIMIT"
 msgstr ""
 
-#: lib/IMP.php:1052
+#: lib/IMP.php:1056
 #, php-format
 msgid "Quota status: NO LIMIT"
 msgstr ""
@@ -3345,7 +3345,7 @@ msgstr ""
 msgid "Quoting %f:"
 msgstr ""
 
-#: lib/IMAP/ACL/rfc4314.php:50 lib/IMAP/ACL/rfc2086.php:50
+#: lib/IMAP/ACL/rfc2086.php:50 lib/IMAP/ACL/rfc4314.php:50
 msgid "Read"
 msgstr ""
 
@@ -3361,11 +3361,11 @@ msgstr ""
 msgid "Recent Searches:"
 msgstr ""
 
-#: message.php:573 message.php:617
+#: message.php:574 message.php:618
 msgid "Redirec_t"
 msgstr ""
 
-#: message.php:573 message.php:617
+#: message.php:574 message.php:618
 msgid "Redirect"
 msgstr ""
 
@@ -3434,7 +3434,7 @@ msgstr ""
 msgid "Renaming \"%s\" to \"%s\" failed. This is what the server said"
 msgstr ""
 
-#: message.php:557
+#: message.php:558
 msgid "Reply"
 msgstr ""
 
@@ -3475,11 +3475,11 @@ msgstr ""
 msgid "Reply:"
 msgstr ""
 
-#: message.php:614 mailbox.php:544
+#: mailbox.php:544 message.php:615
 msgid "Report as Innocent"
 msgstr ""
 
-#: message.php:608 mailbox.php:538
+#: mailbox.php:538 message.php:609
 msgid "Report as Spam"
 msgstr ""
 
@@ -3499,8 +3499,8 @@ msgstr ""
 msgid "Required Participant"
 msgstr ""
 
-#: templates/search/search.html:26 templates/search/search.html:183
-#: templates/acl/acl.html:80
+#: templates/acl/acl.html:80 templates/search/search.html:26
+#: templates/search/search.html:183
 msgid "Reset"
 msgstr ""
 
@@ -3508,7 +3508,7 @@ msgstr ""
 msgid "Respondent Status Updated."
 msgstr ""
 
-#: message.php:596
+#: message.php:597
 msgid "Resume"
 msgstr ""
 
@@ -3532,10 +3532,10 @@ msgstr ""
 msgid "Return to Message Composition"
 msgstr ""
 
-#: filterprefs.php:66 templates/smime/smime.html:13
-#: templates/smime/smime.html:93 templates/pgp/pgp.html:21
-#: templates/pgp/pgp.html:145 templates/acl/acl.html:35
-#: templates/acl/acl.html:81 templates/acl/acl.html:95
+#: filterprefs.php:66 templates/acl/acl.html:35 templates/acl/acl.html:81
+#: templates/acl/acl.html:95 templates/pgp/pgp.html:21
+#: templates/pgp/pgp.html:145 templates/smime/smime.html:13
+#: templates/smime/smime.html:93
 msgid "Return to Options"
 msgstr ""
 
@@ -3544,7 +3544,7 @@ msgid ""
 "Return to the mailbox listing after deleting, moving, or copying a message?"
 msgstr ""
 
-#: acl.php:114
+#: acl.php:120
 #, php-format
 msgid "Rights for user \"%s\" cannot be modified."
 msgstr ""
@@ -3558,7 +3558,7 @@ msgstr ""
 msgid "S/MIME"
 msgstr ""
 
-#: lib/IMP.php:1468
+#: lib/IMP.php:1479
 msgid "S/MIME Encrypt Message"
 msgstr ""
 
@@ -3599,11 +3599,11 @@ msgstr ""
 msgid "S/MIME Public/Private Keypair successfully added."
 msgstr ""
 
-#: lib/IMP.php:1469
+#: lib/IMP.php:1480
 msgid "S/MIME Sign Message"
 msgstr ""
 
-#: lib/IMP.php:1470
+#: lib/IMP.php:1481
 msgid "S/MIME Sign/Encrypt Message"
 msgstr ""
 
@@ -3656,12 +3656,13 @@ msgstr ""
 msgid "Sa_ve a copy in "
 msgstr ""
 
-#: message.php:600
+#: message.php:601
 msgid "Sa_ve as"
 msgstr ""
 
-#: templates/fetchmail/fetchmailprefs.html:121 templates/search/search.html:25
-#: templates/search/search.html:182 templates/acl/acl.html:79
+#: templates/acl/acl.html:79 templates/search/search.html:25
+#: templates/search/search.html:182
+#: templates/fetchmail/fetchmailprefs.html:121
 msgid "Save"
 msgstr ""
 
@@ -3681,9 +3682,8 @@ msgstr ""
 msgid "Save Image in Gallery"
 msgstr ""
 
-#: filterprefs.php:129 templates/smime/smime.html:12
-#: templates/smime/smime.html:92 templates/pgp/pgp.html:20
-#: templates/pgp/pgp.html:144
+#: filterprefs.php:129 templates/pgp/pgp.html:20 templates/pgp/pgp.html:144
+#: templates/smime/smime.html:12 templates/smime/smime.html:92
 msgid "Save Options"
 msgstr ""
 
@@ -3695,7 +3695,7 @@ msgstr ""
 msgid "Save _Draft"
 msgstr ""
 
-#: message.php:600 config/prefs.php.dist:660
+#: message.php:601 config/prefs.php.dist:660
 msgid "Save as"
 msgstr ""
 
@@ -3734,8 +3734,8 @@ msgstr ""
 #: lib/Compose.php:218
 #, php-format
 msgid ""
-"Saving the draft failed. The %s header contains an invalid e-mail address: %"
-"s."
+"Saving the draft failed. The %s header contains an invalid e-mail address: "
+"%s."
 msgstr ""
 
 #: lib/Compose.php:258
@@ -3861,7 +3861,7 @@ msgstr ""
 msgid "Sent"
 msgstr ""
 
-#: lib/IMAP/Tree.php:2011
+#: lib/IMAP/Tree.php:2016
 msgid "Sent mail folder"
 msgstr ""
 
@@ -3936,11 +3936,11 @@ msgstr ""
 msgid "Show All Folders"
 msgstr ""
 
-#: message.php:624
+#: message.php:625
 msgid "Show All Headers"
 msgstr ""
 
-#: message.php:621
+#: message.php:622
 msgid "Show Common Headers"
 msgstr ""
 
@@ -3952,7 +3952,7 @@ msgstr ""
 msgid "Show Images?"
 msgstr ""
 
-#: message.php:627
+#: message.php:628
 msgid "Show Mailing List Information"
 msgstr ""
 
@@ -4064,7 +4064,7 @@ msgstr ""
 msgid "Spam"
 msgstr ""
 
-#: lib/IMAP/Tree.php:2004
+#: lib/IMAP/Tree.php:2009
 msgid "Spam folder"
 msgstr ""
 
@@ -4118,7 +4118,7 @@ msgstr ""
 msgid "Strikethrough"
 msgstr ""
 
-#: message.php:684
+#: message.php:685
 msgid "Strip All Attachments"
 msgstr ""
 
@@ -4126,7 +4126,7 @@ msgstr ""
 msgid "Strip Attachment"
 msgstr ""
 
-#: message.php:684
+#: message.php:685
 msgid "Strip Attachments"
 msgstr ""
 
@@ -4151,8 +4151,8 @@ msgid "Subject:"
 msgstr ""
 
 #: templates/search/search.html:25 templates/search/search.html:182
-#: templates/saveimage/saveimage.html:19 templates/smime/passphrase.html:23
-#: templates/pgp/passphrase.html:21
+#: templates/pgp/passphrase.html:21 templates/saveimage/saveimage.html:19
+#: templates/smime/passphrase.html:23
 msgid "Submit"
 msgstr ""
 
@@ -4164,8 +4164,8 @@ msgstr ""
 msgid "Subscript"
 msgstr ""
 
-#: lib/MIME/Viewer/pkcs7.php:452 lib/MIME/Viewer/pgp.php:456
-#: lib/MIME/Viewer/status.php:86
+#: lib/MIME/Viewer/pkcs7.php:452 lib/MIME/Viewer/status.php:86
+#: lib/MIME/Viewer/pgp.php:456
 msgid "Success"
 msgstr ""
 
@@ -4202,7 +4202,7 @@ msgstr ""
 msgid "Target Mailbox:"
 msgstr ""
 
-#: lib/IMP.php:525
+#: lib/IMP.php:529
 msgid "Task Lists"
 msgstr ""
 
@@ -4281,7 +4281,7 @@ msgstr ""
 msgid "The account \"%s\" has been saved."
 msgstr ""
 
-#: attachment.php:44
+#: attachment.php:48
 msgid "The attachment was not found."
 msgstr ""
 
@@ -4404,7 +4404,7 @@ msgstr ""
 msgid "The mail server generated the following message:"
 msgstr ""
 
-#: lib/Message.php:797
+#: lib/Message.php:796
 #, php-format
 msgid "The mailbox %s is already empty."
 msgstr ""
@@ -4494,7 +4494,7 @@ msgstr ""
 msgid "The message does not have a Subject entered."
 msgstr ""
 
-#: lib/Filter.php:72 lib/Spam.php:222
+#: lib/Spam.php:222 lib/Filter.php:72
 msgid "The message has been deleted."
 msgstr ""
 
@@ -4531,7 +4531,7 @@ msgstr ""
 msgid "The requested file does not exist in the Zip attachment."
 msgstr ""
 
-#: message.php:448
+#: message.php:449
 #, php-format
 msgid ""
 "The sender of this message is requesting a Message Disposition Notification "
@@ -4547,13 +4547,13 @@ msgstr ""
 msgid "The signature was successfully replaced."
 msgstr ""
 
-#: attachment.php:60
+#: attachment.php:64
 msgid ""
 "The specified attachment does not exist. It may have been deleted by the "
 "original sender."
 msgstr ""
 
-#: attachment.php:129
+#: attachment.php:133
 msgid "The specified file cannot be read."
 msgstr ""
 
@@ -4621,7 +4621,7 @@ msgstr ""
 msgid "There are no messages in this mailbox."
 msgstr ""
 
-#: thread.php:108
+#: thread.php:110
 msgid "There is no text that can be displayed inline."
 msgstr ""
 
@@ -4643,7 +4643,7 @@ msgstr ""
 msgid "There was an error deleting the event:"
 msgstr ""
 
-#: lib/MIME/Viewer/plain.php:50 lib/MIME/Viewer/enriched.php:36
+#: lib/MIME/Viewer/enriched.php:36 lib/MIME/Viewer/plain.php:50
 msgid "There was an error displaying this message part"
 msgstr ""
 
@@ -4745,11 +4745,11 @@ msgstr ""
 msgid "This message part cannot be viewed because it is too large."
 msgstr ""
 
-#: message.php:521
+#: message.php:522
 msgid "This message to"
 msgstr ""
 
-#: lib/IMP.php:338
+#: lib/IMP.php:342
 #, php-format
 msgid ""
 "This request cannot be completed because the link you followed or the form "
@@ -4768,7 +4768,7 @@ msgstr ""
 msgid "Thread Display:"
 msgstr ""
 
-#: thread.php:181 config/prefs.php.dist:1211
+#: thread.php:183 config/prefs.php.dist:1211
 msgid "Thread View"
 msgstr ""
 
@@ -4780,8 +4780,8 @@ msgstr ""
 msgid "Thumbnail of attached image"
 msgstr ""
 
-#: compose.php:836 mailbox.php:587 lib/Search.php:716 lib/UI/Mailbox.php:90
-#: lib/UI/Message.php:26 templates/contacts/contacts.html:40
+#: compose.php:836 mailbox.php:587 lib/Search.php:716 lib/UI/Message.php:26
+#: lib/UI/Mailbox.php:90 templates/contacts/contacts.html:40
 #: templates/login/recompose.html:14
 msgid "To"
 msgstr ""
@@ -4790,23 +4790,23 @@ msgstr ""
 msgid "To Address"
 msgstr ""
 
-#: message.php:565
+#: message.php:566
 msgid "To All"
 msgstr ""
 
-#: message.php:561
+#: message.php:562
 msgid "To List"
 msgstr ""
 
-#: message.php:558
+#: message.php:559
 msgid "To Sender"
 msgstr ""
 
-#: message.php:565
+#: message.php:566
 msgid "To _All"
 msgstr ""
 
-#: message.php:561
+#: message.php:562
 msgid "To _List"
 msgstr ""
 
@@ -4830,7 +4830,7 @@ msgid ""
 "higher."
 msgstr ""
 
-#: thread.php:121 templates/thread/thread.html:31
+#: thread.php:123 templates/thread/thread.html:31
 msgid "To:"
 msgstr ""
 
@@ -4858,7 +4858,7 @@ msgstr ""
 msgid "Trash"
 msgstr ""
 
-#: lib/IMAP/Tree.php:1991
+#: lib/IMAP/Tree.php:1996
 msgid "Trash folder"
 msgstr ""
 
@@ -4874,14 +4874,14 @@ msgstr ""
 msgid "Unable to connect to SQL server."
 msgstr ""
 
-#: lib/Quota/mercury32.php:68 lib/Quota/command.php:91
-#: lib/Quota/logfile.php:85 lib/Quota/hook.php:42 lib/Quota/maildir.php:111
-#: lib/Quota/imap.php:42 lib/Quota/mdaemon.php:45
+#: lib/Quota/imap.php:42 lib/Quota/logfile.php:85 lib/Quota/mercury32.php:68
+#: lib/Quota/hook.php:42 lib/Quota/maildir.php:111 lib/Quota/mdaemon.php:45
+#: lib/Quota/command.php:91
 msgid "Unable to retrieve quota"
 msgstr ""
 
-#: templates/message/navbar_navigate.html:13 templates/mailbox/navbar.html:19
-#: templates/mailbox/navbar.html:35
+#: templates/mailbox/navbar.html:19 templates/mailbox/navbar.html:35
+#: templates/message/navbar_navigate.html:13
 msgid "Unanswered"
 msgstr ""
 
@@ -4889,7 +4889,7 @@ msgstr ""
 msgid "Unanswered messages"
 msgstr ""
 
-#: message.php:552 mailbox.php:514
+#: mailbox.php:514 message.php:553
 msgid "Undelete"
 msgstr ""
 
@@ -4959,8 +4959,8 @@ msgstr ""
 msgid "Unnamed"
 msgstr ""
 
-#: message.php:474 mailbox.php:757 templates/message/navbar_navigate.html:9
-#: templates/mailbox/navbar.html:15 templates/mailbox/navbar.html:31
+#: mailbox.php:757 message.php:475 templates/mailbox/navbar.html:15
+#: templates/mailbox/navbar.html:31 templates/message/navbar_navigate.html:9
 msgid "Unseen"
 msgstr ""
 
@@ -4988,7 +4988,7 @@ msgstr ""
 msgid "Update this event on my calendar"
 msgstr ""
 
-#: templates/smime/import_key.html:40 templates/pgp/import_key.html:38
+#: templates/pgp/import_key.html:38 templates/smime/import_key.html:40
 msgid "Upload:"
 msgstr ""
 
@@ -5008,7 +5008,7 @@ msgstr ""
 msgid "User"
 msgstr ""
 
-#: acl.php:90 acl.php:131
+#: acl.php:96 acl.php:137
 #, php-format
 msgid ""
 "User \"%s\" successfully given the specified rights for the folder \"%s\"."
@@ -5026,10 +5026,10 @@ msgstr ""
 msgid "Username: "
 msgstr ""
 
-#: lib/MIME/Viewer/pkcs7.php:256 templates/smime/smime.html:35
-#: templates/smime/smime.html:67 templates/smime/smime.html:71
-#: templates/pgp/pgp.html:43 templates/pgp/pgp.html:75
-#: templates/pgp/pgp.html:80
+#: lib/MIME/Viewer/pkcs7.php:256 templates/pgp/pgp.html:43
+#: templates/pgp/pgp.html:75 templates/pgp/pgp.html:80
+#: templates/smime/smime.html:35 templates/smime/smime.html:67
+#: templates/smime/smime.html:71
 msgid "View"
 msgstr ""
 
@@ -5043,8 +5043,8 @@ msgstr ""
 msgid "View %s Public Key"
 msgstr ""
 
-#: lib/MIME/Viewer/images.php:157 lib/MIME/Viewer/images.php:162
 #: lib/MIME/Viewer/pdf.php:93 lib/MIME/Viewer/pdf.php:98
+#: lib/MIME/Viewer/images.php:157 lib/MIME/Viewer/images.php:162
 msgid "View Attachment"
 msgstr ""
 
@@ -5060,7 +5060,7 @@ msgstr ""
 msgid "View Personal Public Key"
 msgstr ""
 
-#: message.php:576
+#: message.php:577
 msgid "View Thread"
 msgstr ""
 
@@ -5076,7 +5076,7 @@ msgstr ""
 msgid "View event"
 msgstr ""
 
-#: folders.php:458 mailbox.php:695
+#: mailbox.php:695 folders.php:458
 #, php-format
 msgid "View messages in %s"
 msgstr ""
@@ -5110,7 +5110,7 @@ msgstr ""
 msgid "Virtual INBOX"
 msgstr ""
 
-#: lib/IMAP/Tree.php:2031
+#: lib/IMAP/Tree.php:2036
 msgid "Virtual INBOX Folder"
 msgstr ""
 
@@ -5118,7 +5118,7 @@ msgstr ""
 msgid "Virtual Trash"
 msgstr ""
 
-#: lib/IMAP/Tree.php:2027
+#: lib/IMAP/Tree.php:2032
 msgid "Virtual Trash Folder"
 msgstr ""
 
@@ -5126,11 +5126,11 @@ msgstr ""
 msgid "Virtual folder label:"
 msgstr ""
 
-#: lib/Crypt/PGP.php:382 lib/MIME/Viewer/pkcs7.php:446
+#: lib/MIME/Viewer/pkcs7.php:446 lib/Crypt/PGP.php:382
 msgid "Warning"
 msgstr ""
 
-#: lib/IMP.php:334
+#: lib/IMP.php:338
 msgid ""
 "We cannot verify that this request was really sent by you. It could be a "
 "malicious request. If you intended to perform this action, you can retry it "
@@ -5184,7 +5184,7 @@ msgstr ""
 msgid "Where should the cursor be located in the compose text area by default?"
 msgstr ""
 
-#: message.php:584 mailbox.php:530
+#: mailbox.php:530 message.php:585
 msgid "Whitelist"
 msgstr ""
 
@@ -5278,12 +5278,12 @@ msgstr ""
 msgid "You forwarded this message on %%s to the following recipients: %s."
 msgstr ""
 
-#: lib/IMP.php:1098
+#: lib/IMP.php:1102
 #, php-format
 msgid "You have %s new messages."
 msgstr ""
 
-#: lib/IMP.php:1098
+#: lib/IMP.php:1102
 msgid "You have 1 new message."
 msgstr ""
 
@@ -5394,11 +5394,11 @@ msgstr ""
 msgid "Your PGP Public/Private Keys"
 msgstr ""
 
-#: templates/smime/smime.html:70 templates/pgp/pgp.html:79
+#: templates/pgp/pgp.html:79 templates/smime/smime.html:70
 msgid "Your Private Key:"
 msgstr ""
 
-#: templates/smime/smime.html:66 templates/pgp/pgp.html:74
+#: templates/pgp/pgp.html:74 templates/smime/smime.html:66
 msgid "Your Public Key:"
 msgstr ""
 
@@ -5439,7 +5439,7 @@ msgstr ""
 msgid "Your default encryption method for sending messages:"
 msgstr ""
 
-#: attachment.php:115
+#: attachment.php:119
 #, php-format
 msgid ""
 "Your linked attachment has been downloaded by at least one user.\n"
@@ -5468,7 +5468,7 @@ msgstr ""
 msgid "[Hide Addresses]"
 msgstr ""
 
-#: message.php:285 rss.php:75 mailbox.php:719 lib/Compose.php:1920
+#: rss.php:75 mailbox.php:719 message.php:286 lib/Compose.php:1920
 #: lib/Compose.php:2398
 msgid "[No Subject]"
 msgstr ""
@@ -5498,7 +5498,7 @@ msgstr ""
 msgid "_Bcc"
 msgstr ""
 
-#: message.php:580 mailbox.php:526
+#: mailbox.php:526 message.php:581
 msgid "_Blacklist"
 msgstr ""
 
@@ -5506,11 +5506,11 @@ msgstr ""
 msgid "_Cc"
 msgstr ""
 
-#: message.php:554 mailbox.php:508 mailbox.php:510
+#: mailbox.php:508 mailbox.php:510 message.php:555
 msgid "_Delete"
 msgstr ""
 
-#: lib/IMP.php:871
+#: lib/IMP.php:875
 msgid "_Folders"
 msgstr ""
 
@@ -5518,23 +5518,23 @@ msgstr ""
 msgid "_Identity"
 msgstr ""
 
-#: lib/IMP.php:840
+#: lib/IMP.php:844
 msgid "_Inbox"
 msgstr ""
 
-#: lib/IMP.php:908
+#: lib/IMP.php:912
 msgid "_Log out"
 msgstr ""
 
-#: message.php:589
+#: message.php:590
 msgid "_Message Source"
 msgstr ""
 
-#: lib/IMP.php:868
+#: lib/IMP.php:872
 msgid "_New Message"
 msgstr ""
 
-#: message.php:603
+#: message.php:604
 msgid "_Print"
 msgstr ""
 
@@ -5547,11 +5547,11 @@ msgstr ""
 msgid "_Refresh %s"
 msgstr ""
 
-#: message.php:557
+#: message.php:558
 msgid "_Reply"
 msgstr ""
 
-#: lib/IMP.php:873
+#: lib/IMP.php:877
 msgid "_Search"
 msgstr ""
 
@@ -5571,11 +5571,11 @@ msgstr ""
 msgid "_Undelete"
 msgstr ""
 
-#: message.php:576
+#: message.php:577
 msgid "_View Thread"
 msgstr ""
 
-#: message.php:584 mailbox.php:530
+#: mailbox.php:530 message.php:585
 msgid "_Whitelist"
 msgstr ""
 

@@ -6,7 +6,7 @@ require_once 'Horde/MIME/Viewer/html.php';
  * The MIME_Viewer_html class renders out HTML text with an effort to
  * remove potentially malicious code.
  *
- * $Horde: imp/lib/MIME/Viewer/html.php,v 1.75.2.40 2009/07/07 22:04:51 slusarz Exp $
+ * $Horde: imp/lib/MIME/Viewer/html.php,v 1.75.2.41 2010/06/30 21:55:47 slusarz Exp $
  *
  * Copyright 1999-2009 The Horde Project (http://www.horde.org/)
  *
@@ -258,22 +258,22 @@ class IMP_MIME_Viewer_html extends MIME_Viewer_html {
          * mailto: links, links that have an "#xyz" anchor and ignore
          * all links that already have a target. */
         return preg_replace(
-            array('/<a\s([^>]*\s+href=["\']?(#|mailto:))/i',
-                  '/<a\s([^>]*)\s+target=["\']?[^>"\'\s]*["\']?/i',
-                  '/<a\s/i',
-                  '/<area\s([^>]*\s+href=["\']?(#|mailto:))/i',
-                  '/<area\s([^>]*)\s+target=["\']?[^>"\'\s]*["\']?/i',
-                  '/<area\s/i',
+            array('/<a\b([^>]*\bhref=["\']?(#|mailto:))/i',
+                  '/<a\b([^>]*)\btarget=["\']?[^>"\'\s]*["\']?/i',
+                  '/<a\b/i',
+                  '/<area\b([^>]*\bhref=["\']?(#|mailto:))/i',
+                  '/<area\b([^>]*)\btarget=["\']?[^>"\'\s]*["\']?/i',
+                  '/<area\b/i',
                   "/\x01/",
                   "/\x02/"),
             array("<\x01\\1",
-                  "<\x01 \\1 target=\"_blank\"",
-                  '<a target="_blank" ',
+                  "<\x01\\1target=\"_blank\"",
+                  '<a target="_blank"',
                   "<\x02\\1",
-                  "<\x02 \\1 target=\"_blank\"",
-                  '<area target="_blank" ',
-                  'a ',
-                  'area '),
+                  "<\x02\\1target=\"_blank\"",
+                  '<area target="_blank"',
+                  'a',
+                  'area'),
             $data);
     }
 
