@@ -1,0 +1,22 @@
+From: =?UTF-8?q?Carl=20F=C3=BCrstenberg?= <carl@excito.com>
+Date: Mon, 12 Sep 2011 16:20:46 +0200
+Subject: Use isset instead of is_null
+
+---
+ lib/IMP.php |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/lib/IMP.php b/lib/IMP.php
+index 000460b..7510a1f 100644
+--- a/lib/IMP.php
++++ b/lib/IMP.php
+@@ -202,7 +202,7 @@ class IMP {
+         }
+ 
+         $auto_server = IMP::getAutoLoginServer();
+-        if (is_null($server_key)) {
++        if (!isset($server_key)) {
+             $server_key = $auto_server;
+         }
+ 
+-- 
