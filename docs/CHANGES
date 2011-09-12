@@ -1,3 +1,29 @@
+-------
+v4.3.10
+-------
+
+[jan] Don't submit the action form when reloading messages with iTip
+      attachments (Bug #9502).
+
+
+------
+v4.3.9
+------
+
+[mms] Fix error if user's account only contains an INBOX (Bug #9273).
+
+
+------
+v4.3.8
+------
+
+[jan] SECURITY: Properly escape user input in Fetchmail configuration.
+[mms] Fix updating POP3 indices when using mailbox caching (Bug #8035).
+[jan] Include "anyone" user when listing users in the ACL screen (Bug #9135).
+[mms] Turn DNS prefetching off when displaying untrusted message content
+      (Ticket #8836).
+
+
 ------
 v4.3.7
 ------

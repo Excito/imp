@@ -1,179 +1,158 @@
 <?xml version="1.0" encoding="iso-8859-2"?>
-<!-- $Horde: imp/locale/hu_HU/help.xml,v 1.8.6.9 2008/02/12 12:23:26 jan Exp $ -->
 <help>
-  <entry id="keyboard-navigation" state="new">
-    <title>Keyboard: Navigation</title>
-    <para>You may use your keyboard to move between messages in the mailbox list, to the previous or next messages while viewing a message, and between pages of your mailbox list.</para>
-    <heading>Message List Keyboard Navigation</heading>
-    <para>You can use your keyboard to select and view messages in your message list. In order to move between messages, use the Up and Down arrow keys while holding the Control (Ctrl) key. You will start at the bottom of the page (last displayed message) if you press Up, and at the top of the page (first displayed message) if you press Down.</para>
-    <para>The current message is highlighted just as if you were mousing over it. While you are moving up and down through the mailbox list, you can press Space to select or deselect that message, and you can press Return to view that message.</para>
-    <heading>Message List: Previous/Next Page</heading>
-    <para>Use the Left and Right keys on your keyboard to go to the previous page of messages in your mailbox or the next page of messages, respectively.</para>
-    <heading>Message View: Previous/Next Message</heading>
-    <para>Use the Left and Right keys on your keyboard to go to the previous message or the next message, respectively.</para>
+
+<entry id="keyboard-navigation" md5="885a83e5ce7c455f8d7d40a17ca901df" state="uptodate">
+    <title>Billentyűzet: Navigáció</title>
+    <para>A levelezési mappák nézetben a billentyűzet is használható arra, hogy Ön a levelek között navigáljon, az előző vagy a következő levélre váltson, vagy a mappanézet további oldalaira lapozzon.</para>
+    <heading>Navigáció mappanézetben</heading>
+    <para>A billentyűzet használatával a mappanézetben kiválasztható és megnyitható a lista bármelyik levele. A fel és le nyilak segítségével, a Ctrl billentyű lenyomva tartása mellett a kivánt levélhez navigálhatunk.</para>
+    <para>Az aktuális levél ugyanúgy kiemelődik, mintha az egérmutatót vinné fölé. A szóköz billentyűvel kijelölhet egyes üzeneteket, illetve törölhet kijelölést, amíg a mappanézetben a levelek listájában navigál. Az Enter billentyű lenyomásáhal megnyithatja az aktuális levelet.</para>
+    <para>A Ctrl helyett az Alt billentyű nyomvatartásával az összes érintett levél kijelölésre, illetve a már kiválasztottak kijelölésének törlésére kerül.</para>
+    <heading>Mappanézet: Előző/Következő oldal</heading>
+    <para>A bal és jobb nyilak segítségével válthat a mappanézet egyes lapjai között.</para>
+    <heading>Levélnézet: Előző/Következő üzenet</heading>
+    <para>Levélnézetben a bal és jobb nyilakkal az előző illetve a következő üzenetre válthat.</para>
 </entry>
-  <entry id="message-forward" state="new">
-  <title>Forwarding Email</title>
-  <para>When forwarding an email, you have several choices.</para>
 
-  <heading>Forwarding from the Mailbox View</heading>
-  <para>In the mailbox view, you can forward multiple messages at the same time. Each message that you select will be sent, in its entirety, to your recipients. You will see each message as an attachment in your compose window. On the receiving end, the recipient(s) will see each email as an embedded email.</para>
+<entry id="message-forward" state="uptodate" md5="54e9d9dcf21964f5f81bc6c23e48cdea">
+  <title>Email továbbítása</title>
+  <para>Több lehetősége is van egy levél továbbítására.</para>
 
-  <heading>Forwarding from the Message View</heading>
-  <para>When forwarding individual messages in the message view, you can choose three different options:</para>
-  <para><b>1. Entire Message</b>: This option will attach the entire message to your email. The compose area will not contain any text from the forwarded message. This is the same as forwading a single email from the mailbox view, except that the Subject: line will be set for you.</para>
-  <para><b>2. Body Text Only</b>: If you only want to forward the body of the email, choose this option. Any attachments to the original email will not be included in your forward. The text will appear in the compose area, and you can edit it if you wish or add your own comments.</para>
-  <para><b>3. Body Text with Attachments</b>: To forward the attachments of an email along, along with the body as described in #2 Body Text Only, use this option. The body text will be placed in the compose area for you to edit, and all attachments to the original message will be copied to your forward.</para>
+  <heading>Továbbítás mappanézetből</heading>
+  
+  <para>
+  Mappanézetben több levelet egyszerre is továbbíthat.
+  Mindegyik levél, amit kijelölt, teljes egészében továbbításra kerül a megadott címzetteknek.
+  Mindegyik levél egy-egy csatolmányként fog megjelenni a továbbítandó levél szerkesztésekor.
+  A címzettek mindegyik továbbított levelet egy-egy csatolmányként fogják látni.
+  </para>
+
+  <heading>Továbbítás üzenetnézetből</heading>
+  
+  <para>
+  Amikor egy adott levelet továbbít a levélnézetből, a következő három lehetősége van:
+  </para>
+
+  <para><b>1. Teljes levél</b>: A teljes levél csatolásra kerül a leveléhez. A levélszerkesztő nem tartalmaz majd szöveget belőle.
+  Ez olyan, mint egyetlen levél továbbítása a mappanézetből, kivéve, hogy a Tárgy be lesz már állítva Önnek.</para>
+  <para><b>2. Csak a szövegtörzs</b>: Ha csak a levél szövegét szeretné továbbítani, válassza ezt a lehetőséget.
+  A csatolmányok nem kerülnek így továbbításra.
+  A levél szövege az új levél szerkesztőablakában fog megjelenni, amit Ön tetszése szerint módosíthat.</para>
+  <para><b>3. Szövegtörzs csatolmányokkal</b>: A 2. lehetőséghez hasonló, azonban a csatolmányokat is továbbítja.</para>
 
 </entry>
-  <entry id="compose-buttons" state="unknown">
+
+<entry id="compose-buttons" md5="bd0e2b0eff15d7c5cf7df9b7ef4ac40a" state="uptodate">
     <title>Levélírás: funkciógombok</title>
-    <heading>Funkciógombok</heading>
+    
+    <heading>Küldés</heading>
     <para>
-    A 'Levél elküldése' elküldi a levelet a kívánt címzett(ek)nek. Erre
+    A Küldés gomb elküldi a levelet a megadott címzett(ek)nek. Erre
     a gombra csak akkor kattintson, amikor a levél már teljesen kész, mert
     ezt követően a levélküldés már nem állítható le, a levél nem hívható 
     vissza.
     </para>
+    
+    <heading>Mentés piszkozatként</heading>
     <para>
     Ha félbe kell hagyjuk a levélírást, kattintsunk a 
-    'Mentsük el munkapéldányként' gombra. Ez a 'Drafts' nevű mappában 
+    Mentés piszkozatként gombra. Ez a 'Drafts' nevű mappában 
     helyezi el a levelet. Ezt a mappát úgy érhetjük el, ha a levéllista 
     ablak felső kék menüsorának jobb szélén levő legördülő menüjéből 
     kiválasztjuk. A félbehagyott levelet később úgy fejezhetjük be,
     hogy kinyitjuk a 'Drafts' mappát, rákattintunk a kérdéses levélre,
-    majd a 'Folytatás' szövegre. Érdemes a levél tárgyát megadni a 
+    majd a Folytatás szövegre. Érdemes a levél tárgyát megadni a 
     munkapéldányként való elmentés előtt, hogy később a 'Drafts' mappában
     könnyen kiválasztható legyen a kívánt levél. A munkapéldányként
-    való mentés után az INBOX-ba vagy abba a mappába kerül vissza
+    való mentés után a Beérkezett üzenetek mappába vagy abba a mappába kerül vissza
     ami utoljára nyitva volt.
     </para>
+    
+    <heading>Elvetés</heading>
     <para>
-    A 'Mégsem kell ez a levél' gombra kattintva visszakerülünk az INBOX-ba 
+    A Elvetés gombra kattintva elvetjük a levelet és visszakerülünk a Beérkezett üzenetek mappába 
     vagy abba a mappába, ami utoljára nyitva volt, anélkül, hogy készülő
     levelünket elküldenénk vagy elmentenénk.
     </para>
-<!-- English entry:
-<entry id="compose-buttons">
-    <title>Message Composition: Actions</title>
-    <heading>Actions</heading>
+</entry>
+
+<entry id="compose-identity" md5="6b2272c5440c753e783d000db88fea07" state="uptodate">
+    <title>Levélírás: Személyazonosságok</title>
+    <heading>Személyazonosságok</heading>
     <para>
-    Send Message launches your email to the intended recipient(s). Be sure you want to send before clicking here as once sent it cannot be taken back.
-    </para>
-    <para>
-    Save Draft places an unfinished message in a folder called 'Drafts'
-accessible by the pop-down box on the right side of the blue navigation bar at top. You can then finish the message later by switching to the 'Drafts' folder, clicking on the saved message to open it, and then clicking on 'Resume'. Be sure to put a subject on the email before you save the draft so that you can easily identify which message you want within the Drafts folder. After saving as a Draft, you are returned to your INBOX or whatever folder you were viewing last.
-    </para>
-    <para>
-    Cancel Message drops the message in progress and simply returns you to the INBOX or whatever folder you were viewing last.
-    </para>
-</entry>--></entry>
-  <entry id="compose-identity" state="new">
-    <title>Message Composition: Identity</title>
-    <heading>Identity</heading>
-    <para>
-    Choose the identity to send email as from a drop-down list of identities that you entered under <qt>Options-&gt;Personal Information</qt>.
+    Válasza ki a megfelelő személyazonosságot, ez fog megjelenni a levél küldőjeként. 
+    Személyazonosságokat az Opciók menüben a Személyes adatok alatt tud megadni.
     </para>
 </entry>
-  <entry id="compose-from" state="unknown">
-    <title>Levélírás: A feladó azonosítója</title>
-    <heading>"A feladó azonosítója"</heading>
+
+<entry id="compose-from" md5="4395043c22323cc80d50709c5d20637e" state="uptodate">
+    <title>Levélírás: Feladó</title>
+    <heading>Feladó</heading>
     <para>
-    Válassza ki azt az azonosítót, melynek megfelelő szerepben kívánja
-    a levelet írni. Küldéskor a levél 'From:' mezejébe (a feladó címeként)
-    a kiválasztott azonosítónak megfelelő cím kerül majd.
+    Válasza ki a megfelelő személyazonosságot, ez fog megjelenni a levél küldőjeként. 
+    Személyazonosságokat az Opciók menüben a Személyes adatok alatt tud megadni.
     </para>
-<!-- English entry:
-<entry id="compose-from">
-    <title>Message Composition: From</title>
-    <heading>"From"</heading>
-    <para>
-    Depending on your setup you can choose from a drop down list an identity that you entered under "Options-&gt;Personal Information", or you can enter the mail address in a text field that you want to use as the sender of this message.
-    </para>
-</entry>--></entry>
-  <entry id="compose-to" state="unknown">
+</entry>
+
+<entry id="compose-to" md5="31cba17f169572c367aa8014831eb8f8" state="uptodate">
     <title>Levélírás: Címzett</title>
-    <heading>"Címzett"</heading>
+    <heading>Címzett</heading>
     <para>
     Írja be a levél címzettjének/címzettjeinek pontos email címét. Az egyes
     címeket vesszővel kell elválasztani, más karakter használata hibát okoz.
-    Az ide írt címek az elküldendő levél 'To:' mezejébe kerülnek.
     </para>
-<!-- English entry:
-<entry id="compose-to">
-    <title>Message Composition: To</title>
-    <heading>"To"</heading>
-    <para>
-    Enter the correct email address(es) of those to receive your message. You must separate each address with a comma; other punctuation will result in an error. Your entry follows "To:" in outgoing mail.
-    </para>
-</entry>--></entry>
-  <entry id="compose-cc" state="unknown">
-    <title>Levélírás: Cc</title>
-    <heading>"Cc (carbon copy, másolat)"</heading>
+</entry>
+
+<entry id="compose-cc" md5="97571433ab037ef9c4d101a56bf74e25" state="uptodate">
+    <title>Levélírás: Másolat</title>
+    <heading>Másolat</heading>
     <para>
     Ide írja be azoknak a pontos email címét, akiknek másolatot kíván 
     küldeni a készülő levélből. Az egyes
     címeket vesszővel kell elválasztani, más karakter használata hibát okoz.
-    Az ide írt címek az elküldendő levél 'Cc:' mezejébe kerülnek. Azoknak
+    Az ide írt címek az elküldendő levél 'Másolat:' mezejébe kerülnek. Azoknak
     szokás ilyen módon másolatot küldeni a levélből, akik nem közvetlen módon, 
-    de érdekeltek abban, hogy tudjanak a levélről. A 'To:' és 'Cc:' címzettek
+    de érdekeltek abban, hogy tudjanak a levélről. A 'Címzett:' és 'Másolat:' címzettek
     mindegyike látja mindkét mező teljes tartalmát, így mindannyian pontosan 
     tudják, hogy ki kapta meg a levelet.
     </para>
-<!-- English entry:
-<entry id="compose-cc">
-    <title>Message Composition: Cc</title>
-    <heading>"Cc"</heading>
-    <para>
-    Enter the correct email address(es) of those to receive a carbon copy of your message. You must separate each address with a comma; other punctuation will result in an error. Your entry follows "Cc:" in outgoing mail.
-    </para>
-    <para>
-    Carbon copies are usually sent to people other than the one(s) being written to directly but are important recipients of the email as well, usually someone indirectly concerned about the subject of the email.  All 'To:' recipients and 'Cc:' recipients can see the entire list of both kinds of recipients.
-    </para>
-</entry>--></entry>
-  <entry id="compose-bcc" state="unknown">
-    <title>Levélírás: Bcc</title>
-    <heading>"Bcc (blind carbon copy, titkos másolat)"</heading>
+</entry>
+
+
+<entry id="compose-bcc" state="uptodate" md5="aa8f9e2d44fdb74def0fa15240ff687b">
+    <title>Levélírás: Titkos másolat</title>
+    <heading>Titkos másolat</heading>
     <para>
     Ide írja be azoknak a pontos email címét, akiknek titkos másolatot kíván 
     küldeni a készülő levélből. Az egyes címeket vesszővel kell elválasztani, 
     más karakter használata hibát okoz. Az ide írt címek az elküldendő levél 
-    'Bcc:' mezejébe kerülnek. Ezek a címzettek ugyanúgy kapnak egy példányt
-    a levélből, és látják a 'To:' és 'Cc:' címzettek teljes listáját is.
+    'Titkos másolat:' mezejébe kerülnek. Ezek a címzettek ugyanúgy kapnak egy példányt
+    a levélből, és látják a 'Címzett:' és 'Másolat:' címzettek teljes listáját is.
     Ez utóbbi címzettek előtt viszont teljesen rejtve marad az a tény, hogy 
-    még a 'Bcc:' mezőben szereplő személyek is kaptak a levélből egy példányt.
-    A 'blind copy' tehát arra utal, hogy a 'Bcc:' címzettekről semmilyen
-    módon nem szerezhetnek tudomást a normál (To: és Cc:) címzettek.
+    még a 'Titkos másolat:' mezőben szereplő személyek is kaptak a levélből egy példányt.
+    A 'blind copy' tehát arra utal, hogy a 'Titkos másolat:' címzettekről semmilyen
+    módon nem szerezhetnek tudomást a normál (Címzett: és Másolat:) címzettek.
     Ezt a másolatküldési módszert akkor szokás használni, ha bizonyítani 
     akarjuk valakinek (rendszerint valami főnök), hogy egy harmadik személy
     tudomására hoztuk a levélben leírtakat, de anélkül, hogy az illető tudjon
     róla. 
     </para>
-<!-- English entry:
-<entry id="compose-bcc">
-    <title>Message Composition: Bcc</title>
-    <heading>"Bcc"</heading>
-    <para>
-    Enter the correct email address(es) of those to receive a blind carbon copy of your message. You must separate each address with a comma; other punctuation will result in an error. Your entry follows "Bcc:" in outgoing mail.
-    </para>
-    <para>
-    Blind carbon copies are usually sent to people other than direct and indirect recipients ("To:" and "Cc:" recipients) who need to read what is being written as well WITHOUT the other recipients knowing that they are receiving the email. Thus 'blind' means that the identity of these recipients is hidden from all other recipients of the email, and only you and they know they got a copy. You typically use this to tell an authority figure that you are telling someone something without alarming the person you are sending the actual email to.
-    </para>
-</entry>--></entry>
-  <entry id="compose-subject" state="unknown">
+</entry>
+
+<entry id="compose-subject" md5="0639a8790e306acc9e19b4d1ce342d53" state="uptodate">
     <title>Levélírás: Tárgy</title>
-    <heading>"Tárgy"</heading>
+    <heading>Tárgy</heading>
     <para>
     Ide írja be a levél tárgyát. Ez kerül az elküldött levél 'Subject:' 
     mezejébe. Keressünk rövid, egyszerű, de informatív megfogalmazást.
-    A levél tárgya (a 'Subject:' mező tartalma) a legegyszerűbb módszer
+    A levél tárgya (a 'Tárgy:' mező tartalma) a legegyszerűbb módszer
     arra, hogy a levél címzettjét (de a feladóját is!) emlékeztesse
     a levél tartalmára, így egy alkalmasan megválasztott tárgy nagyban
     segíti az embert leveleit rendben tartani, ill. egy fontos
     levelet később megtalálni. 
     </para>
     <para>
-    Amikor a 'Válasz' (Reply), vagy 'Továbbítás' (Forward) funkció 
+    Amikor a Válasz, vagy Továbbítás  funkció 
     segítségével válaszol egy levélre ill. továbbít egy levelet, akkor
     a tárgy (a 'Re:' ill. '(fwd)' beszúrásával) bemásolódik a küldött
     levél tárgy mezejébe. Ez segít a levelezés résztvevőinek abban, 
@@ -182,44 +161,22 @@ accessible by the pop-down box on the right side of the blue navigation bar at t
     megváltoztatni egy kissé, ezzel jelezve, hogy a beszélgetés fonalában 
     új irányt kezdtünk.
     </para>
-<!-- English entry:
-<entry id="compose-subject">
-    <title>Message Composition: Subject</title>
-    <heading>"Subject"</heading>
+</entry>
+
+<entry id="compose-charset" state="uptodate" md5="c2c878070445af81407da5bfc4083ea3">
+    <title>Levélírás: Karakterkészlet</title>
+    <heading>Karakterkészlet</heading>
     <para>
-    Enter the subject of your message. Your entry follows "Subject:" in outgoing mail. Keep it short, simple and descriptive.  The subject line is the easiest way for you and your correspondents to remember what was in the email and thus is very important in organizing your email and finding important ones later.
-    </para>
-    <para>
-    Also, when you 'Reply' or 'Forward' and email this subject line is copied over into the new message and so is a valuable way of telling what messages go together to form a "thread" of a conversation.  However, if the 'Reply' or 'Forward' contains new ideas, you may want to add simple modifications to the 'Subject' line so the recipient(s) can follow the progression of the "thread."
-    </para>
-</entry>--></entry>
-  <entry id="compose-charset" state="new">
-    <title>Message Composition: Charset</title>
-    <heading>Character Set</heading>
-    <para>
-    Selects the character set to send the outgoing message with.
+    Válassza ki levelének karakterkészletét.
     </para>
 </entry>
-  <entry id="compose-options" state="unknown">
+
+<entry id="compose-options" md5="5f1d50a733c8b7e46aecece28822ff70" state="uptodate">
     <title>Levélírás: Opciók</title>
-    <heading>"Opciók"</heading>
+    <heading>Opciók</heading>
     <para>
     Ezek az opciók a levél címzésében, megírásában, elmentésében vannak
     segítségünkre.
-    </para>
-    <para>
-    Amennyiben megjelenik a "Címjegyzék" felirat, akkor telepítésre került
-    a hasonló (eredetileg "Turba") nevű programmodul. Ebben az esetben
-    a feliratra kattintva kiválaszthatjuk a címjegyzékeinkből a kívánt
-    email címe(ke)t. Hasonló "A címrészlet teljessé egészítése" lehetőség.
-    Ehhez írjunk be a megfelelő mezőbe (címzett, Cc, Bcc) a kívánt személy
-    nevének első néhány karakterét, majd kattintsunk a 
-    "A címrészlet teljessé egészítése" szövegre. Amennyiben a 
-    címjegyzékünkben egyetlen ember neve kezdődik a beírt karakterekkel,
-    akkor ez az email cím bemásolódik a megfelelő mezőbe. Ha több személy
-    neve is a megadott karakterekkel kezdődik, akkor a program egy legördülő
-    menüben felkínálja a lehetőségeket, ezek közül kiválaszthatjuk azt, 
-    amelyikre gondoltunk.
     </para>
     <para>
     Amennyiben megjelenik a "Helyesírásellenőrzés" szöveg, akkor erre 
@@ -229,14 +186,8 @@ accessible by the pop-down box on the right side of the blue navigation bar at t
     szükséges állományokat a rendszergazda telepítette a szerverre).
     </para>
     <para>
-    A "Speciális karakterek" szövegre kattintva olyan karaktereket is 
-    beírhatunk a készülő levélbe, amik nincsenek egyetlen billentyűhöz sem
-    hozzárendelve. A kiválasztott karaktereket "cut and paste" módszerrel
-    vihetjük át a levelet tartalmazó ablakba.
-    </para>
-    <para>
-    A "Mellékletek" szövegre kattintva láthatóvá válik a levélíró ablak alján 
-    levő rész, mely a mellékletek csatolására szolgál. Ha a képernyő elég 
+    A "Csatolmányok" szövegre kattintva láthatóvá válik a levélíró ablak alján 
+    levő rész, mely a csatolmányok megadására szolgál. Ha a képernyő elég 
     nagy ahhoz, hogy ez a rész eredetileg is látható volt, akkor semmi sem
     történik.
     </para>
@@ -248,35 +199,20 @@ accessible by the pop-down box on the right side of the blue navigation bar at t
     hogy a szerveren mekkora a személyes rendelkezésünkre álló lemezterület 
     (ún. kvóta), dönthetünk úgy, hogy minden elküldött levelünket 
     archiváljuk ily módon (ehhez nagy kvóta kell, különösen, ha gyakran 
-    küldünk mellékleteket), vagy csak a fontosabbakat. A kvóta teljes 
+    küldünk csatolmányokat), vagy csak a fontosabbakat. A kvóta teljes 
     kitöltése azzal jár, hogy nem tudunk új leveleket fogadni! Új azonosítók
     létrehozásával (Opciók-&gt;Személyes adatok-&gt;Az Ön azonosítóinak módosítása)
     beállítható, hogy történjen-e automatikus archiválás, és melyik mappába 
     kerüljenek a kérdéses azonosítóval írt levelek. 
     </para>
-<!-- English entry:
-<entry id="compose-options">
-    <title>Message Composition: Options</title>
-    <heading>"Options"</heading>
-    <para>
-    These Options help you prepare your message.
-    </para>
-    <para>
-    Click "Spell Check" to check your spelling.
-    </para>
-    <para>
-    Click "Attachments" to go to the bottom of the page where you can attach files to this message.
-    </para>
-    <para>
-    Activate the check-button next to "Save copy" to save a copy of this message in the folder you selected for this purpose under "Options-&gt;Personal Information-&gt;Identities". Eventually there is also a drop down list next to the button where you can select another folder.
-    </para>
-    <para>
-    Save copies of important emails you send so that you have something to refer back to later and to keep an accurate record of what was said. We do not recommend you save every email since then your disk storage quota will be used up quickly (especially when you send attachments) and your mailbox will be full and unable to receive new incoming email. You can, however, turn this feature 'on' as your default within your Identity, by going to Options-&gt;Personal Information-&gt;Edit your identities. In your options you can also setup maintenance tasks that empty or rename these folders periodically.
-    </para>
-</entry>--></entry>
-  <entry id="compose-attach" state="unknown">
-    <title>Levélírás: Mellékletek csatolása</title>
-    <heading>"Mellékletek csatolása"</heading>
+    <warn>
+    Lehetséges, hogy nem érdemes minden elküldött levelet elmenteni, hiszen úgy gyorsan betelhet a rendelkezésre álló tárterület.
+    </warn>
+</entry>
+
+<entry id="compose-attachments" md5="c61d86cfad0842f122278366bb2804b0" state="uptodate">
+    <title>Levélírás: Csatolmányok</title>
+    <heading>Csatolmányok</heading>
     <para>
     Bizonyos méretbeli korlátozásokkal ugyan, de elvileg bármilyen fájl 
     csatolható a levélhez.
@@ -289,174 +225,191 @@ accessible by the pop-down box on the right side of the blue navigation bar at t
     a csatolás még NEM történt meg! Ehhez a 2. lépés is szükséges.
     </para>
     <para>2. lépés:
-    Kattintson a "Melléklet csatolása" gombra. A fájl neve, mérete, MIME típusa
-    hozzáadódik a mellékletek listájához. Érdemes tudni, hogy nagyméretű
+    Kattintson a "Módosítás" gombra. A fájl neve, mérete, MIME típusa
+    hozzáadódik a csatolmányok listájához. Érdemes tudni, hogy nagyméretű
     állományok ill. lassú Internet kapcsolat esetén a fájlnak a szerverre
     való küldése és a levélhez való csatolása hosszabb időt is igénybe vehet.
     Ilyenkor legyen türelemmel, ne kattintson semmire, míg a fájl meg nem
-    jelenek a csatolt mellékletek listájában.
-    </para>
-<!-- English entry:
-<entry id="compose-attach">
-    <title>Message Composition: Attach</title>
-    <heading>"Attach"</heading>
-    <para>
-    You may attach files to your message if your browser supports uploading of files. More than 1 file can be uploaded at once.
-    </para>
-    <para>Step 1: Either type the path and name of a file that you want attached to this message or click "Browse" button and select the file to be attatched. The path and name of that file now appears in the Attachment box.
-    </para>
-    <para>Step 2: Decide whether you want the file to be viewed as an attachment or inline with the rest of the message. The receiving person(s) mail reading software must be able to handle the file type inline; if not, this part will be viewed as an attachment instead.
-    </para>
-    <para>Step 3: Click "Attach" button. The file name(s) and size(s) will be added to your list of Attachments. Please note that for large files and/or slower Internet connections, the process of uploading and attaching your file to the email may take a while. Please be patient and do not click other links/buttons while you are waiting.
-    </para>
-</entry>--></entry>
-  <entry id="compose-attachments" state="unknown">
-    <title>Levélírás: Mellékletek</title>
-    <heading>"Mellékletek"</heading>
-    <para>
-    Itt a levélhez csatolt fájlok listáját látjuk. Egy már csatolt állományt
-    a következőképpen távolíthatunk el a listából:
-    </para>
-    <para>1. lépés: 
-    Pipáljuk ki az eltávolítandó állomány(ok)at.
-    </para> 
-    <para>2. lépés: 
-    Kattintsunk a "Vegyük ki a kijelöltet" szövegre.
-    </para>
-<!-- English entry:
-<entry id="compose-attachments">
-    <title>Message Composition: Attachments</title>
-    <heading>Attachments</heading>
-    <para>
-    This section displays a list of files already attached to your message.
-    </para>
-    <heading>Delete attached file(s)</heading>
-    <para>
-    To delete an attached file(s):
+    jelenek a csatolt csatolmányokok listájában.
     </para>
     <para>
-    Step 1: Activate the check-button next to the attached filename(s) you want to delete.
+	Amíg nem akarja egy csatolmány leírását megváltoztatni, vagy szövegköziként beállítani, Ön készen van. A csatolmányok akkor lesznek feltöltve, amikor elküldi a levelet. Ha valamit változtatni szeretne a csatolmányokon, vagy szeretné őket azonnal feltölteni, kattintson a "Módosítás" gombra.
+    </para>
+
+    <tip>
+    Vegye figyelembe, hogy nagyméretű csatolmányok és lassú internetkapcsolat sokáig tartó feltöltést eredményezhetnek. Kérjük, legyen türelemmel amíg a küldés történik.
+    </tip>
+</entry>
+
+<entry id="compose-current-attachments" md5="1dac09e0dba4d062ec6a4f82718956b7" state="uptodate">
+    <title>Levélírás: Feltöltött csatolmányok</title>
+    <heading>Feltöltött csatolmányok</heading>
+    <para>
+    Ez a lista tartalmazza a már feltöltött csatolmányokat.
+    </para>
+    <heading>Csatolmányok törlése</heading>
+    <para>
+    Csatolmányok törlése:
     </para>
     <para>
-    Step 2: Click "Delete Attachment(s)".
-    </para>
-    <heading>Change Attachment Disposition</heading>
-    <para>
-    To change the disposition for your attachments:
+    1. lépés: Pipálja ki a Töröljük? mezőben a törölni szándékozott csatolmányt.
     </para>
     <para>
-    Step 1: Change each attachment's disposition - either 'inline' or 'attachment' - to the desired value.
+    2. lépés: Vagy kattintson a "Módosítás" gombra, vagy a levél elküldésekor automatikusan végrehajtódik a törlés.
+    </para>
+    <heading>Elhelyezés</heading>
+    <para>
+    Csatolmányok elhelyezésének megváltoztatása:
     </para>
     <para>
-    Step 2: Click "Update Attachment Information".
-    </para>
-    <heading>Change Attachment Description</heading>
-    <para>
-    To change the description for your attachments (the text the recipient will see that describes the attachment):
+    1. lépés: Szükség szerint állítsa be a csatolmányok elhelyezését.
     </para>
     <para>
-    Step 1: Enter a description into the Description field.
+    2. lépés: Vagy kattintson a "Módosítás" gombra, vagy a levél elküldésekor automatikusan végrehajtódik a módosítás.
+    </para>
+    <heading>Leírás</heading>
+    <para>
+    Csatolmányok leírásának megváltoztatása:
     </para>
     <para>
-    Step 2: Click "Update Attachment Information".
+    1. lépés: Szükség szerint állítsa be a csatolmányok leírását.
     </para>
-</entry>--></entry>
-  <entry id="compose-priority" state="new">
-    <title>Message Composition: Priority</title>
-    <heading>Priority</heading>
     <para>
-    This sets the "X-Priority" header on your outgoing message. The "X-Priority" tag is a sort of "pseudo standard" that Netscape, Mozilla, Opera, and Outlook mail clients appear to agree on. Any mail clients that do not handle this header will simply ignore it.
+    2. lépés: Vagy kattintson a "Módosítás" gombra, vagy a levél elküldésekor automatikusan végrehajtódik a módosítás.
     </para>
 </entry>
-  <entry id="compose-save-attachments" state="new">
-    <title>Message Composition: Save Attachments</title>
+
+<entry id="compose-priority" md5="b023367c36de3ce1567d27ccaa45640c" state="uptodate">
+    <title>Levélírás: Prioritás</title>
+    <heading>Prioritás</heading>
     <para>
-    Determines whether the attachments in your composition are saved with the message when stored in the sent-mail folder.  If "Yes", the attachment data will be saved.  If "No", the attachment data will be stripped from the message after it is sent to all recipients.  Choosing "No" will help conserve disk space by removing (potentially large) attachment information from the saved messages.
+	Itt állítható be a küldendő levél sürgőssége.
     </para>
 </entry>
-  <entry id="compose-link-attachments" state="new">
-    <title>Message Composition: Link Attachments</title>
+
+<entry id="compose-save-attachments" md5="db89972c4ebb0b41ab691b6a7744a81d" state="uptodate">
+    <title>Levélírás: Csatolmányok mentése</title>
     <para>
-    Determines whether the attachments in your composition are sent as a part of the mail message or whether those attachments are kept on a local server.  If attachments are linked, the recipient(s) of your message will be provided a weblink where they can download the attachment(s).  Linking attachments has the advantage of tremendously reducing the size of outgoing messages.  Linking attachments has the disadvantage that the content of the attachments can not be guaranteed to be available in the future since the attachment data is not located within the e-mail message.
+    Meghatározza, hogy a levélküldés után a csatolmányok is elmentésre kerüljenek az elküldött levelek mappájában.
+    Helytakarékosság végett érdemes lehet a "Nem" választása, ekkor csak a levél szövege kerül mentésre.
+    "Igen" beállításával az összes csatolmány is elmentésre kerül.
     </para>
 </entry>
-  <entry id="search" state="unknown">
+
+<entry id="compose-link-attachments" md5="63b3841c95aed31b5372f0fa770ee382" state="uptodate">
+    <title>Levélírás: Hivatkozott csatolmányok</title>
+    <para>
+    Meghatározza, hogy a csatolmányok a levélhez legyenek-e csatolva, vagy a helyi szerveren tárolódjanak.
+    Ha a csatolmányok hivatkozottak, akkor a levél címzettjei egy egy hivatkozást (URL-t) kapnak, ahonnan letölthetik a csatolmányokat.
+    A hivatkozott csatolmányok előnye, hogy nagyban csökkentik a kimenő levelek méretét.
+    Hátrányuk, hogy a szerveren foglalnak helyet, így nem garantálható az elérhetőségük a későbbiekben.
+    </para>
+</entry>
+
+<entry id="search" md5="0d9192553331cd63eeb46a3f52ef3db8" state="uptodate">
     <title>Keresés a levelek között</title>
     <heading>A keresés módja</heading>
     <para>
     A levelei között többféle szempont szerint is végezhet keresést.
     </para>
-    <para>1. lépés:
-    Írjuk be a megfelelő mezőbe a keresési kritériumot. A 'Feladó', 
-    'Címzett', 'Cc' mezőkbe az email cím egy részlete is írható, a tárgy
-    ill. levéltörzs részbe pedig egy szó vagy szórészlet írható. 
-    </para>
-    <para>2. lépés: 
-    Ha szükséges, adja meg, hogy milyen jelzetű levelekre kívánja a keresést
-    leszűkíteni.
-    </para>
-    <para>3. lépés: 
-    Adja meg, hogy melyik mappákra kívánja a keresést leszűkíteni.
-    </para>
-    <para>4. lépés: 
-    Kattintson a "Keresés" gombra.
+    <para>
+        1. lépés: Állítsa be, hogy mindegyik keresőfeltételnek teljesülnie kell, vagy elég bármelyiknek.
+        Select whether you want to match <b>all</b> queries (an AND search) or match <b>any</b> query (an OR search).
     </para>
     <para>
-    Amennyiben eredményes volt a keresés, a talált levelek tárgyai 
-    kilistázódnak a "Keresés eredménye" c. ablakban.
-    </para>
-<!-- English entry:
-<entry id="search">
-    <title>Message Search</title>
-    <heading>Search Criteria</heading>
-    <para>
-    You may search for messages from your folders using different search criteria.
-    </para>
-    <para>Step 1: Enter text to the fields you want to add to your search criteria.
-    </para>
-    <para>Step 2: Choose the message flag(s) to add to your search criteria.
-    </para>
-    <para>Step 3: Choose the folder(s) from which to search for the messages.
-    </para>
-    <para>Step 4: Click "Search".
+        2. lépés: Válassza ki a megfelelő keresőmezőket és értékeket.
     </para>
     <para>
-    If any messages matched your search criteria, then the subjects of these messages will be shown in the "Search Results" view.
+        3. lépés: Válassza ki a megfelelő mappát, ahonnan a keresést indítani akarja.
     </para>
-</entry>--></entry>
-  <entry id="folder-options" state="unknown">
-    <title>Mappák</title>
-    <heading>Mappákkal végzett műveletek</heading>
+    <para>
+        4. lépés: Kattintson a "Keresés" gombra.
+    </para>
+    <para>
+    Amennyiben eredményes volt a keresés, a talált levelek tárgyai kilistázódnak a "Keresés eredménye" c. ablakban.
+    </para>
+</entry>
+
+<entry id="folder-options" md5="08ee3e450a82431727763b9db082ec08" state="uptodate">
+    <title>Mappák: Műveletek</title>
     <para>
       Először jelölje ki a megfelelő mappákat, majd válassza ki a legördülő
       menüből az a műveletet, amit végre kíván hajtani.    
     </para>
+    <heading>Létrehozás</heading>
     <para>
-      Előfordulhat, hogy további kérdésekre kell majd válaszolnia.
-      A mappák törlésével érdemes óvatosnak lenni, amennyiben véletlenül
-      kitöröl egy mappát, a benne levő összes levél elveszik!
+        Új almappát hoz létre a kiválasztott mappában.
+        A legfelsőbb szinten kiválasztás nélkül hozhat létre mappát.
     </para>
-<!-- English entry:
-<entry id="folder-options">
-    <title>Folder Management: Options</title>
-    <heading>Folder Options</heading>
+    <heading>Átnevezés</heading>
     <para>
-      You can select a folder by using the radio buttons along the left column.  Once you have done this, select the option you wish to perform on the folder via the select box to the left.
+        Átnevez egy mappát.
     </para>
+    <heading>Törlés</heading>
     <para>
-      You will be prompted for further options.  Be careful with the delete option, as you can lose all the messages in a folder if you delete it by mistake!
+        Töröl egy mappát és a benne lévő összes üzenetet.
+        Ha a mappa almappákat is tartalmaz, azok nem törlődnek automatikusan, azokat is ki kell jelölnie a bal oldalon.
     </para>
-    <heading>Import mbox File</heading>
+    <heading>Ürítés</heading>
     <para>
-      This option will import a mbox format file into the folder of your choice. Choose 1 (one) folder to import the messages into and then select this option. You will then be taken to a page that will prompt for the mbox file to import.
+        A mappában lévő összes üzenetet törli, magát a mappát nem.
     </para>
-</entry>--></entry>
-  <entry id="filters" state="unknown">
+    <heading>Végleges törlés</heading>
+    <para>
+        A törlésre jelölt üzeneteket törli végérvényesen a kijelölt mappákban.
+        Erre csak szemetes mappa nélküli módban van lehetőség.
+    </para>
+    <heading>Feliratkozás/Leiratkozás</heading>
+    <para>
+        Feliratkozás, vagy leiratkozás állítható be itt. Ha fel van iratkozva egy mappára, az megjelenik a mappalistában.
+        Ez csak IMAP mappa feliratkozás esetén hasznáható.
+    </para>
+    <heading>Új levél ellenőrzése/Ne legyen új levél ellenőrzés</heading>
+    <para>
+        Beállítja, vagy törli, hogy a kijelölt mappákban keressen-e a rendszer új leveleket.
+    </para>
+    <heading>Az összes levelet olvasottként/olvasatlanként jelöljük meg</heading>
+    <para>
+        Beállítható, hogy egy mappa összes üzenetét olvasottként, vagy olvasatlanként állítsuk be.
+    </para>
+    <heading>Letöltés</heading>
+    <para>
+        A kijelölt mappák minden üzenete mbox formátumban letölthető így.
+    </para>
+    <heading>Letöltés .zip formátumban</heading>
+    <para>
+        A kijelölt mappák minden üzenete egy .zip fájba csomagolva tölthető le így.
+    </para>
+    <heading>Levelek importálása</heading>
+    <para>
+        Levelek mbox, vagy .eml formátumban tölthetők fel így a szerverre a kiválasztott mappába.
+    </para>
+    <heading>Mappastruktúra újjáépítése</heading>
+    <para>
+        A levelezőszervertől kért információk alapján a rendszer újraépíti a mappák listáját.
+        Erre akkor lehet szükség, ha a webmail mellett egyszerre levelezőprogrammal is használja a rendszert, és az végzett változtatásokat a mappalistában, melyek itt automatikusan nem jelennek meg.
+    </para>
+
+    <heading>Leiratkozott mappák megjelenítése/elrejtése</heading>
+    <para>
+    IMAP mappa feliratkozás használata esetén a leiratkozott mappák megjelenítése állítható be itt.
+    </para>
+    <heading>Összes kinyitása</heading>
+    <para>
+    Kibontja az összes mappát a mappalistában.
+    </para>
+    <heading>Összes becsukása</heading>
+    <para>
+    Becsukja az összes mappát a mappalistában.
+    </para>
+</entry>
+
+<entry id="filters" md5="5ef60786767e638fbf5ba8fc5bd5d9d2" state="uptodate">
     <title>Szűrők: Alkalmazás</title>
     <heading>A szűrők bekapcsolása</heading>
     <para>
     Kattintson a "Kapcsoljuk be a szűrőket:" ikonra (egy kis
-    tölcsérszerű ábra), mely az INBOX felirattól és a frissítési ikontól 
+    tölcsérszerű ábra), mely a Beérkezett üzenetek felirattól és a frissítési ikontól 
     jobbra található az új levelek áttekintő ablakában. Ennek hatására
     a szűrőfeltételeknek megfelelően a beérkezett levelek közül a 
     kiszűrendő levelek törlődnek ill. más mappába helyeződnek. 
@@ -466,503 +419,602 @@ accessible by the pop-down box on the right side of the blue navigation bar at t
     Opciók-&gt;Szűrők-&gt;A szűrőfeltételek módosítása-&gt;Érvényesítsük az 
     összes szabályt alkalmazásával is.
     </para>
-<!-- English entry:
-<entry id="filters">
-    <title>Filters: Apply</title>
-    <heading>Apply Filter Rules</heading>
+</entry>
+
+<entry id="filter-edit-rules" md5="5baa5708ac9449e797f967313a9e1a27" state="uptodate">
+    <title>Szűrők: Szűrőszabályok szerkesztése</title>
+    <heading>Szűrőszabályok szerkesztése</heading>
     <para>
-    Click on the "Apply Filter" icon next to the INBOX name in the mailbox view to filter all messages according to the specified rules.
-    </para>
-</entry>--></entry>
-  <entry id="filter-edit-rules" state="new">
-    <title>Filters: Edit Filter Rules</title>
-    <heading>Edit Your Filter Rules</heading>
-    <para>
-    Click on "Edit your filter rules" to proceed to the page where you can add, delete, and edit the currently active set of filter rules.
+    Kattintson a "Szűrőszabályok szerkesztése" feliratra és szerkessze a szűrőszabályokat.
     </para>
 </entry>
-  <entry id="filter-edit-blacklist" state="new">
-    <title>Filters: Edit Blacklist</title>
-    <heading>Edit Your Blacklist</heading>
+
+<entry id="filter-edit-blacklist" md5="80ff7803c66599c7035f7f8811d218cc" state="uptodate">
+    <title>Szűrők: Tiltólista szerkesztése</title>
+    <heading>Tiltólista szerkesztése</heading>
     <para>
-    Click on "Edit your blacklist" to proceed to the page where you can add, delete, and edit the list of e-mail addresses you ALWAYS refuse mail from.
+    Kattintson a "Tiltólista szerkesztése" feliratra, ami után tetszés szerint vehet fel, törölhet, módosíthat címeket a tiltólistáján.
+    A tiltólistán szereplő címektől minden levelet visszautasít a rendszer.
     </para>
 </entry>
-  <entry id="filter-edit-whitelist" state="new">
-    <title>Filters: Edit Whitelist</title>
-    <heading>Edit Your Whitelist</heading>
+
+<entry id="filter-edit-whitelist" md5="330c3a8fad198c7afe855c101c63cd0f" state="uptodate">
+    <title>Szűrők: Engedélyezési lista szerkesztése</title>
+    <heading>Engedélyezési lista szerkesztése</heading>
     <para>
-    Click on "Edit your whitelist" to proceed to the page where you can add, delete, and edit the list of e-mail addresses you ALWAYS accept mail from.
+    Kattintson az "Engedélyezési lista szerkesztése" feliratra, ami után tetszés szerint vehet fel, törölhet, módosíthat címeket az engedélyezési listáján.
+    Az itt szereplő címekről mindig elfogad leveleket a rendszer.
     </para>
 </entry>
-  <entry id="filter-on-login" state="new">
-    <title>Filters: Filter on Login</title>
-    <heading>Apply Filter Rules Upon Logon?</heading>
+
+<entry id="filter-on-login" md5="37d9297d1cca46435e36b6e38e45dcdb" state="uptodate">
+    <title>Szűrők: Futtatás bejelentkezéskor</title>
+    <heading>Végrehajtsuk a szűréseket bejelentkezéskor?</heading>
     <para>
-    Check this option to always apply filters when first logging onto IMP.
+    Kapcsolja be ezt a lehetőséget, ha mindig futtatni akarja a szűréseket, amikor bejelentkezik a webmailbe.
     </para>
 </entry>
-  <entry id="filter-on-display" state="new">
-    <title>Filters: Filter on Refresh</title>
-    <heading>Apply filter rules whenever INBOX is displayed?</heading>
+
+<entry id="filter-on-display" md5="f5afc305402ef52bad108933f3f33291" state="uptodate">
+    <title>Szűrők: Futtatás frissítéskor</title>
+    <heading>Végrehajtsuk a szűréseket a Beérkezett üzenetek mappa minden megjelenítésekor?</heading>
     <para>
-    Check this option to always apply filters whenever your view the INBOX?
+    Kapcsolja be ezt a lehetőséget, ha mindig futtatni akarja a szűréseket, amikor a Beérkezett üzenetek mappa megjelenítésre kerül.
     </para>
 </entry>
-  <entry id="filter-any-mailbox" state="new">
-    <title>Filters: Filter any Mailbox</title>
-    <heading>Apply filter rules to any mailbox?</heading>
+
+<entry id="filter-any-mailbox" md5="71c51e83909f9d0bd440d220772ee3c6" state="uptodate">
+    <title>Szűrők: Futtatás minden postaládán</title>
+    <heading>Végrehajtsuk a szűréseket az összes postaládán?</heading>
     <para>
-    Check this option if you want to be allowed to apply filter rules to any mailbox. Normally, filtering rules are only applied to new mail that is delivered to your INBOX.  If this option is checked, an icon will appear on all mailbox pagges that will allow you to apply filter rules to the messages in the current mailbox.  NOTE: Filtering in mailboxes other than INBOX may produce strange (e.g. the filter may cause a copy of messages to be delivered to the same mailbox) and/or undesired results (e.g. it may cause messages to be moved/deleted if new filtering rules have been implemented since the message has been delivered to the current mailbox).
+    Kapcsolja be ezt a lehetőséget, ha az összes postaládán futtatni akarja a szűréseket.
+    A szűrések általában csak akkor szükségesek, amikor új üzenet érkezik az Ön Beérkezett mappájába. Ha ez a lehetőség be van kapcsolva, akkor egy nyomógomb fog feltűnni minden postaláda-oldalon, ami lehetővé teszi, hogy Ön végrehajtsa a szűréseket az adott postaládán.
+    
+    Megjegyzés: a Beérkezett mappán kívüli postaládákon végrehajtott szűrések furcsa eredményre vezethetnek: pl. üzenetek másolatának létrehozása ugyanabban a mappában, stb.
     </para>
 </entry>
-  <entry id="pgp-compose-attach-pubkey" state="new">
-    <title>PGP: Attach Public Key</title>
-    <heading>Attach Public Key</heading>
+
+<entry id="filter-on-sidebar">
+    <title>Szűrők: Futtatás az oldalsó menü frissítésekor</title>
+    <heading>Végrehajtsuk a szűréseket az oldalsó menü minden frissítésekor?</heading>
     <para>
-    If selected then a copy of your PGP public key, if it exists, will be attached to the outgoing message.  You can set the default behavior via the PGP Options screen.
+    Kapcsolja be ezt a lehetőséget, ha mindig futtatni akarja a szűréseket, amikor a bal oldali menü frissítődik.
     </para>
 </entry>
-  <entry id="pgp-option-scan-body" state="new">
-    <title>PGP: Scan Text Bodies</title>
-    <heading>Scan Text Bodies</heading>
+
+<entry id="pgp-compose-attach-pubkey" md5="97446dbbb27616b4fa39be801e10df2d" state="uptodate">
+    <title>PGP: Nyilvános kulcs csatolása</title>
+    <heading>Nyilvános kulcs csatolása</heading>
     <para>
-    If selected then IMP will scan the body of all text messages for PGP data, and display the results if any data is found.  Note that this may slow down the system as every text message must be scanned in its entirety for PGP data.
+    Ha ez a lehetőség be van kapcsolva, akkor az Ön PGP nyilvános kulcsa (ha meg van adva) csatolva lesz a kimenő levélhez.
+    A PGP beállítások között megadhat alapértelmezett értéket erre a lehetőségre.
     </para>
 </entry>
-  <entry id="compose-options-encrypt" state="new">
-    <title>Compose: Encryption Options</title>
-    <heading>No Encryption</heading>
+
+<entry id="pgp-option-scan-body" md5="6baaada0d46dc1ab0941087f235f359b" state="uptodate">
+    <title>PGP: PGP adatok keresése</title>
+    <heading>PGP adatok keresése</heading>
     <para>
-    Send the message with no encryption (cleartext).
-    </para>
-    <heading>PGP Encrypt Message</heading>
-    <para>
-    This option will encrypt the current message, using PGP and the recipients personal public key, and then send it. You can only send a message to a single person using this option. You MUST have the public key of the recipient stored in your addressbook or else this option will fail. If you have the public key for the recipient in your addressbook and are still receiving errors, verify that the e-mail address in the recipient field matches the e-mail address where the public key is stored. The encrypted data will be attached to the outgoing message.
-    </para>
-    <heading>PGP Sign Message</heading>
-    <para>
-    This option will digitally sign the current message using PGP and your personal private key. If you have not already entered the passphrase for your private key during this session you will be prompted for it.  The receipient must have a copy of your public key to digitally verify your
-    signature.
-    </para>
-    <heading>PGP Sign/Encrypt Message</heading>
-    <para>
-    This option will first digitally sign your message and then will encrypt the resulting output. See the 'PGP Encrypt Message' and 'PGP Sign Message' entries for further information.
-    </para>
-    <heading>S/MIME Encrypt Message</heading>
-    <para>
-    TODO
-    </para>
-    <heading>S/MIME Sign Message</heading>
-    <para>
-    TODO
-    </para>
-    <heading>S/MIME Sign/Encrypt Message</heading>
-    <para>
-    TODO
+	Az emailek szöveges részeit átvizsgáljuk, hogy tartalmaznak-e PGP adatokat?
+	<warn>
+	Bekapcsolása lelassíthatja a levelek megjelenítésését.
+	</warn>
     </para>
 </entry>
-  <entry id="pgp-overview" state="new">
-    <title>PGP: Overview</title>
-    <heading>What is PGP?</heading>
+
+<entry id="compose-options-encrypt" md5="78ff9bd91687efb91d2798ca0458b5cb" state="uptodate">
+    <title>Levélírás: PGP beállítások</title>
+    <heading>Titkosítatlan</heading>
     <para>
-    PGP is a tool for secure communication and data storage, especially for use with e-mail. It can be used to encrypt data and to create digital signatures. IMP uses GnuPG (GNU Privacy Guard) to provide this functionality.
+    A levél titkosítatlanul, nyílt szövegként való küldése.
     </para>
-    <heading>Enable PGP functionality?</heading>
+    <heading>Titkosítás</heading>
     <para>
-    If this option is selected, you will be able to create/view your personal PGP keys, add/delete public keys from other individuals, read encrypted mail, verify digitally signed mail, and encrypt/sign your outgoing mail.
+	Az Ön személyes, privát kulcsa és a címzett nyilvános PGP kulcsa segítségével titkosítva küldjük el a levelet.
+    A titkosított levelet csak a címzett személyes kulcsához tartozó jelmondat ismerője olvashatja el.
+    Mivel a titkosítás a címzettől is függ, egyszerre egy címzettnek küldhető titkosított levél.
+    A címjegyzékében meg kell legyen a címzett email címéhez tartozó nyilvános kulcs.
     </para>
-</entry>
-  <entry id="pgp-option-attach-pubkey" state="new">
-    <title>PGP: Options - Attach Public Key</title>
-    <heading>Options - Attach Public Key</heading>
+    <heading>Digitális aláírás</heading>
     <para>
-    If selected then a copy of your PGP public key, if it exists, will by default be attached to all outgoing messages.
+	A levelet digitális aláírással látjuk el.
+    A digitális aláírás az Ön privát PGP kulcsa segítségével történik.
+    A levél eredetiségét a címzettek az Ön nyilvános kulcsa segítségével ellenőrizhetik.
     </para>
-</entry>
-  <entry id="pgp-manage-pubkey" state="new">
-    <title>PGP: Manage Public Keys</title>
-    <heading>Overview</heading>
+    <heading>Titkosítás és digitális aláírás</heading>
     <para>
-    This screen lists all of the current users in your addressbook that have PGP public keys. These users are the ONLY users that you can either 1) send an encrypted message to -OR- 2) verify a digital signature.
+	Először digitális aláírással látjuk el, majd titkosítjuk a kimenő levelet.
+    Ez tehát a Titkosítás és a Digitális aláírás kombinációja.
     </para>
-    <heading>View</heading>
+    <heading>Titkosítás jelmondattal</heading>
     <para>
-    Opens a window to view the PGP public key.
+    Ezzel a lehetőséggel Ön a PGP segítségével, egy jelmondat használatával titkosíthatja a levelet. A rendszer bekéri Öntől a titkosításra használandó jelmondatot. Add át a jelmondatot a címzettnek egy másik csatornán (pl. telefonon, személyesen, stb.). A címzett csak a jelmondat ismeretében fogja tudni elolvasni az üzenetet.
     </para>
-    <heading>Details</heading>
+    <heading>Titkosítás és digitális aláírás jelmondattal</heading>
     <para>
-    Displays some details about the PGP public key.
+	Először digitális aláírással látjuk el, majd titkosítjuk a kimenő levelet. A "Titkosítás jelmondattal" és a "Digitális aláírás" szakaszok adnak erről bővebb információt.
     </para>
-    <heading>Delete</heading>
+    <heading>Titkosítás S/MIME-mal</heading>
     <para>
-    Deletes the public key from your addressbook.
+    Ezzel a lehetőséggel S/MIME segítségével fogja a rendszer titkosítani a kimenő levelet.
+    Önnek rendelkeznie kell a címzett tanúsítványával a címjegyzékében.
     </para>
-</entry>
-  <entry id="pgp-import-pubkey" state="new">
-    <title>PGP: Manage Public Keys - Import</title>
-    <heading>Import Public Keys</heading>
+    <heading>Digitális aláírás S/MIME-mal</heading>
     <para>
-    This button will open a window where you can manually import a PGP public key.  The key can either be pasted into a textfield or, if the key resides in a file on your local computer, you can import it.  If the key is valid it will be inserted into your addressbook and the window will close; if not valid, an error message will be returned explaining why.
+    Ezzel a lehetőséggel S/MIME digitális aláírás helyezhető el a kimenő levélen. Ha még nem adta meg jelmondatát a tanúsítványához, a küldés előtt meg kell még adnia.
     </para>
-</entry>
-  <entry id="pgp-overview-personalkey" state="new">
-    <title>PGP: Manage Personal Keys</title>
-    <heading>Overview</heading>
+    <heading>Titkosítás és digitális aláírás S/MIME-mal</heading>
     <para>
-    If you want to digitally sign messages or enable others to send you encrypted messages, you must have your own personal public/private PGP keypair.
-    </para>
-    <heading>Your Public Key</heading>
-    <para>
-    Your public key should be made available to any person that you want to be able to send you encrypted messages that only YOU can decrypt (using your private key). Additionally, your public key needs to be made available to anybody you send a ddigitally signed message to - the public key is required to verify the digital signature.
-    </para>
-    <heading>Your Private Key</heading>
-    <para>
-    Your private key is necessary to decrypt any message encrypted using your public key. Additionally, your private key is needed if you want to digitally sign a message. Your private key will be protected via a passphrase created when the keys are generated. Thus, to perform any activity that requires your private key, IMP will prompt you for your passphrase. You only need to insert your passphrase once per session - IMP will store your passphrase until you logout (So be sure to logout!).
+    Ezzel a lehetőséggel először S/MIME digitális aláírás kerül a kimenő levélre, majd S/MIME titkosításra kerül. Lásd a "Titkosítás S/MIME-mal" és a "Digitális aláírás S/MIME-mal" szakaszokat további információért.
     </para>
 </entry>
-  <entry id="pgp-personalkey-public" state="new">
-    <title>PGP: Manage Personal Keys - Public Key</title>
-    <heading>View</heading>
+
+<entry id="pgp-overview" md5="24b5138b4b53f73b5f2f2739e4c1858d" state="uptodate">
+    <title>PGP: Áttekintés</title>
+    <heading>Mi az a PGP?</heading>
     <para>
-    Opens a window to view the PGP public key.
+    A PGP egy eszköz biztonságos kommunikációra és adattárolásra, mely különösen alkalmas emailekre. Digitális aláírásra és titkosításra használható. Ez a webmail rendszer (az IMP) a GnuPG (GNU Privacy Guard) szoftvert használja.
     </para>
-    <heading>Details</heading>
+    <heading>Engedélyezzük a PGP szolgáltatásokat?</heading>
     <para>
-    Displays some details about the PGP public key.
+    Ha a PGP szolgáltatások be vannak kapcsolva, akkor Önnek lehetősége lesz létrehozni/megadni személyes PGP kulcsokat, feltölteni/törölni mások nyilvános kulcsait, elolvasni Önnek szóló titkosított leveleket, és digitálisan aláírni, valamint titkosítani kimenő leveleit.
     </para>
-</entry>
-  <entry id="pgp-personalkey-private" state="new">
-    <title>PGP: Manage Personal Keys - Private Key</title>
-    <heading>Enter Passphrase</heading>
     <para>
-    Opens the passphrase dialog window. The passphrase entered, if correct, will be stored by IMP until your session ends.
-    </para>
-    <heading>Unload Passphrase</heading>
-    <para>
-    Removes the stored passphrase from IMP - any additional usage of the private key will require you to reenter the passphease.
-    </para>
-    <heading>View</heading>
-    <para>
-    Opens a window to view the PGP private key. DO NOT SEND THIS KEY TO ANYONE - this option is strictly so that you can export your IMP personal private key for use in another program.
-    </para>
-    <heading>Details</heading>
-    <para>
-    Displays some details about the PGP private key.
+    Bővebben: http://hu.wikipedia.org/wiki/PGP
     </para>
 </entry>
-  <entry id="pgp-personalkey-delete" state="new">
-    <title>PGP: Manage Personal Keys - Delete</title>
-    <heading>Delete Personal Keys</heading>
+
+<entry id="pgp-option-attach-pubkey" md5="561ce43370ac4afbcc3f9818c8fbc2f6" state="uptodate">
+    <title>PGP: Opciók - Nyilvános kulcsának csatolása</title>
+    <heading>Nyilvános kulcsának csatolása</heading>
     <para>
-    This button will delete your personal public/private keypair from IMP's preferences.
+    Ha be van kapcsolva, akkor az Ön nyilvános, PGP kulcsának másolata a kimenő levélhez lesz csatolva.
     </para>
 </entry>
-  <entry id="pgp-personalkey-create-name" state="new">
-    <title>PGP: Create Personal Key - Name</title>
-    <heading>Name</heading>
+
+<entry id="pgp-manage-pubkey" md5="b289ea5824b7f69f35c0751497f4e1c3" state="uptodate">
+    <title>PGP: Nyilvános kulcsok kezelése</title>
+    <heading>Áttekintés</heading>
     <para>
-    The name you want embedded in your personal keys. A required field.
+    Ez az oldal listáz a címjegyzékéből mindenkit, akinek tárolva van a nyilvános PGP kulcsa.
+    Ezek azok a címzettek, akiknek Ön titkosított üzenetet küldhet, illetve akik digitális aláírását ellenőrizheti.
+    </para>
+    <heading>Megtekintés</heading>
+    <para>
+    Megnyit egy ablakot a nyilvános PGP kulcs megtekintésére.
+    </para>
+    <heading>Részletek</heading>
+    <para>
+    Részleteket mutat a nyilvános PGP kulcsról.
+    </para>
+    <heading>Törlés</heading>
+    <para>
+    Töröl egy nyilvános PGP kulcsot a címjegyzékből.
     </para>
 </entry>
-  <entry id="pgp-personalkey-create-comment" state="new">
-    <title>PGP: Create Personal Key - Comment</title>
-    <heading>Comment</heading>
+
+<entry id="pgp-import-pubkey" md5="6ee1130b46e9ff1ca9ad3a3a47e7b382" state="uptodate">
+    <title>PGP: Nyilvános kulcsok kezelése - Importálás</title>
+    <heading>Nyilvános kulcs importálása</heading>
     <para>
-    A comment string you want embedded in your personal keys. An optional field.
+    Ez a gomb megnyit egy ablakot, ahol Ön manuálisan importálhat egy PGP nyilvános kulcsot.
+    Ez akár egy szövegdobozba beilleszthető, akár fájlból feltölthető. Ha a kulcs érvényes, a kulcsot fölvesszük a címjegyzékébe és az ablak bezáródik.
+    Ha nem érvényes, akkor egy hibaüzenet jelenik meg, ami leírja a hiba okát.
     </para>
 </entry>
-  <entry id="pgp-personalkey-create-email" state="new">
-    <title>PGP: Create Personal Key - E-mail Address</title>
-    <heading>E-mail Address</heading>
+
+<entry id="pgp-overview-personalkey" md5="220af2b74a58f430efd72d6d6b1f993f" state="uptodate">
+    <title>PGP: Saját kulcsok kezelése</title>
+    <heading>Áttekintés</heading>
     <para>
-    The e-mail address you want associated with your personal keys. A required field.
+    Ha Ön digitálisan alá szeretné írni egyes kimenő leveleit, vagy lehetővé akarja tenni, hogy mások titkosított üzeneteket küldhessenek Önnek, akkor rendelkeznie kell egy nyilvános/privát kulcspárral.
+    </para>
+    <heading>Az Ön nyilvános PGP kulcsa</heading>
+    <para>
+    Az Ön nyilvános kulcsa bárki számára hozzáférhető lehet.
+    Segítségével más olyan titkosított üzenetet küldhet Önnek, amit csak Ön (a privát kulcsa segítségével) tud elolvasni.
+    Segítségével mások ellenőrizhetik az Ön leveleire helyezett digitális aláírásának érvényességét: azt, hogy a levelet valóban Ön küldte, és azt senki sem változtatta meg.
+    </para>
+    <heading>Az Ön provát PGP kulcsa</heading>
+    <para>
+    Az Ön privát kulcsa szükséges ahhoz, hogy feloldja az Önnek küldött levelek titkosítását, és ahhoz is, ha Ön digitálisan alá kívánja írni egyes kimenő leveleit.
+    Az Ön privát kulcsa egy jelmondattal védett, amit csak Ön ismerhet. Ennek megfelelően, ha a levelezőrendszernek az Ön privát kulcsát kell használnia, akkor be kell kérnie Öntől az ahhoz tartozó jelmndatot. A levelezőrendszer csak egyszer kérdezi meg Öntől a jelmondatát, és tárolja azt a kilépéséig (ezért is érdemes mindig kijelentkezni).
     </para>
 </entry>
-  <entry id="pgp-personalkey-create-keylength" state="new">
-    <title>PGP: Create Personal Key - Keylength</title>
-    <heading>Keylength</heading>
+
+<entry id="pgp-personalkey-public" md5="3c844d4ff8fdda3e0d446b47a63117e0" state="uptodate">
+    <title>PGP: Saját kulcsok kezelése - Nyilvános kulcs</title>
+    <heading>Megtekintés</heading>
     <para>
-    The keylength, in bytes, of your generated key. The greater the value, the greater the protection (and also greater generation time and encryption time). 1024 bytes is the default - this value provides excellent protection.
+    Megnyit egy ablakot a nyilvános PGP kulcs megtekintésére.
+    </para>
+    <heading>Részletek</heading>
+    <para>
+    Részleteket mutat a nyilvános PGP kulcsról.
     </para>
 </entry>
-  <entry id="pgp-personalkey-create-passphrase" state="new">
-    <title>PGP: Create Personal Key - Passphrase</title>
-    <heading>Passphrase</heading>
+
+<entry id="pgp-personalkey-private" md5="1851b67a1aeef1242fc3a2b94af75c03" state="uptodate">
+    <title>PGP: Saját kulcsok kezelése - Személyes kulcs</title>
+    <heading>Jelmondat megadása</heading>
     <para>
-    The passphrase used to protect/encrypt your personal private key. This should be AT LEAST 6 characters, should NOT be the same as your login password, should NOT be based on a dictionary word, and should include both numbers and letters. You must enter this passphrase twice for verification purposes. A required field.
+    Bekéri az Ön személyes kulcsához tartozó jelmondatot. Ha a jelmondat helyes, a rendszerből való kilépésig eltárolja azt.
+    </para>
+    <heading>Jelmondat elfelejtése</heading>
+    <para>
+    Törli a tárolt jelmondatot. Személyes kulcsának további használata esetén a jelmondatot újra meg kell majd adnia.
+    </para>
+    <heading>Megtekintés</heading>
+    <para>
+    Megnyit egy ablakot a személyes PGP kulcs megtekintésére.
+    </para>
+	<warn>
+    SOHA SENKINEK NE ADJA ÁT SZEMÉLYES PGP KULCSÁT
+    </warn>
+    <heading>Részletek</heading>
+    <para>
+    Részleteket mutat a személyes PGP kulcsról.
     </para>
 </entry>
-  <entry id="pgp-personalkey-create-actions" state="new">
-    <title>PGP: Create Personal Key - Actions</title>
-    <heading>Create Keys</heading>
+
+<entry id="pgp-personalkey-delete" md5="dbd8cbe6bce71c4fb592dd1b3b27b7ce" state="uptodate">
+    <title>PGP: Saját kulcsok kezelése - Törlés</title>
+    <heading>A kulcspár törlése</heading>
     <para>
-    Create and store your personal public/private keypair.
-    </para>
-    <heading>Import Keypair</heading>
-    <para>
-    Import a personal/private keypair. This button opens a window where you can manually import your existing PGP personal public/private keypair.  The keys can either be pasted into a textfield or, if the keys reside in a file on your local computer, you can import them.  If the keys are valid they will be inserted into your preferences and the window will close; if not valid, an error message will be returned explaining why.
+	Ezzel a gombbal törölheti az Ön saját, személyes/nyilvános kulcspárját az Imp rendszerből.
     </para>
 </entry>
-  <entry id="smime-overview" state="new">
-    <title>S/MIME: Overview</title>
-    <heading>What is S/MIME?</heading>
+
+<entry id="pgp-personalkey-create-name" md5="748cb124b7ff52820792e278037a8c27" state="uptodate">
+    <title>PGP: Saját kulcs készítése - Név</title>
+    <heading>Név</heading>
     <para>
-    S/MIME is a private/public key pair system which provides digital signatures, message privacy, and tamper detection in a open, interoperable way.  S/MIME can provide message privacy by encrypting messages that only the sender and the intended recipients can decode.  It allows you to identify the sender of a message via a digital signature.  Together, this encryption and digital signing help provide tamper detection, allowing recipients to determine whether a message was altered after it was sent.
-    </para>
-    <heading>Enable S/MIME functionality?</heading>
-    <para>
-    If this option is selected, you will be able to import your personal S/MIME keys, read encrypted mail, verify digitally signed mail, and encrypt/sign your outgoing mail.
+    Az a név, ami a személyes kulcspárjában rögzítésre kerül. Szükséges megadni.
     </para>
 </entry>
-  <entry id="smime-overview-personalkey" state="new">
-    <title>S/MIME: Personal Keys</title>
-    <heading>Overview</heading>
+
+<entry id="pgp-personalkey-create-comment" md5="e666eb9f0ee4b49fe04f74fc18db8640" state="uptodate">
+    <title>PGP: Saját kulcs készítése - Megjegyzés</title>
+    <heading>Megjegyzés</heading>
     <para>
-    If you want to digitally sign or encrypt messages you must have your own personal public/private S/MIME keypair.
+    Egy megjegyzés, ami a személyes kulcspárjában rögzítésre kerül. Szükséges megadni.
     </para>
 </entry>
-  <entry id="smime-import-personal-certs" state="new">
-    <title>S/MIME: Import Personal Certificates</title>
-    <heading>Import Personal Certificates</heading>
+
+<entry id="pgp-personalkey-create-email" md5="c729f70fdb3a73cbb7ba5ef5888e3092" state="uptodate">
+    <title>PGP: Saját kulcs készítése - Emailcím</title>
+    <heading>Emailcím</heading>
     <para>
-    Import personal certificates from a PKCS #12 format file. PKCS #12 files is the file usually generated when exporting a key from a browser (e.g. Internet Explorer, Firefox) or from a certificate store maintained by an Operating System (e.g. Windows XP). If the keys are valid they will be inserted into your preferences and the window will close; if not valid, an error message will be returned explaining why.
+    Az az emailcím, amihez a kulcspárját rendelni szeretné. Szükséges megadni.
     </para>
 </entry>
-  <entry id="smime-delete-personal-certs" state="new">
-    <title>S/MIME: Delete Personal Certificates</title>
-    <heading>Delete Personal Certificates</heading>
+
+<entry id="pgp-personalkey-create-keylength" md5="24ca641c63fb5ff310a39ee0d3b1ee55" state="uptodate">
+    <title>PGP: Saját kulcs készítése - Kulcshossz</title>
+    <heading>Kulcshossz</heading>
     <para>
-    Delete your personal certificates from your preferences.  You will no longer be able to sign S/MIME messages or view any S/MIME encrypted messages addressed to you.
+    A generálandó kulcs hossza bitekben. Minél nagyobb ez az érték, annál erősebb a védelem, de annál hosszabb ideig tart a generálása és a vele való titkosítás is. 1024 bit az alapértelmezett érték, ez kitűnő védelmet biztosít.
     </para>
 </entry>
-  <entry id="smime-manage-pubkey" state="new">
-    <title>S/MIME: Manage Public Keys</title>
-    <heading>S/MIME: Manage Public Keys</heading>
+
+<entry id="pgp-personalkey-create-passphrase" md5="2fb9372970bf33f51e988ba39dbd7193" state="uptodate">
+    <title>PGP: Saját kulcs készítése - Jelmondat</title>
+    <heading>Jelmondat</heading>
     <para>
-    Manage your S/MIME public key list.
-    </para>
-    <heading>View</heading>
-    <para>
-    View the raw text of the public key.
-    </para>
-    <heading>Details</heading>
-    <para>
-    View technical details of the public key.
-    </para>
-    <heading>Delete</heading>
-    <para>
-    Deletes the selected public key from storage.  Deleting a public key for a user will prevent your from encrypting a message to that user.
+    A jelmondat (jelszó) szolgál az Ön saját privát kulcsának védelmére. A jelmondat legalább 6 karakter hosszú kell legyen, nem egyezhez meg az Ön bejelenentkezési jelszavával, ne legyen értelmes szó, és tartalmazzon betűket és számokat is. A biztonság kedvéért kétszer kell megadja a jelmondatot. Szükséges megadni.
     </para>
 </entry>
-  <entry id="printing" state="new">
-    <title>Printing</title>
-    <heading>Print a message</heading>
+
+<entry id="pgp-personalkey-create-actions" md5="0f8234935b964c83533b4ec4c15eb712" state="uptodate">
+    <title>PGP: Saját kulcs készítése - Teendők</title>
+    <heading>Kulcsok készítése</heading>
     <para>
-    To print a message you are viewing, click on the "Print" link at either the top or bottom of the message. The message will open in a new window formated for printing.  Depending on your web browser and operating system, the print dialog box may open for you.  If it does not open, then pull down the web browser's "File" menu and choose "Print" to open the print dialog box.
+    Az Ön személyes kulcspárjának, azaz privát és nyilvános kulcsának létrehozása és rögzítése.
+    </para>
+    <heading>Kulcsok importálása</heading>
+    <para>
+    Az Ön meglévő kulcspárjának betöltése. Ez a gomb megnyit egy ablakot, ahol Ön manuálisan importálhatja meglévő kulcspárját. A kulcsok szövegként is beilleszthetők, illetve ha a számítógépen fájlban tárolja őket, akkor betallózható. Ha a kulcspár érvényes, az Imp rendszer rögzíti azt és az ablak bezárul. Ha bármelyikük érvénytelen, egy hibaüzenet jelenik meg a hiba pontos okával.
     </para>
 </entry>
-  <entry id="sorting" state="new">
-    <title>Sorting and Threading</title>
-    <heading>Sorting Entries</heading>
+
+<entry id="smime-overview" md5="d3c752b1345fb2eccfe575c07461963f" state="uptodate">
+    <title>S/MIME: Áttekintés</title>
+    <heading>Mi az az S/MIME?</heading>
     <para>
-    When viewing a list of messages, you can sort the messages by any column by clicking on the appropriate column heading.  To switch columns between ascending and descending order, click on the arrow icon in the column heading.
+    Az S/MIME egy publikus/privát kulcspáron alapuló rendszer, mellyel email üzenetek digitális aláírása, titkosítása, változtatásérzékelése válik lehetővé. Az S/MIME által titkosított üzeneteket csak a feladó és az érintett címzettek képesek dekódolni és elolvasni. A dogotális aláírás a feladó személyét azonosítja megbízható módon. A digitális aláírás és a titkosítás együtt lehetővé teszik, hogy a címzettek meggyőződhessenek arról, hogy az üzenetet valóban a feladó írta, és hogy azt a küldés után nem módosították.
     </para>
-    <heading>Threading</heading>
+    <heading>Bekapcsoljuk az S/MIME szolgáltatásokat?</heading>
     <para>
-    To group messages by threads (subject), so each message is grouped with all its replies, click the [Thread] link in the subject column heading.  To return to normal subject sorting, click on the [Subject] link in the subject column heading.
-    </para>
-</entry>
-  <entry id="alternative-msg" state="new">
-    <title>Multipart/Alternative Messages</title>
-    <para>
-    Some message have been sent as a "multipart/alternative" type by the sender. These messages have several parts, all displaying the SAME CONTENT but in DIFFERENT FORMATS. The mail agent will display the last part in the list that can be successfully displayed inline in the browser, if any. All other formats will appear under the heading "Alternative parts for this section" and can be viewed or downloaded separately. It is important to note that these alternative parts contain the SAME CONTENTS as the part that is shown - they are simply in a different media format (e.g. text vs. HTML output).
+    Ha ez az opció be van kapcsolva, akkor Ön beimportálhatja meglévő S/MIME kulcspárját, azután elolvashat Önnek szóló titkosított üzeneteket, ellenőrizheti bejövp leveleinek digitális aláírását, továbbá kivánság szerint digitálisan aláírhatja és titkosíthatja az Ön kimenő levelezését.
     </para>
 </entry>
-  <entry id="prefs-rename_sentmail_monthly" state="new">
-    <title>Preferences: Maintenance: Rename Sent-mail Folder Monthly</title>
+
+<entry id="smime-overview-personalkey" md5="9f4f36ae72cb4abc731067d338be3b98" state="uptodate">
+    <title>S/MIME: Személyes kulcsok</title>
+    <heading>Áttekintés</heading>
     <para>
-    Turn this option on if you would like to rename your sent-mail folder at the beginning of every month.  The folder will be renamed (to a name that contains the month and year) and a new sent-mail folder will be created.
+    Ha Ön szeretné digitális aláírással ellátni, vagy titkosítani kimenő leveleit, rendelkeznie kell egy saját publikus/privát S/MIME kulcspárral.
     </para>
 </entry>
-  <entry id="prefs-delete_sentmail_monthly" state="new">
-    <title>Preferences: Maintenance: Delete Sent-mail Folder Monthly</title>
+
+<entry id="smime-import-personal-certs" md5="cf0ed2e3e24d30dedf8cfef2c2645759" state="uptodate">
+    <title>S/MIME: Személyes tanúsítványok importálása</title>
+    <heading>Személyes tanúsítványok importálása</heading>
     <para>
-    Turn this option on if you would like to delete old sent-mail folders at the beginning of every month.  This may be useful if you have a quota, for example.
+    Személyes tanúsítványok importálása PKCS #12 formátumú fájlból. PKCS #12 fájlokat általában böngészőprogramokból (pl. Internet Explorer, Firefox, stb.), vagy operációs rendszerek (pl. Windows) kulcstárából történő exportáláskor jönnek létre. Ha a kulcspár érvényes, az Imp rendszer rögzíti azt és az ablak bezárul. Ha bármelyikük érvénytelen, egy hibaüzenet jelenik meg a hiba pontos okával.
     </para>
 </entry>
-  <entry id="prefs-delete_sentmail_monthly_keep" state="new">
-    <title>Preferences: Maintenance: Delete Sent-mail Folder Monthly - # of Folders to Keep</title>
+
+<entry id="smime-delete-personal-certs" md5="018bb6b61a7e416892de288ad1c880f4" state="uptodate">
+    <title>S/MIME: Személyes tanúsítványok törlése</title>
+    <heading>Személyes tanúsítványok törlése</heading>
     <para>
-    If you are deleting old sent-mail folders every month, how many months of old folders do you  want to keep?  Any folders older than this many months will be deleted.
+    A személyes tanúsítványok (az Ön privát és a nyilvános kulcsa) törlésével az IMP levelezőrendszer eltávolítja az Ön kulcsait a rendszerből. Ezután újabb levelek digitális aláírását már nem tudja elvégezni, illetve nem tudja dekódolni az Önnek címzett titkosított üzeneteket.
     </para>
 </entry>
-  <entry id="prefs-purge_sentmail" state="new">
-    <title>Preferences: Maintenance: Purge Sent-Mail</title>
+
+<entry id="smime-manage-pubkey" md5="8b6c63684d3d73b3d084025a78fe7e88" state="uptodate">
+    <title>S/MIME: Nyilvános kulcsok kezelése</title>
+    <heading>S/MIME: Nyilvános kulcsok kezelése</heading>
     <para>
-    Do you want to purge your sent-mail folder(s) every so often.
+    S/MIME nyilvános kulcslistájának kezelése.
+    </para>
+    <heading>Megtekintés</heading>
+    <para>
+    A nyilvános kulcs nyers szövegének megtekintése.
+    </para>
+    <heading>Részletek</heading>
+    <para>
+    A nyilvános kulcstechnikai részleteinek megtekintése.
+    </para>
+    <heading>Törlés</heading>
+    <para>
+    A kiválasztott nyilvános kulcs törlése a rendszerből. A törlés után titkosított üzenet annak a felhasználónak már nem lesz lehetséges.
     </para>
 </entry>
-  <entry id="prefs-purge_sentmail_interval" state="new">
-    <title>Preferences: Maintenance: Purge Sent-Mail Interval</title>
+
+<entry id="printing" md5="f233c11b6b4a6bedeb68f1d5a2a976db" state="uptodate">
+    <title>Nyomtatás</title>
+    <heading>Üzenet nyomtatása</heading>
     <para>
-    If you are purging your sent-mail folder(s), how often should it be purged?
+    A megnyitott levél nyomtatásához kattintson a "Nyomtatás" feliratra, akár az üzenet fölött, akár alatt. Az üzenet ekkor egy új ablakban nyílik meg nyomtatásra formázva. Az Ön böngészőjétől és operációs rendszerétől függően a nyomtatási párbeszédpanel is megnyílhat automatikusan. Ha ez nem történik meg a nyomtatást a "Fájl" menü "Nyomtatás" menüpontjával kezdeményezheti.
     </para>
 </entry>
-  <entry id="prefs-purge_sentmail_keep" state="new">
-    <title>Preferences: Maintenance: Purge Sent-Mail Keep</title>
+
+<entry id="sorting" md5="18cdeac38027fe5c42bab693f2a4260a" state="uptodate">
+    <title>Sorbarendezés és logikai sorrend</title>
+    <heading>Üzenetek sorbarendezése</heading>
     <para>
-    If you are purging your sent-mail folder(s), message older than how many days should be purged?
+    Mappanézetben, amikor Ön az üzenetek listáját látja, a lista bármelyik oszlopa szerint sorbarendezheti az üzeneteket a megfelelő oszlop fejlécére kattintva. Ismételt kattintás egy oszlopfejlécen a rendezési irányt változtatja meg.
+    </para>
+    <heading>Logikai sorrend</heading>
+    <para>
+    A tárgysor szerint is csoportosíthatók az üzenetek, ilyenkor minden válaszüzenet egy csoportba kerül. Ehhez a tárgy oszlop fejlécében található "Logikai sorrend" feliratra kattintson. A tárgy szerinti sorbarendezéshez való visszatéréshez kattintson az oszlopfejlécben a "Tárgy" feliratra.
+    
+    To group messages by threads (subject), so each message is grouped with all its replies, click the [Thread] link in the subject column heading. To return to normal subject sorting, click on the [Subject] link in the subject column heading.
     </para>
 </entry>
-  <entry id="prefs-delete_attachments_monthly" state="new">
-    <title>Preferences: Maintenance: Delete Linked Attachments Monthly</title>
+
+<entry id="alternative-msg" md5="4978073f76977b6af6b69810e4d22a65" state="uptodate">
+    <title>Többrészes (Multipart/Alternative) üzenetek</title>
     <para>
-    Turn this option on if you would like to delete old linked attachments at the beginning of every month.  This may be useful if you have a quota, for example.
+    Egyes üzenetek a küldő levelelezőprogramja többrészesként (Multipart/Alternative) állít elő és küld el. Ezen üzenetek több üzenetrésszel rendelkeznek, melyek ugyanazt a tartalmat mutatják különböző (például egyszerű szöveges és html) formátumban. Az Imp levelezőrendszer ezen részek közül az utolsót jeleníti meg az üzenetnézetben, amely a böngészőjében helyesen megjeleníthető. A többi, alternatív részek listája az "Ennek a résznek az alternatív változatai" szakaszban jelenik meg. Ezek megtekinthetők, illetve le is tölthetők. Ezek a részek tehát mind ugyanazt a tartalmat ábrázolják különböző formátumokban.
     </para>
 </entry>
-  <entry id="prefs-delete_attachments_monthly_keep" state="new">
-    <title>Preferences: Maintenance: Delete Linked Attachments Monthly - # of Months to Keep</title>
+
+<entry id="prefs-rename_sentmail_monthly" md5="530fa20e0afbc25ffd40877948832899" state="uptodate">
+    <title>Opciók: Bejelentkezéssel kapcsolatos feladatok: Nevezzük át az elküldött leveleket tartalmazó mappát a hónap elején?</title>
     <para>
-    If you are deleting old linked attachments every month, how many months of old attachments do you  want to keep?  Any attachments older than this many months will be deleted.
+    Kapcsolja be ezt az opciót, és a rendszer minden hónap elején átnevezi az elküldött leveleket tartalmazó mappát és egy új, üres elküldött elemeket mappát készít.
     </para>
 </entry>
-  <entry id="prefs-purge_trash" state="new">
-    <title>Preferences: Maintenance: Purge Trash</title>
+
+<entry id="prefs-delete_sentmail_monthly" md5="0beed16dfd68e2f25e0c66871fd546df" state="uptodate">
+    <title>Opciók: Bejelentkezéssel kapcsolatos feladatok: Töröljük a régi elküldött leveleket tartalmazó mappákat a hónap elején?</title>
     <para>
-    Do you want to purge your trash folder every so often.
+    Kapcsolja be ezt az opciót, és a rendszer minden hónap elején törli az elküldött leveleket tartalmazó mappa tartalmát. Ez kvóta problémák esetén lehet hasznos.
     </para>
 </entry>
-  <entry id="prefs-purge_trash_interval" state="new">
-    <title>Preferences: Maintenance: Purge Trash Interval</title>
+
+<entry id="prefs-delete_sentmail_monthly_keep" md5="71ed1c2eab48b91a25b5bcd4b14ccea9" state="uptodate">
+    <title>Opciók: Bejelentkezéssel kapcsolatos feladatok: Hány régi elküldött leveleket tartalmazó mappát tartsunk meg, havi törlés esetén?</title>
     <para>
-    If you are purging your trash folder, how often should it be purged?
+    Ha Ön bekapcsolta az elküldött levelek havi törlését, akkor a rendszer ennnyi  hónapig megőrzi az elküldött leveleket tartalmazó mappákat törlés előtt. Az ennél régebbi mappák törlésre kerülnek.
     </para>
 </entry>
-  <entry id="prefs-purge_trash_keep" state="new">
-    <title>Preferences: Maintenance: Purge Trash Keep</title>
+
+<entry id="prefs-purge_sentmail" md5="7b37c534aaaec6b43589f15845cf0273" state="uptodate">
+    <title>Opciók: Bejelentkezéssel kapcsolatos feladatok: Az Elküldött levelek mappából töröljük ki a régi leveleket?</title>
     <para>
-    If you are purging your trash folder, message older than how many days should be purged?
+    Ennek az opciónak a bekapcsolásával az elküldött leveleket tartalmazó mappából törölhetők a régi levelek.
     </para>
 </entry>
-  <entry id="prefs-purge_spam" state="new">
-    <title>Preferences: Maintenance: Purge Spam</title>
+
+<entry id="prefs-purge_sentmail_interval" md5="423f3c1b0645cee1bc58e6e22a6d8b68" state="uptodate">
+    <title>Opciók: Bejelentkezéssel kapcsolatos feladatok: Milyen gyakran ürítsük az Elküldött levelek mappát?</title>
     <para>
-    Do you want to purge your spam folder every so often.
+    Ha Ön bekapcsolta az elküldött levelek mappából a régi levelek törlését, akkor a törlés gyakoriságát ezzel az opcióval állíthatja be.
     </para>
 </entry>
-  <entry id="prefs-purge_spam_interval" state="new">
-    <title>Preferences: Maintenance: Purge Spam Interval</title>
+
+<entry id="prefs-purge_sentmail_keep" md5="fcba2b7e5da61a7fdda7970f926f8d8a" state="uptodate">
+    <title>Opciók: Bejelentkezéssel kapcsolatos feladatok: Hány napnál régebbi leveleket ürítsük ki az Elküldött levelek mappából</title>
     <para>
-    If you are purging your spam folder, how often should it be purged?
+    Ha Ön bekapcsolta az elküldött levelek mappából a régi levelek törlését, akkor a rendszer az ennyi napnál régebbi leveleket törli a mappából.
     </para>
 </entry>
-  <entry id="prefs-purge_spam_keep" state="new">
-    <title>Preferences: Maintenance: Purge Spam Keep</title>
+
+<entry id="prefs-delete_attachments_monthly" md5="373ea02ede6df5fc345caf632e19a75f" state="uptodate">
+    <title>Opciók: Bejelentkezéssel kapcsolatos feladatok: Töröljük a hónap elején a régi, hivatkozás formájában küldött mellékletek tényleges példányait?</title>
     <para>
-    If you are purging your spam folder, message older than how many days should be purged?
+    Kapcsolja be ezt a lehetőséget, ha azt szeretné, hogy a rendszer minden hónap elején törölje az Ön által hivatkozásként küldött, a megadottnál régebbi csatolmányok helyben tárolt példányait. A csatolmányok ezentúl már nem lesznek elérhetők a címzettek számára.
+    
+    A csatolmányok törlése helymegtakarítást jelent, így hasznos lehet kvótaprobléma esetén.
     </para>
 </entry>
-  <entry id="prefs-attrib_text" state="new">
-     <title>Preferences: Message Composition: Attribution Text</title>
+
+<entry id="prefs-delete_attachments_monthly_keep" md5="1b340a60214dffd04aec02cc1127df5d" state="uptodate">
+    <title>Opciók: Bejelentkezéssel kapcsolatos feladatok: Hány hónapig tartsuk meg a hivatkozás formájában küldött mellékletek tényleges példányát, havi törlés esetén?</title>
+    <para>
+    Ha a hivatkozásként küldött csatolmányok havi törlését választja, akkor itt állíthatja be, hogy a rendszer hány hónapig őrizze meg a csatolmányokat. Az itt megadott hónapnél régebbi csatolmányok minden hónap elején törlésre kerülnek és a címzettek számára már nem lesznek elérhetőek.
+    </para>
+</entry>
+
+<entry id="prefs-purge_trash" md5="dc71871146be3e46ade0087a8cf18273" state="uptodate">
+    <title>Opciók: Bejelentkezéssel kapcsolatos feladatok: A Szemetes mappából töröljük ki a régi leveleket?</title>
+    <para>
+    Kapcsolja be ezt a lehetőséget, ha azt szeretné, hogy a rendszer a megadott időközönként, a megadottnál régebbi leveleket automatikusan törölje a Szemetes mappából.
+    </para>
+</entry>
+
+<entry id="prefs-purge_trash_interval" md5="7be91fbeb05b2d87289d4c5602d5a32f" state="uptodate">
+    <title>Opciók: Bejelentkezéssel kapcsolatos feladatok: Milyen gyakran ürítsük a Szemetes mappát?</title>
+    <para>
+    Ha Ön a Szemetes mappa automatikus ürítését választotta, itt adhatja meg, hogy ez milyen gyakran történjen.
+    </para>
+</entry>
+
+<entry id="prefs-purge_trash_keep" md5="3cb5a2b5b80b7ac1179ae005f983970e" state="uptodate">
+    <title>Opciók: Bejelentkezéssel kapcsolatos feladatok: Hány hónapig tartsuk meg a hivatkozás formájában küldött mellékletek tényleges példányát?</title>
+    <para>
+    Ha Ön a Szemetes mappa automatikus ürítését választotta, itt adhatja meg, hogy az ennyi napnál régebbi leveleket törölje a rendszer a Szemetes mappából.
+    </para>
+</entry>
+
+<entry id="prefs-purge_spam" md5="9cabaf3500d3316054db045cf5339f5e" state="uptodate">
+    <title>Opciók: Bejelentkezéssel kapcsolatos feladatok: A Spam mappából töröljük ki a régi leveleket?</title>
+    <para>
+    Kapcsolja be ezt a lehetőséget, ha azt szeretné, hogy a rendszer a megadott időközönként, a megadottnál régebbi leveleket automatikusan törölje a Spam mappából.
+    </para>
+</entry>
+
+<entry id="prefs-purge_spam_interval" md5="fe0f7289693d19bd386638e25beeb276" state="uptodate">
+    <title>Opciók: Bejelentkezéssel kapcsolatos feladatok: Milyen gyakran ürítsük a Spam mappát</title>
+    <para>
+    Ha Ön a Spam mappa automatikus ürítését választotta, itt adhatja meg, hogy ez milyen gyakran történjen.
+    </para>
+</entry>
+
+<entry id="prefs-purge_spam_keep" md5="f4748aba20cf4a9b6ce92822bd185de6" state="uptodate">
+    <title>Opciók: Bejelentkezéssel kapcsolatos feladatok: Hány napnál régebbi leveleket ürítsük ki a Spam mappából?</title>
+    <para>
+    Ha Ön a Spam mappa automatikus ürítését választotta, itt adhatja meg, hogy az ennyi napnál régebbi leveleket törölje a rendszer a Spam mappából.
+    </para>
+</entry>
+
+<entry id="prefs-attrib_text" md5="721a09d7ca028c97e3bd2b38c597fff7" state="uptodate">
+     <title>Opciók: Válaszok/továbbítások: Válaszoláskor hogyan jelezzük, hogy kitől idéztünk</title>
      <para>
-     Here you can enter the phrase that you wish to appear before any quoted text in a reply that you send.
+     Itt megadható egy szöveg, ami válaszoláskor, továbbításkor megjelenik a beidézett eredeti levél előtt.
      </para>
      <para>
-     You can include one or more special placeholders to insert information about the message to which you are replying. Placeholders consist of a '%' followed by a single letter. The following placeholders are available:
+     Ide egy vagy több speciális változó is beilleszthető, ezek a következők:
      </para>
 
-     <para> %f : The sender's name and email address</para>
-     <para> %a : The sender's email address</para>
-     <para> %p : The sender's name</para>
-     <para> %r : The full RFC 2822 style date and time zone</para>
-     <para> %d : The date as www, dd mmm YYYY</para>
-     <para> %x : The date in the locale's default</para>
-     <para> %c : The date and time in the locale's default</para>
-     <para> %m : The Message-ID</para>
-     <para> %s : The subject</para>
-     <para> %n : A new line</para>
-     <para> %% : The '%' character</para>
+     <para> %f : A küldő neve és emailcíme</para>
+     <para> %a : A küldő emailcíme</para>
+     <para> %p : A küldő neve</para>
+     <para> %r : Az RFC 2822 szabvány szerinti dátum (pl. "Wed,  8 Dec 2010 14:30:02 +0100 (CET)")</para>
+     <para> %d : A dátum a következő formátumban: hét, nap hónap év</para>
+     <para> %x : A dátum a szerver saját formátuma szerint</para>
+     <para> %c : A dátum és idő a szerver saját formátuma szerint</para>
+     <para> %m : Az üzenet azonosítója (a Message-ID)</para>
+     <para> %s : Az üzenet tárgya</para>
+     <para> %n : Egy újsor karakter</para>
+     <para> %% : Egy % karakter</para>
+</entry>
 
-</entry>
-  <entry id="prefs-default_msg_charset" state="new">
-    <title>Preferences: Default Message Character Set</title>
+<entry id="prefs-default_msg_charset" md5="4ef4fb2090e703f6f8e03f39ab96e717" state="uptodate">
+    <title>Opciók: Milyen karakterkészletet tételezzünk fel azokról a levelekről, amikből hiányzik ez az információ?</title>
     <para>
-    Define the default character set to use for text message parts that do not contain explicit character set information. Per RFC 2045, messages without a character set parameter are displayed using the 'US-ASCII' character set. However, certain badly broken mailers may send out text messages in other character sets without setting the proper parameters in the message header. Set this parameter to the default character set string to use locally. Select "Default" to use the MIME defaults.
+    Az alapértelmezett kakarterkészlet, amit olyan szöveges levélrészeknél alkalmaz a rendszer, melyeknél nincs megadva karakterkészlet. Az RFC 2045-ös szabvány szerint ezeket a leveletet az 'US-ASCII' karakterkészletben kell megjeleníteni. Ezzel ellentétben néhány hibás, rosszul működő levelezőprogram képes nem-US-ASCII szöveges levélrészeket készíteni úgy, hogy nem adják meg a felhasznált karakterkészletet.
     </para>
 </entry>
-  <entry id="prefs-disposition_request_read" state="new">
-    <title>Preferences: Request Read Receipts</title>
+
+<entry id="prefs-disposition_request_read" md5="89e92c4d68224b2345b59959878a7174" state="uptodate">
+    <title>Opciók: Levélírás: Kér visszaigazolást arról, amikor a címzett elolvassa a levelet?</title>
     <para>
-    "Request a Read Receipt" sends a request to the recipients of this message to notify you when this message is opened by the recipients. Not all clients support / honor this.
+    A szabványos emailekben megadható, hogy a feladó visszaigazolást kér arról, hogy a címzett elolvasta a levelét. Ilyenkor egy külön emailt küld a címzett levelezőprogramja a feladónak a levél olvasásakor. Nem minden levelezőprogram támogatja, engedélyezi ezt, a visszaigazolás elmaradása ennek megfelelően nem jelenti azt, hogy a levelet a feladó nem olvasta el.
     </para>
 </entry>
-  <entry id="prefs-disposition_send_mdn" state="new">
-    <title>Preferences: Send MDN</title>
+
+<entry id="prefs-disposition_send_mdn" md5="1fe04e5dc3de68d172da284895973ea9" state="uptodate">
+    <title>Opciók: MDN küldése</title>
     <para>
-    "Send a MDN" sends a Message Disposition Notification (also known as a read receipt) when you view a message in which the user has requested that they receive notification that you have read the message. In most cases, this will happen automatically without prompting you. In certain isolated cases, you may have to manually decide to send the notification by clicking on a link.
+    Az MDN jelentése: Message Disposition Notification, azaz kézbesítési visszaigazolás. Ezzel az opcióval megadhatja, hogy kiván-e ilyen visszaigazolást küldeni az Ön részére küldött levelek feladóinak, ha ők ezt kérik.
     </para>
 </entry>
-  <entry id="prefs-disposition_request_delivery" state="new">
-    <title>Preferences: Request Delivery Confirmation</title>
+
+<entry id="prefs-disposition_request_delivery" md5="26598e29af05a07de5e13644669be712" state="uptodate">
+    <title>Opciók: Request Delivery Confirmation</title>
     <para>
-    "Request Delivery Confirmation" sends a request to the recipient's e-mail server to notify you when it has delivered the message to the recipient's mailbox. It doesn't mean the message has been seen, just that it's sitting in a mailbox somewhere. Not all mail servers support this.
+    A szabványos emailekben megadható, hogy a feladó visszaigazolást kér a címzett levelezőszerverétől arról, hogy a levelét az kézbesítette, tehát a címzett postaládájába helyezte. Ez ilyen visszaigazolás nem jelenti azt, hogy a címzett el is olvasta a levelet, csak azt, hogy a levél egy postaládában landolt. Nem minden levelezőszerver támogatja ezt a lehetőséget, az értesítés elmaradása tehát nem feltétlenül jelenti azt, hogy a levél nem lett kézbesítve.
     </para>
 </entry>
-  <entry id="prefs-delete_spam_after_report" state="new">
-    <title>Preferences: Delete Spam After Reporting</title>
+
+<entry id="prefs-delete_spam_after_report" md5="cefa8b52e09b0ada90e0889a3959efea" state="uptodate">
+    <title>Opciók: A levelek törlése és áthelyezése: Mi történjen a spamekkel a bejelentésüket követően?</title>
     <para>
-    You may elect to do one of three items after reporting a message as either spam or innocent.
-    </para>
-    <para>
-    First, you can decide to do nothing - the message will be reported as either spam or innocent but will otherwise remain unchanged in your mailbox.
-    </para>
-    <para>
-    Second, if reporting a message as spam, you can instead have the message be immediately deleted.  This setting has no effect on reporting a message as innocent.
-    </para>
-    <para>
-    Third, after reporting a message as spam the message will be deleted from the current mailbox and moved to your spam folder.  Alternatively, if reporting a message as innocent the message will be deleted from the current mailbox and moved to your INBOX.
+    Három lehetőség adható meg arra vonatkozóan, hogy mi történjen egy levéllel spamként való bejelentése után.
     </para>
 </entry>
-  <entry id="prefs-html_image_replacement" state="new">
-    <title>Preferences: HTML Image Replacement</title>
+
+<entry id="prefs-html_image_replacement" md5="28e1cf08e328345a8e7274c853492d4f" state="uptodate">
+    <title>Opciók: A levél megtekintése: Tiltsuk-e le a HTML formátumú levelekben levő képek kérés nélküli, automatikus megjelenítését?</title>
     <para>
-    For HTML messages displayed inline, should all image tags be blocked until you specifically decide to view those images? Note that, if viewing an HTML attachment, the images will always be displayed.
+    Ezzel a beállítással HTML emailek esetén ki- és bekapcsolható a szövegközi és csatolt képek megjelenítése.
     </para>
 </entry>
-  <entry id="prefs-html_image_addrbook" state="new">
-    <title>Preferences: HTML Image Replacement/Addressbook Show</title>
+
+<entry id="prefs-html_image_addrbook" md5="759fa3df24e0a3cd89f320102252f91a" state="uptodate">
+    <title>Opciók: A levél megtekintése: Jelenítsük-e meg automatikusan a HTML formátumú levelekben levő képeket, ha a feladó megtalálható az Ön címtárában?</title>
     <para>
-    If blocking images for inline HTML messages, should we automatically display them instead if the sender appears in your addressbook?
+    Ha a HTML üzenetek képeinek blokkolása be van kapcsolva, mégis megjeleníthetjük azon emailekben lévő képeket, amelyek feladója szerepel a címjegyzékünkben.
     </para>
 </entry>
-  <entry id="prefs-mailbox_start" state="new">
-    <title>Preferences: Mailbox Start Page</title>
+
+<entry id="prefs-mailbox_start" md5="62fcc38a15f54dae7eb8bdafa93ed341" state="uptodate">
+    <title>Opciók: A levélláda ill. a mappák megjelenítési beállításai: Új mappa megnyitásakor melyik oldalt kívánja megjeleníteni?</title>
     <para>
-    Determines which page in the mailbox view will be displayed when you access a mailbox for the first time. Note that the 'unseen' message options do not work with the 'Thread' sorting option - instead, you will be sent to the last page.
+    Megadható, hogy egy mappa megnyitásakor a mappanézet melyik oldalát jelenítse meg a rendszer először.
     </para>
 </entry>
-  <entry id="prefs-save_attachments" state="new">
-    <title>Preferences: Save Attachments on Sent Messages</title>
+
+<entry id="prefs-save_attachments" md5="35b46334cdcc7fa416b9f9fca5874e80" state="uptodate">
+    <title>Opciók: Levélírás: Az elküldött levelek külön mappába történő mentésekor mentsük-e el a mellékleteket is?</title>
     <para>
-    If saving a composed message in a sent-mail folder, determine if all attachment data is saved. The following options are available:
+    Ha a rendszer minden elküldött levelet elment, megadható, hogy a csatolmányok is elmentésre kerüljenek-e vagy sem. A következő lehetőségek adottak:
     </para>
 
-    <para>* "Always save attachments" - NEVER prompt to save attachments in compose screen; the attachments are ALWAYS saved with the message.</para>
-     <para>* "Prompt every time an attachment is sent; default to YES" - ALWAYS prompt to save attachments in the compose screen; the default is to save attachments.</para>
-     <para>* "Prompt every time an attachment is sent; default to NO" - ALWAYS prompt to save attachments in the compose screen; the default is to not save attachments.</para>
-     <para>* "Never save attachments" - NEVER prompt to save attachments in compose screen; the attachments are NEVER saved with the message.</para>
-</entry>
-  <entry id="virtual_inbox" state="new">
-    <title>Virtual Folders: Virtual Inbox</title>
     <para>
-    Virutal Inbox is a saved search that does away with the need to search every mailbox for messages marked as new.  Instead, all currently subscribed mailboxes are searched for new messages and the results are displayed in a single mailbox.
+    "Mindig mentsük el a mellékleteket" - Kérdés nélkül minden kimenő csatolmány elment az elküldött levelekkel.
+    </para>
+    
+     <para>
+     "Választhassak, ha melléklet van a levélben, az IGEN az alapértelmezett" - Mindig kérdezzen rá a csatolmány elmentésére, az Igen válasz legyen az alapértelmezett.
+     </para>
+     
+     <para>
+     "Választhassak, ha melléklet van a levélben, a NEM az alapértelmezett" - Mindig kérdezzen rá a csatolmány elmentésére, a Nem válasz legyen az alapértelmezett.
+     </para>
+     
+     <para>
+     "Sose mentsük a csatolmányokat" - A kimenő üzeneteknek csak a szövege kerül elmentésre, az esetleges csatolmányok sosem.
+     </para>
+</entry>
+
+<entry id="virtual_inbox" md5="a91e01732bb8129cbc6a7f5c6dca3ab3" state="uptodate">
+    <title>Opciók: Szerver és mappa információk: Legyen virtuális Beérkezett üzenetek mappa?</title>
+    <para>
+    A virtuális Beérkezett üzenetek mappa tulajdonképpen egy elmentett keresés, ami lehetővé teszi, hogy ne kelljen minden egyes postaládában az olvasatlan üzeneteket külön-külön keresgélnie, ezeket ugyanis egy helyen jeleníti meg.
     </para>
 </entry>
-  <entry id="virtual_trash" state="new">
-    <title>Virtual Folders: Virtual Trash</title>
+
+<entry id="virtual_trash" md5="b83f73ed56dff0addcbd4702e5a21a3d" state="uptodate">
+    <title>Opciók: Szerver és mappa információk: Legyen virtuális Szemetes mappa?</title>
     <para>
-    Virtual Trash is a saved search that does away with the need for a separate Trash folder.  Instead of moving messages to a centralized trash folder, messages are simply marked as deleted in the current folder they live in.  When 'show deleted messages' is turned off, this results in these messages not appearing in a mailbox view.  When a user clicks on Virtual Trash, *all* mailboxes all searched for messages that are flagged deleted and these messages are displayed in a single mailbox.
+    A virtuális Szemetes mappa tulajdonképpen egy elmentett keresés, ami lehetővé teszi, hogy az üzeneteknek egy központi Szemetes mappába való mozgatása helyett törlésre jelölés után egy helyen legyenek láthatók. Amikor a 'Törölt üzenetek megjelenítése" ki van kapcsolva, ezek a törlésre jelölt üzenetek nem jelennek meg a postaláda nézetben a levelek listájában. Amikor Ön a Virtuális szemetes mappára kattint, a rendszer összegyűjti az összes mappában található törlésre jelölt üzeneteket, és együtt jeleníti meg őket.
     </para>
 </entry>
+
 </help>

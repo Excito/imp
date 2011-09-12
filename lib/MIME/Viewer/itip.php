@@ -4,7 +4,7 @@
  * and provides an option to import the data into a calendar source,
  * if one is available.
  *
- * $Horde: imp/lib/MIME/Viewer/itip.php,v 1.37.2.47 2009/05/14 10:12:26 jan Exp $
+ * $Horde: imp/lib/MIME/Viewer/itip.php,v 1.37.2.48 2011/02/16 16:52:25 jan Exp $
  *
  * Copyright 2002-2009 The Horde Project (http://www.horde.org/)
  *
@@ -615,8 +615,9 @@ class IMP_MIME_Viewer_itip extends MIME_Viewer {
             return $html;
         }
 
-        $html .= '<h2 class="smallheader">' . _("Actions") . '</h2>' .
-            '<select name="action[' . $id . ']">';
+        $html .= '<h2 class="smallheader">' . _("Actions") . '</h2>'
+            . '<select name="action[' . $id . ']"><option value="">'
+            . _("-- select --") . '</option>';
 
         switch ($this->_method) {
         case 'PUBLISH':
@@ -853,11 +854,13 @@ class IMP_MIME_Viewer_itip extends MIME_Viewer {
         }
 
         if ($options) {
-            $html .= '<h2 class="smallheader">' . _("Actions") . '</h2>' .
-                '<label for="action_' . $id . '" class="hidden">' . _("Actions") . '</label>' .
-                '<select id="action_' . $id . '" name="action[' . $id . ']">' .
-                implode("\n", $options) .
-                '</select> <input type="submit" class="button" value="' . _("Go") . '" />';
+            $html .= '<h2 class="smallheader">' . _("Actions") . '</h2>'
+                . '<label for="action_' . $id . '" class="hidden">'
+                . _("Actions") . '</label>' . '<select id="action_' . $id
+                . '" name="action[' . $id . ']"><option value="">'
+                . _("-- select --") . '</option>' . implode("\n", $options)
+                . '</select> <input type="submit" class="button" value="'
+                . _("Go") . '" />';
         }
 
         return $html;
@@ -985,10 +988,11 @@ class IMP_MIME_Viewer_itip extends MIME_Viewer {
         }
 
         if ($options) {
-            $html .= '<h2 class="smallheader">' . _("Actions") . '</h2>' .
-                '<select name="action[' . $id . ']">' .
-                implode("\n", $options) .
-                '</select> <input type="submit" class="button" value="' . _("Go") . '" />';
+            $html .= '<h2 class="smallheader">' . _("Actions") . '</h2>'
+                . '<select name="action[' . $id . ']"><option value="">'
+                . _("-- select --") . '</option>' . implode("\n", $options)
+                . '</select> <input type="submit" class="button" value="'
+                . _("Go") . '" />';
         }
 
         return $html;

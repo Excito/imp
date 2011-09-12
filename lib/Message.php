@@ -15,7 +15,7 @@ define('IMP_MESSAGE_COPY', 2);
  * For any function below that requires an $indices parameter, see
  * IMP::parseIndicesList() for the list of allowable inputs.
  *
- * $Horde: imp/lib/Message.php,v 1.164.8.63 2009/01/06 15:24:04 jan Exp $
+ * $Horde: imp/lib/Message.php,v 1.164.8.64 2010/09/01 07:57:47 slusarz Exp $
  *
  * Copyright 2000-2001 Chris Hyde <chris@jeks.net>
  * Copyright 2000-2009 The Horde Project (http://www.horde.org/)
@@ -708,10 +708,8 @@ class IMP_Message {
 
         $process_list = $update_list = array();
 
-        if (!$this->_usepop) {
-            require_once IMP_BASE . '/lib/IMAP/MessageCache.php';
-            $msg_cache = &IMP_MessageCache::singleton();
-        }
+        require_once IMP_BASE . '/lib/IMAP/MessageCache.php';
+        $msg_cache = &IMP_MessageCache::singleton();
 
         $imp_imap = &IMP_IMAP::singleton();
         $stream = $imp_imap->stream();
@@ -731,6 +729,7 @@ class IMP_Message {
             $imp_imap->changeMbox($key);
             if ($this->_usepop) {
                 $update_list[$key] = $val;
+                $msg_cache->deleteMsgs($key, $val);
             } else {
                 $ids = @imap_search($stream, 'DELETED', SE_UID);
                 if (!empty($ids)) {

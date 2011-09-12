@@ -8,7 +8,7 @@ require_once 'Horde/Serialize.php';
  * query information about individual mailboxes.
  * In IMP, folders = IMAP mailboxes so the two terms are used interchangably.
  *
- * $Horde: imp/lib/IMAP/Tree.php,v 1.25.2.71 2010/02/05 21:27:01 slusarz Exp $
+ * $Horde: imp/lib/IMAP/Tree.php,v 1.25.2.73 2010/09/29 18:35:42 slusarz Exp $
  *
  * Copyright 2000-2009 The Horde Project (http://www.horde.org/)
  *
@@ -308,10 +308,8 @@ class IMP_Tree {
             return array_keys($this->_subscribed);
         }
 
-        /* INBOX must always appear. */
-        $names = array('INBOX' => 1);
-
         $imp_imap = &IMP_IMAP::singleton();
+        $names = array();
 
         $old_error = error_reporting(0);
         foreach ($this->_namespaces as $key => $val) {
@@ -325,17 +323,24 @@ class IMP_Tree {
         }
         error_reporting($old_error);
 
-        // Cached mailbox lists.
+        if (!$showunsub) {
+            // Need to compare to full list to remove non-existent mailboxes
+            // See RFC 3501 [6.3.9]
+            $names = array_flip(array_intersect($this->_getList(true), array_keys($names)));
+        }
+
+        if (!isset($names['INBOX'])) {
+            /* INBOX must always appear. */
+            $names = array('INBOX' => 1) + $names;
+        }
+
         if ($showunsub) {
             $this->_fulllist = array_keys($names);
             return $this->_fulllist;
-        } else {
-            // Need to compare to full list to remove non-existent mailboxes
-            // See RFC 3501 [6.3.9]
-            $names = array_intersect($this->_getList(true), array_keys($names));
-            $this->_subscribed = array_flip($names);
-            return $names;
         }
+
+        $this->_subscribed = $names;
+        return array_keys($names);
     }
 
     /**

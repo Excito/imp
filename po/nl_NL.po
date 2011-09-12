@@ -1,15 +1,15 @@
 # Dutch translations for Imp package.
-# Copyright 2006-2009 The Horde Project
+# Copyright 2006-2010 The Horde Project
 # This file is distributed under the same license as the Imp package.
-# Jan Kuipers <jrkuipers@lauwerscollege.nl>, 2001-2009.
+# Jan Kuipers <jrkuipers@lauwerscollege.nl>, 2001-2010.
 # Updated Han Spruyt, 2005
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Imp H3 (4.3.6-cvs)\n"
+"Project-Id-Version: Imp H3 (4.3.8-cvs)\n"
 "Report-Msgid-Bugs-To: dev@lists.horde.org\n"
-"POT-Creation-Date: 2009-12-14 08:18+0100\n"
-"PO-Revision-Date: 2009-12-14 19:58+0100\n"
+"POT-Creation-Date: 2010-06-11 23:08+0200\n"
+"PO-Revision-Date: 2010-06-12 00:07+0200\n"
 "Last-Translator: Jan Kuipers <jrkuipers@lauwerscollege.nl>\n"
 "Language-Team: Dutch <i18n@lists.horde.org>\n"
 "MIME-Version: 1.0\n"
@@ -97,12 +97,12 @@ msgstr "%d berichten zijn gerapporteerd als spam."
 msgid "%d to %d of %d Messages"
 msgstr "%d to %d van %d berichten"
 
-#: lib/UI/Mailbox.php:137
+#: lib/UI/Mailbox.php:134
 #, php-format
 msgid "%s KB"
 msgstr "%s KB"
 
-#: lib/UI/Mailbox.php:135
+#: lib/UI/Mailbox.php:132
 #, php-format
 msgid "%s MB"
 msgstr "%s MB"
@@ -203,7 +203,7 @@ msgstr "%s wenst u op de hoogte te brengen van \"%s\"."
 msgid "%s wishes to receive the latest information about \"%s\"."
 msgstr "%s wenst de laatste informatie te ontvangen over \"%s\"."
 
-#: compose.php:1244
+#: compose.php:1243
 #, php-format
 msgid "%s%% of allowed size"
 msgstr "%s%% van toegestane grootte"
@@ -616,7 +616,7 @@ msgstr "Toenemend"
 msgid "Ask"
 msgstr "Vragen"
 
-#: compose.php:1182
+#: compose.php:1181
 msgid "Attach Files"
 msgstr "Toegevoegde bestanden:"
 
@@ -825,7 +825,7 @@ msgstr "Kan niet verbinden met de mailserver op afstand."
 msgid "Cannot connect to the remote mail server: "
 msgstr "Kan niet verbinden met de mailserver op afstand: "
 
-#: lib/IMAP/Tree.php:2093
+#: lib/IMAP/Tree.php:2098
 msgid "Cannot directly create mailbox in this folder."
 msgstr "Kan niet direct een mailbox in deze map maken."
 
@@ -1013,7 +1013,7 @@ msgstr "Sluiten"
 msgid "Close this window"
 msgstr "Sluit dit venster"
 
-#: lib/IMAP/Tree.php:2038
+#: lib/IMAP/Tree.php:2043
 msgid "Closed Folder"
 msgstr "Gesloten map"
 
@@ -1555,7 +1555,7 @@ msgstr "Download in .zip formaat"
 msgid "Draft"
 msgstr "Klad"
 
-#: lib/IMAP/Tree.php:1993
+#: lib/IMAP/Tree.php:1998
 msgid "Draft folder"
 msgstr "Kladmap"
 
@@ -1880,7 +1880,7 @@ msgstr "Gemarkeerde berichten"
 msgid "Fo_rward"
 msgstr "Door_sturen"
 
-#: lib/IMAP/Tree.php:2038 templates/folders/folders_size.html:6
+#: lib/IMAP/Tree.php:2043 templates/folders/folders_size.html:6
 msgid "Folder"
 msgstr "Map"
 
@@ -2209,7 +2209,7 @@ msgid "In Process"
 msgstr "In behandeling"
 
 #: lib/Folder.php:68 lib/api.php:293 lib/IMP.php:733 lib/IMP.php:744
-#: lib/IMAP/Tree.php:410 lib/IMAP/Tree.php:1976
+#: lib/IMAP/Tree.php:410 lib/IMAP/Tree.php:1981
 #: templates/prefs/initialpageselect.inc:4
 msgid "Inbox"
 msgstr "Inbox"
@@ -2393,7 +2393,7 @@ msgstr "Laatste mailboxpagina"
 msgid "Last Page"
 msgstr "Laatste pagina"
 
-#: compose.php:1208
+#: compose.php:1207
 msgid "Link Attachments?"
 msgstr "Koppel bijlagen?"
 
@@ -2475,7 +2475,7 @@ msgstr "Mailpreviews"
 msgid "Mail server type to connect to:"
 msgstr "Mailservertype om mee te verbinden:"
 
-#: lib/IMAP/Tree.php:1983 lib/IMAP/Tree.php:2010
+#: lib/IMAP/Tree.php:1988 lib/IMAP/Tree.php:2015
 msgid "Mailbox"
 msgstr "Mailbox"
 
@@ -2605,15 +2605,15 @@ msgstr "Bericht bekijken"
 msgid "Message from %s"
 msgstr "Bericht van %s"
 
-#: lib/UI/Mailbox.php:151
+#: lib/UI/Mailbox.php:148
 msgid "Message has attachments"
 msgstr "Bericht heeft bijlagen"
 
-#: lib/UI/Mailbox.php:150
+#: lib/UI/Mailbox.php:147
 msgid "Message is encrypted"
 msgstr "Bericht is versleuteld"
 
-#: lib/UI/Mailbox.php:149
+#: lib/UI/Mailbox.php:146
 msgid "Message is signed"
 msgstr "Bericht is ondertekend"
 
@@ -2949,7 +2949,7 @@ msgstr "Ma_p openen"
 msgid "Open Folder"
 msgstr "Map openen"
 
-#: lib/IMAP/Tree.php:2034
+#: lib/IMAP/Tree.php:2039
 msgid "Opened Folder"
 msgstr "Geopende map"
 
@@ -3295,7 +3295,7 @@ msgstr "Voorkeursinstellingen"
 msgid "Preferences successfully updated."
 msgstr "Voorkeursinstellingen met succes bijgewerkt."
 
-#: compose.php:1228
+#: compose.php:1227
 msgid "Preview"
 msgstr "Beoordelen"
 
@@ -3781,7 +3781,7 @@ msgstr "Op_slaan als"
 msgid "Save"
 msgstr "Opslaan"
 
-#: compose.php:1204
+#: compose.php:1203
 msgid "Save Attachments with message in sent-mail folder?"
 msgstr "Bijlagen samen met bericht opslaan in outbox map?"
 
@@ -3974,11 +3974,11 @@ msgstr "Verzend bericht"
 msgid "Send message without a Subject?"
 msgstr "Verzend bericht zonder onderwerp?"
 
-#: config/prefs.php.dist:266
+#: config/prefs.php.dist:264
 msgid "Sent"
 msgstr "Versturen"
 
-#: lib/IMAP/Tree.php:2006
+#: lib/IMAP/Tree.php:2011
 msgid "Sent mail folder"
 msgstr "OUTBOX"
 
@@ -4191,7 +4191,7 @@ msgstr "Sorteren op geadresseerde"
 msgid "Spam"
 msgstr "Spam"
 
-#: lib/IMAP/Tree.php:1999
+#: lib/IMAP/Tree.php:2004
 msgid "Spam folder"
 msgstr "Spam map"
 
@@ -5030,11 +5030,11 @@ msgstr "Totale grootte:"
 msgid "Traditional"
 msgstr "Traditioneel"
 
-#: config/prefs.php.dist:319
+#: config/prefs.php.dist:317
 msgid "Trash"
 msgstr "Prullenbak"
 
-#: lib/IMAP/Tree.php:1986
+#: lib/IMAP/Tree.php:1991
 msgid "Trash folder"
 msgstr "Prullenbak"
 
@@ -5106,7 +5106,7 @@ msgstr "Niet verwerkt onderdeel van type: %s"
 msgid "Unknown"
 msgstr "Onbekend"
 
-#: lib/UI/Mailbox.php:206 lib/UI/Mailbox.php:209 lib/UI/Mailbox.php:213
+#: lib/UI/Mailbox.php:203 lib/UI/Mailbox.php:206 lib/UI/Mailbox.php:210
 msgid "Unknown Date"
 msgstr "Onbekende datum"
 
@@ -5288,7 +5288,7 @@ msgstr "Label vereist voor virtuele map"
 msgid "Virtual INBOX"
 msgstr "Virtuele INBOX"
 
-#: lib/IMAP/Tree.php:2026
+#: lib/IMAP/Tree.php:2031
 msgid "Virtual INBOX Folder"
 msgstr "Virtuele INBOX map"
 
@@ -5296,7 +5296,7 @@ msgstr "Virtuele INBOX map"
 msgid "Virtual Trash"
 msgstr "Virtuele prullenbak"
 
-#: lib/IMAP/Tree.php:2022
+#: lib/IMAP/Tree.php:2027
 msgid "Virtual Trash Folder"
 msgstr "Virtuele Prullenbak"
 

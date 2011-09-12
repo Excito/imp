@@ -19,7 +19,7 @@
  * The table structure can be created by the scripts/sql/imp_sentmail.sql
  * script.
  *
- * $Horde: imp/lib/Sentmail/sql.php,v 1.12.2.2 2009/02/17 17:13:51 chuck Exp $
+ * $Horde: imp/lib/Sentmail/sql.php,v 1.12.2.3 2010/07/28 05:19:39 mrubinsk Exp $
  *
  * @author  Jan Schneider <jan@horde.org>
  * @since   IMP 4.2
@@ -104,27 +104,26 @@ class IMP_Sentmail_sql extends IMP_Sentmail {
             $where = sprintf(' AND sentmail_action in (%s)',
                              implode(', ', $filter));
         }
-        $query = sprintf('SELECT sentmail_recipient, count(*) AS sentmail_count FROM %s WHERE sentmail_who = %s AND sentmail_success = 1%s GROUP BY sentmail_recipient ORDER BY sentmail_count DESC LIMIT %d',
+        $query = sprintf('SELECT sentmail_recipient, count(*) AS sentmail_count FROM %s WHERE sentmail_who = %s AND sentmail_success = 1%s GROUP BY sentmail_recipient ORDER BY sentmail_count DESC',
                          $this->_params['table'],
                          $this->_db->quote(Auth::getAuth()),
-                         $where,
-                         $limit);
+                         $where);
 
         /* Log the query at a DEBUG log level. */
         Horde::logMessage(sprintf('IMP_Sentmail_sql::favouriteRecipients(): %s', $query),
                           __FILE__, __LINE__, PEAR_LOG_DEBUG);
 
         /* Execute the query. */
-        $recipients = $this->_db->getAll($query);
-        if (is_a($recipients, 'PEAR_Error')) {
+        $result = $this->_db->limitQuery($query, 0, $limit);
+        if (is_a($result, 'PEAR_Error')) {
             Horde::logMessage($recipients, __FILE__, __LINE__, PEAR_LOG_ERR);
             return $recipients;
         }
 
         /* Extract email addresses. */
         $favourites = array();
-        foreach ($recipients as $recipient) {
-            $favourites[] = $recipient[0];
+        while ($result->fetchInto($row)) {
+            $favourites[] = $row[0];
         }
 
         return $favourites;

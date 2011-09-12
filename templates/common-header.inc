@@ -20,6 +20,12 @@ if ($GLOBALS['browser']->isBrowser('msie') &&
     ($GLOBALS['browser']->getMajor() == 8)) {
     echo '<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />' . "\n";
 }
+
+
+if (Util::nonInputVar('dnsnoprefetch')) {
+    echo '<meta http-equiv="x-dns-prefetch-control" content="off" />' . "\n";
+}
+
 echo Util::bufferOutput('require', IMP_TEMPLATES . '/javascript_defs.php');
 IMP::includeScriptFiles();
 IMP::includeStylesheetFiles(!empty($printer_friendly));

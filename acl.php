@@ -1,6 +1,6 @@
 <?php
 /**
- * $Horde: imp/acl.php,v 1.23.10.15 2009/01/06 15:24:01 jan Exp $
+ * $Horde: imp/acl.php,v 1.23.10.17 2010/07/28 21:09:14 jan Exp $
  *
  * Copyright 2000-2009 The Horde Project (http://www.horde.org/)
  *
@@ -60,7 +60,9 @@ if ($new_user) {
     $new_acl = Util::getFormData('new_acl');
     /* check to see if $new_user already has an acl on the folder */
     if (isset($acls[$new_user])) {
-        $acls[$new_user] = $new_acl;
+        if ($new_acl) {
+            $acls[$new_user] = $new_acl;
+        }
         $new_user = '';
     }
 }
@@ -80,12 +82,16 @@ case 'imp_acl_set':
     if ($new_user) {
         /* Each ACL is submitted with the acl as the value. Reverse the hash
            mapping for createACL(). */
-        $new_acl = array_flip($new_acl);
+        if ($new_acl) {
+            $new_acl = array_flip($new_acl);
+        }
         $result = $ACLDriver->createACL($folder, $new_user, $new_acl);
         if (is_a($result, 'PEAR_Error')) {
             $notification->push($result);
         } elseif (!count($new_acl)) {
-            $notification->push(sprintf(_("All rights on folder \"%s\" successfully removed for user \"%s\"."), $folder, $new_user), 'horde.success');
+            if (isset($acls[$new_user])) {
+                $notification->push(sprintf(_("All rights on folder \"%s\" successfully removed for user \"%s\"."), $folder, $new_user), 'horde.success');
+            }
         } else {
             $notification->push(sprintf(_("User \"%s\" successfully given the specified rights for the folder \"%s\"."), $new_user, $folder), 'horde.success');
         }
@@ -206,7 +212,7 @@ if (empty($_SESSION['imp']['admin'])) {
     require_once IMP_BASE . '/lib/api.php';
     $current_users = array_keys($curr_acl);
     $new_user_field = '<select id="new_user" name="new_user">';
-    foreach (_imp_userList() as $user) {
+    foreach (array('anyone') + _imp_userList() as $user) {
         if (in_array($user, $current_users)) {
             continue;
         }

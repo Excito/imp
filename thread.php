@@ -1,6 +1,6 @@
 <?php
 /**
- * $Horde: imp/thread.php,v 2.10.2.29 2009/07/23 11:33:34 jan Exp $
+ * $Horde: imp/thread.php,v 2.10.2.30 2010/07/01 20:00:26 slusarz Exp $
  *
  * Copyright 2004-2009 The Horde Project (http://www.horde.org/)
  *
@@ -16,6 +16,8 @@ require_once IMP_BASE . '/lib/Mailbox.php';
 require_once IMP_BASE . '/lib/Message.php';
 require_once IMP_BASE . '/lib/MIME/Contents.php';
 require_once IMP_BASE . '/lib/Template.php';
+
+$dnsnoprefetch = true;
 
 /* What mode are we in?
  * DEFAULT/'thread' - Thread mode

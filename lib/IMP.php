@@ -128,7 +128,7 @@ define('IMP_IDX_SEP', "\1");
 /**
  * IMP Base Class.
  *
- * $Horde: imp/lib/IMP.php,v 1.449.4.129 2009/12/16 21:56:13 jan Exp $
+ * $Horde: imp/lib/IMP.php,v 1.449.4.130 2010/10/01 07:13:02 slusarz Exp $
  *
  * Copyright 1999-2009 The Horde Project (http://www.horde.org/)
  *
@@ -1262,6 +1262,13 @@ class IMP {
 
         if ($empty && isset($_SESSION['imp']['namespace'][''])) {
             $cache[$key][$mailbox] = $_SESSION['imp']['namespace'][''];
+        } elseif (strcasecmp($mailbox, 'INBOX') === 0) {
+            $cache[$key][$mailbox] = array(
+                'delimiter' => '/',
+                'hidden' => false,
+                'name' => '',
+                'type' => 'personal'
+            );
         } else {
             $cache[$key][$mailbox] = null;
         }

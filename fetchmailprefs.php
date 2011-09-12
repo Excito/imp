@@ -1,6 +1,6 @@
 <?php
 /**
- * $Horde: imp/fetchmailprefs.php,v 1.39.4.10 2009/01/06 15:24:01 jan Exp $
+ * $Horde: imp/fetchmailprefs.php,v 1.39.4.11 2010/09/27 08:54:46 jan Exp $
  *
  * Copyright 2002-2009 The Horde Project (http://www.horde.org/)
  *
@@ -164,12 +164,12 @@ if (empty($actionID)) {
     $t->set('to_edit', ($to_edit !== null));
     if ($t->get('to_edit')) {
         $t->set('edit_account', intval($to_edit));
-        $t->set('fmid', $fm_account->getValue('id', $to_edit));
-        $t->set('fmusername', $fm_account->getValue('username', $to_edit));
-        $t->set('fmpassword', $fm_account->getValue('password', $to_edit));
-        $t->set('fmserver', $fm_account->getValue('server', $to_edit));
+        $t->set('fmid', htmlspecialchars($fm_account->getValue('id', $to_edit)));
+        $t->set('fmusername', htmlspecialchars($fm_account->getValue('username', $to_edit)));
+        $t->set('fmpassword', htmlspecialchars($fm_account->getValue('password', $to_edit)));
+        $t->set('fmserver', htmlspecialchars($fm_account->getValue('server', $to_edit)));
         if ($t->get('allowfolders')) {
-            $t->set('fmrmailbox', $fm_account->getValue('rmailbox', $to_edit));
+            $t->set('fmrmailbox', htmlspecialchars($fm_account->getValue('rmailbox', $to_edit)));
         }
         $t->set('fmonlynew', $fm_account->getValue('onlynew', $to_edit));
         $t->set('fmmarkseen', $fm_account->getValue('markseen', $to_edit));

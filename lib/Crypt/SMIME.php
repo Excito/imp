@@ -11,7 +11,7 @@ define('IMP_SMIME_PUBKEY_FIELD', 'smimePublicKey');
  * The IMP_SMIME:: class contains all functions related to handling
  * S/MIME messages within IMP.
  *
- * $Horde: imp/lib/Crypt/SMIME.php,v 1.45.2.25 2009/10/09 13:02:34 jan Exp $
+ * $Horde: imp/lib/Crypt/SMIME.php,v 1.45.2.26 2011/01/05 18:52:37 slusarz Exp $
  *
  * Copyright 2002-2009 The Horde Project (http://www.horde.org/)
  *
@@ -189,7 +189,7 @@ class IMP_SMIME extends Horde_Crypt_smime {
         }
 
         $this->_getPublicKeySources();
-        $key = $GLOBALS['registry']->call('contacts/getField', array($address, IMP_SMIME_PUBKEY_FIELD, $this->_sources, false, true));
+        $key = $GLOBALS['registry']->call('contacts/getField', array($address, IMP_SMIME_PUBKEY_FIELD, $this->_sources, true, true));
 
         /* See if the address points to the user's public key. */
         if (is_a($key, 'PEAR_Error')) {

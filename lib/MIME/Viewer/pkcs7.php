@@ -17,7 +17,7 @@ require_once 'Horde/MIME/Structure.php';
  * This class may add the following parameters to the URL:
  *   'smime_verify_msg' -- Do verification of S/MIME signed data.
  *
- * $Horde: imp/lib/MIME/Viewer/pkcs7.php,v 1.68.2.29 2009/10/21 14:07:21 jan Exp $
+ * $Horde: imp/lib/MIME/Viewer/pkcs7.php,v 1.68.2.30 2011/01/14 15:19:21 jan Exp $
  *
  * Copyright 2002-2009 The Horde Project (http://www.horde.org/)
  *
@@ -224,7 +224,6 @@ class IMP_MIME_Viewer_pkcs7 extends MIME_Viewer {
                 $msg_data = $this->_impSmime->extractSignedContents($raw_text);
                 if (is_a($msg_data, 'PEAR_Error')) {
                     $this->_status[] = $msg_data->getMessage();
-                    $mime_message = $mime;
                 } else {
                     $mime_message = &MIME_Structure::parseTextMIMEMessage($msg_data);
                 }
@@ -274,7 +273,7 @@ class IMP_MIME_Viewer_pkcs7 extends MIME_Viewer {
             $text .= '<table cellspacing="0">' . $mc->getMessage(true) . '</table>';
         }
 
-        return $this->_outputStatus();
+        return $text . $this->_outputStatus();
     }
 
     /**
